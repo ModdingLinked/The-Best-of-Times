@@ -99,6 +99,44 @@ SOFTWARE.
             <li>TTW: <strong>Tale of Two Wastelands</strong> (will be installed shortly)</li>
           </ul>
           <hr>
+        <h2 class="installingfnv">Installing Prerequisites:</h2>
+            <h2 class="modhead"><a class="modlink" href="http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe" target="_blank">Microsoft VC++ 2013</a></h2>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run the installer and follow the given instructions</li>
+                        <ul>
+                            <li>If you get a message that the program is already installed, just exit out of the installer</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - Required libraries for FNV and the 4GB Patcher</p>
+            <h2 class="modhead"><a class="modlink" href="https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads" target="_blank">Microsoft VC++ 2015, 2017, 2019</a></h2>
+              <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Click the <strong>x86: vc_redist.x86.exe</strong> and <strong>x64: vc_redist.x64.exe</strong> links under the <strong>Visual Studio 2015, 2017 and 2019</strong> header</li>
+                    <li>Run both of the <strong>.exe</strong> files and follow the given instructions</li>
+                        <ul>
+                            <li>If you get a message that the program is already installed, just exit out of the installer</li>
+                        </ul>
+                </ul>
+              <p class="moddesc"> - Required libraries for Mod Organizer 2</p>
+            <h2 class="modhead">Updating Audio Drivers</h2>
+                <ul class="specialinstructions">
+                  <li>Windows search for <strong>Device Manager</strong></li>
+                  <li>In the device manager, expand the <strong>Audio inputs and outputs</strong> section, right-click on your primary audio device, and select <strong>Update driver</strong> </li>
+                    <img id="FOMODImg" src="./img/update driver.png" alt="Select 'Portable'" style="width:100%;max-width:300px">
+                    <div id="FOMODModal" class="modal">
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                  <li>From the pop-up, select <strong>Search automatically for updated driver software</strong></li>
+                    <img id="FOMODImg3" src="./img/search auto.png" alt="'Search automatically for updated driver software'" style="width:100%;max-width:300px">
+                      <div id="FOMODModal3" class="modal">
+                          <img class="modal-content" id="img03">
+                          <div id="caption3"></div>
+                      </div>
+                  <li>If the search reports that you already have the latest drivers, you can exit the window</li>
+                  <li>If it says your drivers are outdated, let it update your drivers to the latest version</li>
+                </ul>
         <h2 class="installingfnv">Installing Fallout New Vegas:</h2>      
           <div class="installcontainer">
             <button class="accordioninstall">I do not have Fallout New Vegas/Fallout 3 installed</button>
@@ -114,15 +152,13 @@ SOFTWARE.
                         <ul>
                           <li>If you do not have another drive to create a folder on, follow these steps (Requires <a class="modsublink" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>):</li>
                         </ul>
-                          <ul class="steaminstall">
-                            <ul>
                           <li>Navigate to <strong>Steam/steamapps/</strong> and open <strong>libraryfolders.vdf</strong> with Notepad++)</li>
                           <li>You should see something similar to this:</li>
-                            <img id="FOMODImg" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
-                            <div id="FOMODModal" class="modal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div id="caption"></div>
+                          <img id="FOMODImg2" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
+                            <div id="FOMODModal2" class="modal">
+                              <span class="close">&times;</span>
+                                <img class="modal-content" id="img02">
+                                <div id="caption2"></div>
                             </div>
                           <li>Add a new line below the lowest filepath and follow the same format for creating a new drive path</li>
                             <ul>
@@ -132,8 +168,6 @@ SOFTWARE.
                             <ul>
                               <li>Make sure the number and file path align with how many folders there already are and where you intend to create the new respectively. You also must manually create the file you are pointing it to, Steam will not create it for you</li>
                             </ul>
-                          </ul>
-                        </ul>
                       <li>Exit out of the menu and go to <strong>Library</strong></li>
                       <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
                       <li>From the pop-up, select <strong>Choose location for install:</strong></li>
@@ -147,6 +181,7 @@ SOFTWARE.
                   </ul>
                 </p>
               </div>
+          </div>
             <button class="accordioninstall">I have Fallout New Vegas/Fallout 3 previously installed and may have leftover mod files</button>
               <div class="panelinstall">
                 <p>
@@ -169,15 +204,13 @@ SOFTWARE.
                           <ul>
                             <li>If you do not have another drive to create a folder on, follow these steps (Requires <a class="modsublink" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>):</li>
                           </ul>
-                            <ul class="steaminstall">
-                              <ul>
                             <li>Navigate to <strong>Steam/steamapps/</strong> and open <strong>libraryfolders.vdf</strong> with Notepad++)</li>
                             <li>You should see something similar to this:</li>
-                              <img id="FOMODImg" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
-                              <div id="FOMODModal" class="modal">
-                                  <span class="close">&times;</span>
-                                  <img class="modal-content" id="img01">
-                                  <div id="caption"></div>
+                            <img id="FOMODImg2" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
+                              <div id="FOMODModal2" class="modal">
+                                <span class="close">&times;</span>
+                                  <img class="modal-content" id="img02">
+                                  <div id="caption2"></div>
                               </div>
                             <li>Add a new line below the lowest filepath and follow the same format for creating a new drive path</li>
                               <ul>
@@ -187,8 +220,6 @@ SOFTWARE.
                               <ul>
                                 <li>Make sure the number and file path align with how many folders there already are and where you intend to create the new respectively. You also must manually create the file you are pointing it to, Steam will not create it for you</li>
                               </ul>
-                            </ul>
-                          </ul>
                         <li>Exit out of the menu and go to <strong>Library</strong></li>
                         <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
                         <li>From the pop-up, select <strong>Choose location for install:</strong></li>
@@ -257,6 +288,29 @@ SOFTWARE.
               </ul>
             </ul>
           </p>
+      <h2 class="installingfnv">Capping FPS</h2>
+        <h2 class="modhead">For Users with an NVIDIA GPU Only: <a class="modlink" href="https://github.com/DeadManWalkingTO/NVidiaProfileInspectorDmW/releases" target="_blank">NVIDIA Profile Inspector</a></h2>
+            <ul class="specialinstructions">
+                <li>Download the <strong>NVidiaProfileInspectorDmW</strong> (non-portable) file</li>
+                <li>Extract the archive to a safe location</li>
+                <li>Run <strong>NVidiaProfileInspectorDmW.exe</strong></li>
+                <li>Click <strong>Yes</strong> if there is a pop-up</li>
+                <li>From the <strong>Profiles:</strong> drop-down in the top left, select <strong>Fallout - New Vegas</strong></li>
+                <li>In the <strong>2. - Sync and Refresh</strong> section, set <strong>Frame Rate Limiter</strong> to 1 less than your monitor's refresh rate</li>
+                <li>Click the <strong>Apply changes</strong> button in the top right then exit</li>
+            </ul>
+    <h2 class="modhead">For Users with an AMD GPU Only:</h2>
+        <ul class="specialinstructions">
+            <li>Right-click on your desktop and select <strong>AMD Radeon Settings</strong></li>
+            <li>In the <strong>Gaming</strong> tab, select the <strong>Fallout New Vegas</strong> profile</li>
+            <li>In the <strong>Profile Graphics tab</strong>, change the following:</li>
+            <li>Enable <strong>Chill (FPS)</strong></li>
+            <li>Set <strong>Chill Min</strong> and <strong>Chill Max</strong> to 1 less than your monitor's refresh rate</li>
+            <li>Hit the home button in the bottom left (the settings should automatically save), and make sure the word <strong>Enabled</strong> appears below the profile name</li>
+                <ul>
+                    <li>If not, click the three vertical dots to the right of the profile name and select <strong>Enable Profile</strong></li>
+                </ul>
+        </ul>
     </div>
     <div>
       <hr>
@@ -264,7 +318,6 @@ SOFTWARE.
       <a class="arrows" href="./core-mo2config.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
   </div>
 </body>
-
 <script>
   var acc = document.getElementsByClassName("accordioninstall");
   var i;
@@ -282,23 +335,4 @@ SOFTWARE.
     });
   }
 </script>
-<script>
-  var modal = document.getElementById('FOMODModal');
-  
-  var img = document.getElementById('FOMODImg');
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-  }
-  
-  var span = document.getElementsByClassName("close")[0];
-  
-  span.onclick = function() { 
-      modal.style.display = "none";
-  }
-  </script>
-
 </html>
