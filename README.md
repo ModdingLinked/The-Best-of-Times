@@ -1,4 +1,4 @@
-# [The Best of Times](https://vivanewvegas.github.io/)
+# [The Best of Times](https://thebestoftimes.github.io/)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-informational.svg)](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt)
 
