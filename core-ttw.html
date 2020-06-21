@@ -93,7 +93,7 @@ SOFTWARE.
             <li>In the installer, ensure the file paths to both the Fallout 3 installation and Fallout New Vegas installation are correct</li>
             <li>Set the Tale of Two Wastelands install path to <strong>Your Mod Organizer 2 Folder/mods/Tale of Two Wastelands 3.2</strong></li>
                 <ul>
-                    <li>For example, here are my filepaths (YOUR FILEPATHS WILL NOT BE EXACTLY THE SAME AS MINE, THIS IS JUST AN EXAMPLE) </li>
+                    <li>For example, here are my filepaths (Your filepaths will not be exactly the same as mine, this is just an example)</li>
                         <img id="FOMODImg2" src="./img/ttw file paths.png" alt="'Your Mod Organizer 2 Folder/mods/Tale of Two Wastelands 3.2'" style="width:100%;max-width:300px">
                             <div id="FOMODModal2" class="modal">
                                 <img class="modal-content" id="img02">
@@ -121,7 +121,7 @@ SOFTWARE.
             <li>In the installer, ensure that the filepath for New Vegas is correct, and that the filepath for Tale of Two Wastelands v3.2 is pointed to the same folder you set as the install location when installing 3.2 (<strong>Your Mod Organizer 2 Folder/mods/Tale of Two Wastelands 3.2</strong>)</li>
             <li>Set the filepath for Tale of Two Wastelands v3.2.1 to the exact same folder as Tale of Two Wastelands 3.2 (<strong>Your Mod Organizer 2 Folder/mods/Tale of Two Wastelands 3.2</strong>)</li>
                 <ul>
-                    <li>For example, here are my filepaths (YOUR FILEPATHS WILL NOT BE EXACTLY THE SAME AS MINE, THIS IS JUST AN EXAMPLE) </li>
+                    <li>For example, here are my filepaths (Your filepaths will not be exactly the same as mine, this is just an example)</li>
                         <img id="FOMODImg7" src="./img/ttw file paths 2.png" alt="'Your Mod Organizer 2 Folder/mods/Tale of Two Wastelands 3.2'" style="width:100%;max-width:300px">
                             <div id="FOMODModal7" class="modal">
                                 <img class="modal-content" id="img07">
@@ -140,7 +140,7 @@ SOFTWARE.
             <li>In the installer, ensure that the filepath for New Vegas is correct, and that the filepath for Tale of Two Wastelands v3.2.1 is pointed to the same folder you set as the install location when installing 3.2.1 (<strong>Your Mod Organizer 2 Folder/mods/Tale of Two Wastelands 3.2</strong>)</li>
             <li>Set the filepath for Tale of Two Wastelands v3.2.1 to the exact same folder as Tale of Two Wastelands 3.2 (<strong>Your Mod Organizer 2 Folder/mods/Tale of Two Wastelands 3.2</strong>)</li>
                 <ul>
-                    <li>For example, here are my filepaths (YOUR FILEPATHS WILL NOT BE EXACTLY THE SAME AS MINE, THIS IS JUST AN EXAMPLE) </li>
+                    <li>For example, here are my filepaths (Your filepaths will not be exactly the same as mine, this is just an example)</li>
                     <img id="FOMODImg9" src="./img/ttw file paths 3.png" alt="Restart" style="width:100%;max-width:300px">
                         <div id="FOMODModal9" class="modal">
                             <img class="modal-content" id="img09">
@@ -169,7 +169,7 @@ SOFTWARE.
             <li>Right-click on <strong>Tale of Two Wastelands 3.2</strong> in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
             <li>Navigate to <strong>nvse/plugins</strong> and delete the <strong>textinput</strong> folder, <strong>jip_nvse.dll</strong>, and <strong>jip_nvse.ini</strong></li>
                 <ul>
-                    <li>TTW comes with an outdated version of JIP, we will installed the current version in the next step</li>
+                    <li>TTW comes with an outdated version of JIP, we will install the correct version in the next step</li>
                 </ul>
             <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 executables"> button on the top bar of MO2 and select <strong>INI Editor</strong></li>
             <li>Navigate to the <strong>FalloutCustom.ini</strong> tab, which should be blank</li>
@@ -210,9 +210,9 @@ SOFTWARE.
                     <ul>
                         <li>If you do not know how many threads your CPU has, use <a class="modsublink" href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">CPU-Z</a> to find out</li>
                     </ul>
-                <li><strong>iPresentInterval</strong> can be set to <strong>0</strong> if you use G/Free-sync, or want to use GPU Driver v-sync</li>
+                <li><strong>iPresentInterval</strong> can be set to <strong>0</strong> if you use G/Free-sync</li>
                 <li><strong>fXenonVertLookSpeed</strong> and <strong>fXenonHorizLookSpeed</strong> can be removed if you do not run the game in a 16:9 aspect ratio</li>
-                <li>Repeat for the <strong>Testing</strong> profile</li>
+                <li>Repeat the INI tweaks for the <strong>Testing</strong> profile</li>
                 </ul>
                     <div class="installcontainer">
                         <button class="accordioninstall">What do these tweaks do?</button>
@@ -222,6 +222,10 @@ SOFTWARE.
                                             <th>Tweak</th>
                                             <th>Effect</th>
                                         </tr>
+                                            <tr>
+                                                <td>SArchiveList=</td>
+                                                <td>Makes sure the game loads the new Fallout - Meshes2.bsa archive created by the TTW installer</td>
+                                            </tr>
                                         <tr>
                                             <td>bPreemptivelyUnloadCells=1</td>
                                             <td>Helps prevent <strong>Out of Memory</strong> crashes when changing cells</td>
@@ -278,7 +282,7 @@ SOFTWARE.
                             </div>
                         </div>
             <ul class="specialinstructions">
-                <li>It is not recommended to change any other .INI settings other than the ones in the guide, <strong>especially not</strong> the following:</li>
+                <li>It is not recommended to change any other .INI settings other than the ones in the guide, <strong>especially not the following:</strong></li>
                     <ul>
                         <li><strong>uGridsToLoad=5:</strong> Changes the amount of cells loaded at once. When changed, it can cause scripts to run when they aren't supposed to, will ruin performance, and will break your game if changed on an existing save</li>
                         <li><strong>bMultiThreadAudio=0:</strong> Can cause crashes when set to 1</li>
