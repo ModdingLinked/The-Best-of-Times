@@ -98,7 +98,7 @@ body {
 .coreheader {
     text-align: center;
     color:limegreen;
-    font-size:1.5vw;
+    font-size: calc(10px + 1.2vw);
 }
 
 .corelist {
