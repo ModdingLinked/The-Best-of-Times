@@ -83,6 +83,8 @@ SOFTWARE.
                     <li>Download the mod manually</li>
                     <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
                 </ul>
+                <p class="moddesc">NOTE: If you do not know what the <strong>Data</strong> folder is, go to the <a class="modsublink" href="./core-installation.html">Core - Installation</a> page and read the <strong>Common Terminology</strong> section</p>
+                <p class="moddesc">NOTE 2: The reason that these NVSE plugins are installed directly into the data folder and not through MO2 is that MO2's virtual file system can (rarely) fail to hook the .DLLs in time when launching the game and therefore they will not work in-game</p>
             <p class="moddesc"> - NVSE extension with 800+ new functions</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">JohnnyGuitar NVSE</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
@@ -132,19 +134,25 @@ SOFTWARE.
                 <br>
             <p class="specialinstall"><strong>Manual editing required:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Open <strong>NVTF.ini</strong></li>
-                    <li>Set <strong>bUseD3D9Ex</strong> to <strong>1</strong> (line 38)</li>
+                    <li>Open <strong>NVTF.ini</strong> in <strong>Fallout New Vegas/Data/nvse/plugins</strong></li>
+                    <li>Set <strong>bModifyDirectXBehavior</strong> to <strong>1</strong> (line 26)</li>
+                    <li>Set <strong>bUseD3D9Ex</strong> to <strong>1</strong> (line 42)</li>
                         <ul>
                             <li>With this setting enabled, you must run the game in exclusive fullscreen mode (the INI tweaks from the previous step already force the game to run in exclusive fullscreen)</li>
                         </ul>
-                    <li>Set <strong>bUseFlipExSwapMode</strong> to <strong>1</strong> (line 61)</li>
+                    <li>Set <strong>bToggleTripleBuffering</strong> to <strong>1</strong> (line 47)</li>
+                    <li>Set <strong>bUseFlipExSwapMode</strong> to <strong>1</strong> (line 65)</li>
                         <ul>
-                            <li>NOTE: If you are on Windows 7, you do not need to enable the previous two options</li>
-                            <li>Enabling this option will break the in-game screenshot function, but will allow for safe alt-tabbing in fullscreen</li>
+                            <li>NOTE: If you are on Windows 7, you do not need to enable the previous three options</li>
+                            <li>Enabling this option will break the in-game screenshot function (Windows print screen will still work), but will allow for safe alt-tabbing in fullscreen. It is fine to leave disabled if you don't alt-tab and want to use in-game screenshots</li>
                         </ul>
-                    <li>Set <strong>iMaxFPSTolerance</strong> to 1 less than your monitor's refresh rate (line 73)</li>
+                    <li>Set <strong>bResizeHashtables</strong> to <strong>1</strong> (line 84)</li>
+                    <li>Set <strong>iMaxFPSTolerance</strong> to 1 less than your monitor's refresh rate (line 91)</li>
                 </ul>
-            <p class="moddesc"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates </p>
+                </ul>
+            <p class="moddesc"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates <br>
+                                NOTE: If you experience incredibly low frame rates and bad stuttering with this mod, set <strong>bUseD3D9Ex</strong> to 0. This setting can rarely cause that on some systems             
+            </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">Mod Limit Fix</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
