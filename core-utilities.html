@@ -46,7 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>
@@ -59,7 +59,7 @@ SOFTWARE.
             <li><a href="./core-mo2config.html">Mod Organizer 2</a></li>
             <li><a href="./core-ttw.html">Installing TTW</a></li>
             <li>Utilities</li>
-            <li><a href="./core-hud.html">Essentials</a></li>
+            <li><a href="./core-essentials.html">Essentials</a></li>
             <li><a href="./core-optionals.html">Optionals</a></li>
             <li><a href="./core-finish.html">Finish Line</a></li>
         </ul>
@@ -126,7 +126,7 @@ SOFTWARE.
                 </ul>
             <p class="moddesc"> - Implements structured exception handling and sanity checking to reduce the amount of crashes</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a></h2>
-            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+            <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Download the mod manually</li>
                     <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
@@ -136,42 +136,40 @@ SOFTWARE.
                 <ul class="specialinstructions">
                     <li>Open <strong>NVTF.ini</strong> in <strong>Fallout New Vegas/Data/nvse/plugins</strong></li>
                     <li>Set <strong>bModifyDirectXBehavior</strong> to <strong>1</strong> (line 26)</li>
-                    <li>Set <strong>bUseD3D9Ex</strong> to <strong>1</strong> (line 42)</li>
                         <ul>
                             <li>With this setting enabled, you must run the game in exclusive fullscreen mode (the INI tweaks from the previous step already force the game to run in exclusive fullscreen)</li>
                         </ul>
-                    <li>Set <strong>bToggleTripleBuffering</strong> to <strong>1</strong> (line 47)</li>
+                    <li>Set <strong>bUseD3D9Ex</strong> to <strong>1</strong> (line 42)</li>
                     <li>Set <strong>bUseFlipExSwapMode</strong> to <strong>1</strong> (line 65)</li>
                         <ul>
-                            <li>NOTE: If you are on Windows 7, you do not need to enable the previous three options</li>
+                            <li>NOTE: If you are on Windows 7, you do not need to enable the previous two options</li>
                             <li>Enabling this option will break the in-game screenshot function (Windows print screen will still work), but will allow for safe alt-tabbing in fullscreen. It is fine to leave disabled if you don't alt-tab and want to use in-game screenshots</li>
                         </ul>
-                    <li>Set <strong>bResizeHashtables</strong> to <strong>1</strong> (line 84)</li>
-                    <li>Set <strong>bReplaceHashingAlgorithm</strong> to <strong>0</strong> (line 86)</li>
-                        <ul>
-                            <li>This setting currently causes issues with JIP LN NVSE when enabled</li>
-                        </ul>
-                    <li>Set <strong>iMaxFPSTolerance</strong> to 1 less than your monitor's refresh rate (line 91)</li>
-                </ul>
+                    <li>Set <strong>iMaxFPSTolerance</strong> to 2 less than your monitor's refresh rate (line 89)</li>
                 </ul>
             <p class="moddesc"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates <br>
                                 NOTE: If you experience incredibly low frame rates and bad stuttering with this mod, set <strong>bUseD3D9Ex</strong> to 0. This setting can rarely cause that on some systems             
             </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a></h2>
+            <p class="specialinstall"><strong>Installation instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Download the mod manually</li>
+                    <li>Extract the <strong>d3dx9_38.dll</strong> file from the archive to the game's <strong>Root</strong> folder</li>
+                </ul>
+            <p class="moddesc"> - Improves the in-game heap management system to decrease load times, lower stuttering, and slightly improve overall performance</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">Mod Limit Fix</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Download the mod manually</li>
                     <li>Extract the <strong>NVSE</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
                 </ul>
-            <p class="moddesc"> - Raises the game's ~120 plugin limit to 255, may also increase performance and decrease load times <br>
-                                NOTE: Although this does raise the plugin limit, the guide will still stay far below the limit, and it is still recommended to stay below ~120 plugins for optimal performance/load times
-            </p>
+            <p class="moddesc"> - Raises the game's ~120 plugin limit to 255. May also increase performance and decrease load times, even if you are far below the plugin limit</p>
         <h2 class="modhead"><a class="modlink" href="./core-optionalutilities.html" target="_blank">Other helpful (and optional) utilities not used in this guide</a></h2>
     </div>      
     <div>
         <hr>
-        <a class="arrows" href="./core-hud.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./core-hud.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <a class="arrows" href="./core-essentials.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./core-essentials.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
 </html>

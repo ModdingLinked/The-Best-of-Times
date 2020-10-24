@@ -46,7 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>
@@ -59,13 +59,13 @@ SOFTWARE.
                 <li>Mod Organizer 2</li>
                 <li><a href="./core-ttw.html">Installing TTW</a></li>
                 <li><a href="./core-utilities.html">Utilities</a></li>
-                <li><a href="./core-hud.html">Essentials</a></li>
+                <li><a href="./core-essentials.html">Essentials</a></li>
                 <li><a href="./core-optionals.html">Optionals</a></li>
                 <li><a href="./core-finish.html">Finish Line</a></li>
             </ul>
         <hr>
         <p class="installingfnvdesc">
-            In this step, we will configure and set up MO2. If you are completely unfamiliar with Mod Organizer 2, I suggest watching <a class="modsublink" href="https://www.youtube.com/watch?v=DG3eqyNOByw&list=PLlN8weLk86Xh3ue76x2ibqtmMramwQmHB" target="_blank">GamerPoet's tutorial series</a>
+            In this step, we will configure MO2 to set it up for installing mods and using the tools we just installed. If you are completely unfamiliar with Mod Organizer 2, I suggest watching <a class="modsublink" href="https://www.youtube.com/watch?v=7v0wWVuOagA&list=PLlN8weLk86Xh3ue76x2ibqtmMramwQmHB&index=2" target="_blank">GamerPoet's tutorial series </a> (it was made for Skyrim, so it has some information that does not apply to New Vegas such as the Steam Workshop part. You can ignore these)
         </p>
         <hr class="modline">
     </div>
@@ -98,7 +98,7 @@ SOFTWARE.
                             <div id="caption"></div>
                         </div>
                 <li>From the pop-up called <strong>Please select the game to manage</strong>, select <strong>TTW</strong> </li>
-                    <img id="FOMODImg2" src="./img/MO2 New Vegas.png" alt="Select 'New Vegas'" style="width:100%;max-width:300px">
+                    <img id="FOMODImg2" src="./img/MO2 New Vegas.png" alt="Select 'TTW'" style="width:100%;max-width:300px">
                         <div id="FOMODModal2" class="modal">
                             <img class="modal-content" id="img02">
                             <div id="caption2"></div>
@@ -197,34 +197,20 @@ SOFTWARE.
         <h2 class="installingfnv">IMPORTANT: Mod Installation Advice in Mod Organizer 2</h2>
                 <p class="overlaydesc">This is general advice to follow when installing mods in Mod Organizer 2</p>
                     <ul class="specialinstructions">
+                        <li>If the guide says <strong>Install normally</strong>, go to the <strong>Files</strong> tab on the Nexus page and install just the main file of the mod by using the <strong>Mod Manager Download</strong> button to download it through MO2</li>
                         <li>When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong></li>
                             <ul>
-                                <li>For <strong>Main Files</strong>, <strong>Updates</strong>, and <strong>Hotfixes</strong>, select <strong>Merge</strong>. This will merge the mod files together into one mod in MO2</li>
+                                <li>For files on Nexus labeled <strong>Main Files</strong> and <strong>Updates</strong>, select <strong>Merge</strong>. This will merge the mod files together into one mod in MO2</li>
                                     <ul>
-                                        <li>If a mod has multiple <strong>Main Files</strong>, select <strong>Rename</strong>. Naming it something different will cause MO2 to install it as its own mod.</li>
+                                        <li>If a mod has multiple <strong>Main Files</strong>, select <strong>Rename</strong>. Naming it something different will cause MO2 to install it as its own mod</li>
                                     </ul>
-                                <li>For <strong>Optional Files</strong>, <strong>Miscellaneous Files</strong>, and <strong>Patches</strong>, select <strong>Rename</strong>. Naming it something different will cause MO2 to install it as its own mod.</li>
+                                <li>For files on Nexus labeled <strong>Optional Files</strong> and <strong>Miscellaneous Files</strong>, select <strong>Rename</strong></li>
                                 <li>When updating from a previous version of a mod, select <strong>Replace</strong>. This will delete all the files from the old version of the mod and just install the ones from the new version</li>
-                            </ul>
-                            <li>If the guide says <strong>Install normally</strong>, go to the <strong>Files</strong> tab on the Nexus page and install just the main file of the mod by using the <strong>Mod Manager Download</strong> button to download it through MO2</li>
-                        <li>If the guide says <strong>Hide the following:</strong>, do the following:</li>
-                            <ul>
-                                <li>Once the mod is installed, double-click it in the left pane of MO2</li>
-                                <li>Navigate to the <strong>Filetree</strong> tab</li>
-                                <li>Right-click on the listed file and select <strong>Hide</strong></li>
-                            </ul>
-                        <li>If MO2 gives you a <strong>No game data on top level</strong> message while installing a mod: </li>
-                            <ul>
-                                <li>Expand the main folder</li>
-                                <li>Find the <strong>Data</strong> folder, right-click on it, and select <strong>Set data directory</strong></li>
-                                    <ul>
-                                        <li>If there is no folder called <strong>Data</strong>, find the folder that contains the mod data (textures, meshes, and/or an .esp) and follow the same instructions as above</li>
-                                    </ul>
                             </ul>
                         <li>If there is no <strong>Mod Manager Download</strong> button for a file, or if a file isn't hosted on Nexus, do the following:</li>
                             <ul>
                                 <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site)</li>
-                                <li>Click the <img class="mo2setting" src="./img/mo2archive.png" alt="mo2 archive button"> button on the toolbar of MO2</li>
+                                <li>Click the <img class="mo2setting" src="./img/mo2archive.png" alt="mo2 archive buttong"> button on the toolbar of MO2</li>
                                 <li>From the pop-up, navigate to where the file installed and double-click it</li>
                                 <li>Finish the install as you would any other mod</li>
                             </ul>
