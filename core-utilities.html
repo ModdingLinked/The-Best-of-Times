@@ -69,22 +69,33 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://github.com/xNVSE/NVSE/releases" target="_blank">xNVSE</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Download the most recent version from the top of the page</li>
+                    <li>Click the <strong>nvse_5_1_beta6.7z</strong> link to download the archive</li>
                     <li>Extract all files ending in <strong>.dll</strong> and the <strong>.exe</strong> (4 total files) from the archive to the <strong>Root</strong> folder, and overwrite when prompted</li>
                         <ul>
-                            <li><strong>nvse_steam_loader.dll</strong> is still needed with the GOG version of the game</li>
+                            <li>If you do not know what the <strong>Root</strong> folder is, read the <strong>Common Terminology</strong> section from the <a class="modsublink" href="./core-installation.html" target="_blank">Installation</a> page</li>
+                            <li><strong>nvse_steam_loader.dll</strong> <u>IS STILL</u> needed with the GOG version of the game</li>
                         </ul>
                 </ul>
-                <p class="moddesc">NOTE: If you do not know what the <strong>Root</strong> folder is, go to the <a class="modsublink" href="./core-installation.html">Installation</a> page and read the <strong>Common Terminology</strong> section</p>
             <p class="moddesc"> - An updated version of NVSE, which extends the scripting capabilities of the engine and is essential for most mods</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE Plugin</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Download the mod manually</li>
+                    <li>Download the main file using the <strong>Manual Download</strong> button (this will be referred to as "downloading manually" from now on)</li>
                     <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
+                        <ul>
+                            <li>If you do not know what the <strong>Data</strong> folder is, read the <strong>Common Terminology</strong> section from the <a class="modsublink" href="./core-installation.html" target="_blank">Installation</a> page</li>
+                        </ul>
+                    <li>The files from the mod, and the rest of the NVSE plugins in this section, should end up like this (pay attention to the filepath at the top)</li>
+                    <img id="FOMODImg" src="./img/JIP Install.png" alt="Fallout New Vegas/Data/NVSE/Plugins" style="width:100%;max-width:300px">
+                        <div id="FOMODModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <ul>
+                            <li>The reason that these NVSE plugins are installed directly into the data folder and not through MO2 is that MO2's virtual file system can (rarely) fail to hook the .DLLs in time when launching the game and therefore they will not work in-game</li>
+                        </ul>
                 </ul>
-                <p class="moddesc">NOTE: If you do not know what the <strong>Data</strong> folder is, go to the <a class="modsublink" href="./core-installation.html">Core - Installation</a> page and read the <strong>Common Terminology</strong> section</p>
-                <p class="moddesc">NOTE 2: The reason that these NVSE plugins are installed directly into the data folder and not through MO2 is that MO2's virtual file system can (rarely) fail to hook the .DLLs in time when launching the game and therefore they will not work in-game</p>
             <p class="moddesc"> - NVSE extension with 800+ new functions</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">JohnnyGuitar NVSE</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
@@ -93,31 +104,6 @@ SOFTWARE.
                     <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
                 </ul>
             <p class="moddesc"> - Another NVSE extender</p>
-        <h2 class="modhead">Verifying NVSE and the 4GB Patch are Working</h2>
-            <p class="moddesc">NOTE: The 4GB patch comes preinstalled with TTW</p>
-            <ul class="specialinstructions">
-                <li>Run the game through MO2 using the <strong>Tale of Two Wastelands</strong> option</li>
-                    <ul>
-                        <li>You don't need to use the <strong>NVSE</strong> option, as the 4GB patch auto-loads NVSE through the default executable</li>
-                    </ul>
-                <li>Once the game has reached the title screen, open the console by pressing the <strong>Tilde (~)</strong> key</li>
-                <li>Input <strong>getnvseversion</strong> into the console and hit enter</li>
-                    <ul>
-                        <li>The console should report <strong>NVSE version: 5</strong></li>
-                            <ul>
-                                <li>If it does not, verify NVSE is installed correctly and retry</li>
-                            </ul>
-                    </ul>
-                <li>Input <strong>getislaa</strong> into the console and hit enter</li>
-                    <ul>
-                        <li>The console should report <strong>GetisLAA >> 2.0000</strong></li>
-                            <ul>
-                                <li>If the console reports <strong>GetisLAA >> 0.0000</strong>, the patch is not installed correctly</li>
-                                <li>If the console reports <strong>GetisLAA >> 1.0000</strong>, the patch is installed correctly but is not working correctly, so you must run the game as an administrator</li>
-                                <li>If the console reports an error message, you did not install JIP LN NVSE correctly</li>
-                            </ul>
-                    </ul>
-            </ul>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/53635/" target="_blank">New Vegas Anti-Crash</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
@@ -155,7 +141,6 @@ SOFTWARE.
                     <li>Extract the <strong>NVSE</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
                 </ul>
             <p class="moddesc"> - Raises the game's ~120 plugin limit to 255. May also increase performance and decrease load times, even if you are far below the plugin limit</p>
-        <h2 class="modhead"><a class="modlink" href="./core-optionalutilities.html" target="_blank">Other helpful (and optional) utilities not used in this guide</a></h2>
     </div>      
     <div>
         <hr>
@@ -163,4 +148,22 @@ SOFTWARE.
         <a class="arrows" href="./core-essentials.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
+<script>
+    var modal = document.getElementById('FOMODModal');
+    
+    var img = document.getElementById('FOMODImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+</script>
 </html>

@@ -69,7 +69,14 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/TTW%20Load%20Order.txt.7z" target="_blank">Load Order.txt</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Extract <strong>loadorder.txt</strong> to <strong>Mod Organizer 2/profiles/Tale of Two Wastelands</strong> and overwrite when prompted</li>
+                    <li>Click the <img class="mo2setting" src="./img/mo2folders.png" alt="mo2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong></li>
+                        <img id="FOMODImg" src="./img/mo2 open profiles folder.png" alt="Open Profiles folder" style="width:100%;max-width:300px">
+                            <div id="FOMODModal" class="modal">
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                                <span class="close">&times;</span>
+                            </div>
+                    <li>Extract the <strong>loadorder.txt</strong> from the archive to opened folder and overwrite when prompted</li>
                     <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 </ul>
             <p class="moddesc"> - Automatically ensures your load order is correct for the TTW and this guide </p>
@@ -95,101 +102,6 @@ var modal = document.getElementById('FOMODModal');
 var img = document.getElementById('FOMODImg');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-
-<script>
-    var modal = document.getElementById('FOMODModal2');
-
-var img = document.getElementById('FOMODImg2');
-var modalImg = document.getElementById("img02");
-var captionText = document.getElementById("caption2");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-
-<script>
-    var modal = document.getElementById('FOMODModal3');
-
-var img = document.getElementById('FOMODImg3');
-var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption3");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-
-<script>
-    var modal = document.getElementById('FOMODModal4');
-
-var img = document.getElementById('FOMODImg4');
-var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption4");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-
-<script>
-    var modal = document.getElementById('FOMODModal5');
-
-var img = document.getElementById('FOMODImg5');
-var modalImg = document.getElementById("img05");
-var captionText = document.getElementById("caption5");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-
-<script>
-    var modal = document.getElementById('FOMODModal6');
-
-var img = document.getElementById('FOMODImg6');
-var modalImg = document.getElementById("img06");
-var captionText = document.getElementById("caption6");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;

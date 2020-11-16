@@ -65,7 +65,7 @@ SOFTWARE.
             </ul>
         <hr>
         <p class="installingfnvdesc">
-            In this step, we will configure MO2 to set it up for installing mods and using the tools we just installed. If you are completely unfamiliar with Mod Organizer 2, I suggest watching <a class="modsublink" href="https://www.youtube.com/watch?v=7v0wWVuOagA&list=PLlN8weLk86Xh3ue76x2ibqtmMramwQmHB&index=2" target="_blank">GamerPoet's tutorial series </a> (it was made for Skyrim, so it has some information that does not apply to New Vegas such as the Steam Workshop part. You can ignore these)
+            In this step, we will install and set up a new instance of Mod Organizer 2. If you are completely unfamiliar with Mod Organizer 2, I suggest watching <a class="modsublink" href="https://www.youtube.com/watch?v=7v0wWVuOagA&list=PLlN8weLk86Xh3ue76x2ibqtmMramwQmHB&index=2" target="_blank">GamerPoet's tutorial series </a> (it was made for Skyrim, so it has some information that does not apply to New Vegas such as the Steam Workshop part. You can ignore these)
         </p>
         <hr class="modline">
     </div>
@@ -81,8 +81,11 @@ SOFTWARE.
                     <ul>
                         <li>If the option does not show up for you, ignore that step</li>
                     </ul>
-                <li>Extract the contents of your archive to a new folder named <strong>Mod Organizer 2</strong> in <strong>Modding Folder/Tools</strong></li>
-                <li>Once you have extracted the archive, right-click on <strong>ModOrganizer.exe</strong> and select <strong>Properties</strong></li>
+                <li>Extract the archive to your <strong>Modding Folder</strong></li>
+                    <ul>
+                        <li>If you do not know what your <strong>Modding Folder</strong> is, read the <strong>Setting up your Modding Folder</strong> section from the <a class="modsublink" href="./core-installation.html" target="_blank">Installation</a> page</li>
+                    </ul>
+                <li>Once the everything has been extracted, right-click on <strong>ModOrganizer.exe</strong> and select <strong>Properties</strong></li>
                 <li>Navigate to the <strong>Compatibility</strong> tab and check the box adjacent to <strong>Run this program as an administrator</strong></li>
                 <li>Select <strong>Apply</strong> then <strong>OK</strong></li>
             </ul>
@@ -121,6 +124,7 @@ SOFTWARE.
                         </ul>
                 <li>If there is a plugin called <strong>FalloutNV_lang.esp</strong> in the right pane, navigate to the <strong>Data</strong> folder and delete it</li>
                             <ul>
+                                <li>If you do not know what the <strong>Root</strong> folder is, read the <strong>Common Terminology</strong> section from the <a class="modsublink" href="./core-installation.html" target="_blank">Installation</a> page</li>
                                 <li>The translation plugin edits 1000s records and will break mods</li>
                             </ul>
                 <li>Click the <img class="mo2setting" src="./img/mo2settings.png" alt="mo2 settings"> button on the toolbar of MO2</li>
@@ -178,7 +182,7 @@ SOFTWARE.
                                 <div id="caption13"></div>
                             </div>
                             <ul>
-                                <li>NOTE: You may want to also check the <strong>Use profile-specific Save Games</strong> if you also have a modded installation of regular FNV and want to keep your saves separate</li>
+                                <li>You may want to also check the <strong>Use profile-specific Save Games</strong> if you also have a modded installation of regular FNV and want to keep your saves separate</li>
                             </ul>
                     <li>With the <strong>Testing</strong> profile selected, select <strong>Copy</strong></li>
                     <li>Input <strong>Tale of Two Wastelands</strong> for the name, click <strong>OK</strong> then <strong>Close</strong></li>
@@ -195,15 +199,12 @@ SOFTWARE.
                 </ul>
                 <hr>
         <h2 class="installingfnv">IMPORTANT: Mod Installation Advice in Mod Organizer 2</h2>
-                <p class="overlaydesc">This is general advice to follow when installing mods in Mod Organizer 2</p>
+                <p class="overlaydesc">This is general advice to follow when installing mods in Mod Organizer 2:</p>
                     <ul class="specialinstructions">
                         <li>If the guide says <strong>Install normally</strong>, go to the <strong>Files</strong> tab on the Nexus page and install just the main file of the mod by using the <strong>Mod Manager Download</strong> button to download it through MO2</li>
-                        <li>When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong></li>
+                        <li>When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong>:</li>
                             <ul>
                                 <li>For files on Nexus labeled <strong>Main Files</strong> and <strong>Updates</strong>, select <strong>Merge</strong>. This will merge the mod files together into one mod in MO2</li>
-                                    <ul>
-                                        <li>If a mod has multiple <strong>Main Files</strong>, select <strong>Rename</strong>. Naming it something different will cause MO2 to install it as its own mod</li>
-                                    </ul>
                                 <li>For files on Nexus labeled <strong>Optional Files</strong> and <strong>Miscellaneous Files</strong>, select <strong>Rename</strong></li>
                                 <li>When updating from a previous version of a mod, select <strong>Replace</strong>. This will delete all the files from the old version of the mod and just install the ones from the new version</li>
                             </ul>

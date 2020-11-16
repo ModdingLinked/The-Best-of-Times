@@ -68,35 +68,23 @@ SOFTWARE.
         <hr>
         <h2 class="installingfnv">Installation Parameters:</h2>      
         <p class="moddesc">
-          - Fallout New Vegas, Fallout 3, and all modding tools must be installed outside all default Windows folders (<strong>Program Files</strong>, <strong>Program Files (x86)</strong>, <strong>Desktop</strong>, and <strong>Documents</strong> for example)
-              <ul class="specialinstructions">
-                <li>This is to avoid issues with Windows UAC (User Account Control) from blocking certain aspects of different tools</li>
-              </ul>
-        </p>
-            <p class="moddesc">
-              - Fallout New Vegas and Mod Organizer 2 must be installed on the same drive, preferably on an SSD for shorter loading times and less stutter while loading assets
-                  <ul class="specialinstructions">
-                    <li>Fallout 3 can be installed on any drive (still outside of the default Windows folders), because it can be uninstalled after installing TTW</li>
-                  </ul>
-              </p>  
-            <p class="moddesc">
-              - You will need at least 22GB gigabytes of free drive space for just the FNV, FO3, and the TTW Installer. The total size of the entire guide is 25.5 gigabytes (including New Vegas, but excluding Fallout 3 since it can be uninstalled after installing TTW)
+          - Fallout New Vegas, Fallout 3, and all modding tools must be installed outside all default Windows folders (including but not limited to <strong>Program Files</strong>, <strong>Program Files (x86)</strong>, <strong>Desktop</strong>, and <strong>Documents</strong>). This is to avoid issues with Windows UAC (User Account Control) from blocking certain aspects of different tools <br>
+          - You will need at least 26GB gigabytes of free drive space for the guide<br>
+          - Fallout 3 can be installed on any drive (still outside of the default Windows folders), because it can be uninstalled after installing TTW
             </p>
         <hr>    
         <h2 class="installingfnv">Common Terminology:</h2>
           <ul class="specialinstructions">
             <li><strong>Root</strong> folder: Where you have installed Fallout New Vegas</li>
               <ul>
-                <li>For Steam it is <strong>Steam/steamapps/common/Fallout New Vegas</strong></li>
-                <li>For GOG it is <strong>GOG Galaxy/Games/Fallout New Vegas</strong> (unless you manually changed the installation path)</li>
+                <li>For Steam: <strong>Steam/steamapps/common/Fallout New Vegas</strong></li>
+                <li>For GOG: <strong>GOG Galaxy/Games/Fallout New Vegas</strong> (unless you manually changed the installation path)</li>
               </ul>
             <li><strong>Data</strong> folder: The <b>Data</b> folder that's located in your <b>Root</b> folder<br></li>
               <ul>
-                <li>For Steam it is <strong>Steam/steamapps/common/Fallout New Vegas/Data</strong></li> 
-                <li>For GOG it is <strong>GOG Galaxy/Games/Fallout New Vegas/Data</strong></li>
+                <li>For Steam: <strong>Steam/steamapps/common/Fallout New Vegas/Data</strong></li> 
+                <li>For GOG: <strong>GOG Galaxy/Games/Fallout New Vegas/Data</strong></li>
               </ul>
-            <li> MO2: <strong>Mod Organizer 2</strong> (will be installed shortly)<br></li>
-            <li>TTW: <strong>Tale of Two Wastelands</strong> (will be installed shortly)</li>
           </ul>
           <hr>
         <h2 class="installingfnv">Installing Prerequisites:</h2>
@@ -210,11 +198,8 @@ SOFTWARE.
             Your modding folder will act as the main directory for all the tools you install, as well as any backups/screenshots/etc. you may want to keep. This folder will be referred to as the <strong>Modding folder</strong> from now on
               <ul class="modfolderlist">
                 <li>Create a new folder in a location of your choice outside of the default Windows folders on the same drive as your Fallout New Vegas installation, but outside of the <strong>Root</strong> folder</li>
-                <li>Name it whatever you want, e.g. <strong>TTW Modding</strong>, and create two sub-folders called <strong>Backups</strong> and <strong>Tools</strong> in it</li>
-                <li>Copy all of the files ending in <strong>.ESM</strong> from FNV's <strong>Data</strong> folder and paste them into the <strong>Backups</strong> folder</li>
-                  <ul>
-                    <li>Backups of the .ESMs should be made so you can recover them if you accidentally edit/delete them, since you will not be able to verify game files after installing TTW</li>
-                  </ul>
+                <li>Name it whatever you want, e.g. <strong>TTW Modding</strong></li>
+                <li>That's it for now, but we will revisit it in the next step</li>
               </ul>
             </p>    
           </p>
@@ -239,9 +224,12 @@ SOFTWARE.
               <li>Verify the game is detecting and using your GPU properly</li>
               <li>Select the <strong>Ultra</strong> preset</li>
                   <ul>
-                    <li>If you have a lower-end PC, you can select the <strong>High</strong> preset. It offers pretty similar visual quality for a decent performance improvement, especially on lower end hardware. You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns. However, you must set <strong>Texture quality</strong> to <strong>High</strong> no matter what preset you use. It is the default setting for the Ultra and High presets, but not Medium/Low</li>
+                    <li>If you have a lower-end PC, you can select the <strong>High</strong> preset. It offers pretty similar visual quality for a decent performance improvement, especially on lower end hardware. You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns</li>
                   </ul>
-              <li>Select <strong>Advanced -> Shadows</strong> and un-check <strong>Enable Shadows</strong> (New Vegas does not have real shadows, only actor shadows which are rarely visible, so you probably won't even see the difference)</li>
+              <li>Select <strong>Advanced -> Shadows</strong> and un-check <strong>Enable Shadows</strong></li>
+                  <ul>
+                    <li>New Vegas does not have any object shadows, only actor shadows which are only highly visible under certain conditions. Disabling this will give a potentially great performance increase in areas with lots of NPCs</li>
+                  </ul>
               <li>Set <strong>Resolution</strong> to your preference (The launcher usually does not properly set it to your max resolution)</li>
               <li>Click <strong>OK</strong> and then <strong>Exit</strong></li>
             </ul>
@@ -272,6 +260,9 @@ SOFTWARE.
                 </ul>
             </ul>
           <li>Scroll down in the settings box and click on <strong>Max Frame Rate</strong></li>
+            <ul>
+              <li>If you do not see the <strong>Max Frame Rate</strong> option, you need to update your GPU drivers</li>
+            </ul>
           <li>In the pop-up menu, select the circle next to <strong>On</strong>, and set the limiter to 1 less than your monitor's refresh rate</li>
             <ul>
                 <li>If you do not know your monitor's refresh rate, do the following:</li>

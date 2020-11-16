@@ -85,57 +85,22 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://taleoftwowastelands.com/viewtopic.php?t=6578" target="_blank">SawyerBatty</a></h2>
             <p class="normalinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - An edited version of the JSawyer mod (a rebalance mod made by the lead director of FNV) made to work with TTW</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/50468/" target="_blank">JIP Companions Command and Control</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Changes the way companions are controlled and interacted with and adds new tactical features similar to isometric RPGs</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">Anniversary Animation Pack</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>Anniversary Anim Pack</strong></li>
                     <li>Optional File - <strong>Tale of Two Wastelands - 3.2.2 Patch</strong></li>
+                        <ul>
+                            <li>If you do not know what to do when installing multiple files from the same mod page, read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section from the <a class="modsublink" href="./core-mo2config.html" target="_blank">Mod Organizer 2</a> page</li>
+                        </ul>
                 </ul>
             <p class="moddesc"> - Includes three of Hitman's previous animation mods, <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/67728" target="_blank">Subtle Camera Motion</a>, <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/67760" target="_blank">Iron Sights Recoil Animations</a>, and <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/67841" target="_blank">Fire Animation Variants</a>, as well as some new previously unreleased animations</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67761" target="_blank">Faster Pip-Boy Animation</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>Faster Pip-Boy Animation (2x)</strong></li>
-                </ul>
-            <p class="moddesc"> - Doubles the speed up the Pip-Boy opening animation</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66726" target="_blank">Functional Post Game Ending</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>Functional Post Game Ending - FOMOD Installer</strong></li>
-                </ul>
-                <br>
-            <p class="specialinstall"><strong>FOMOD instructions:</strong></p>
-                <img id="FOMODImg" src="./img/fpge 1.png" alt="Select 'Tale of Two Wastelands'" style="width:100%;max-width:300px">
-                    <div id="FOMODModal" class="modal">
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div>
-                <img id="FOMODImg2" src="./img/fpge 2.png" alt="Select 'None'" style="width:100%;max-width:300px">
-                    <div id="FOMODModal2" class="modal">
-                        <img class="modal-content" id="img02">
-                        <div id="caption2"></div>
-                    </div>
-                <img id="FOMODImg3" src="./img/fpge 3.png" alt="Select 'None'" style="width:100%;max-width:300px">
-                    <div id="FOMODModal3" class="modal">
-                        <img class="modal-content" id="img03">
-                        <div id="caption3"></div>
-                    </div>
-                <img id="FOMODImg4" src="./img/fpge 4.png" alt="Select 'None'" style="width:100%;max-width:300px">
-                    <div id="FOMODModal4" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img04">
-                        <div id="caption4"></div>
-                    </div>
-            <p class="moddesc"> - Adds a fully functional post-game world to the game that changes based on your choices in-game</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Optional File - <strong>Clarity - TTW 3.2 - Dark Nights - carxt</strong></li>
                         <ul>
-                            <li>NOTE: Non-darker nights version available <a class="modsublink" href="https://taleoftwowastelands.com/viewtopic.php?f=55&t=8592" target="_blank">here</a></li>
+                            <li>Non-darker nights version available <a class="modsublink" href="https://taleoftwowastelands.com/viewtopic.php?f=55&t=8592" target="_blank">here</a> (does not require the original)</li>
                         </ul>
                 </ul>
             <p class="moddesc"> - Removes the atmospheric tint in both FNV and FO3</p>
@@ -146,76 +111,4 @@ SOFTWARE.
         <a class="arrows" href="./core-finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
-<script>
-var modal = document.getElementById('FOMODModal');
-
-var img = document.getElementById('FOMODImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal2');
-
-var img = document.getElementById('FOMODImg2');
-var modalImg = document.getElementById("img02");
-var captionText = document.getElementById("caption2");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal3');
-
-var img = document.getElementById('FOMODImg3');
-var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption3");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal4');
-
-var img = document.getElementById('FOMODImg4');
-var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption4");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
 </html>
