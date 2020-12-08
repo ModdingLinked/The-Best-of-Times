@@ -114,19 +114,18 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a></h2>
             <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Download both the main file and optional file manually</li>
-                    <li>Extract the <strong>nvse</strong> folder from the archive of the main file to the game's <strong>Data</strong> folder, then do the same for the optional file</li>
+                    <li>Download the main file manually</li>
+                    <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
                     <li>After extracting, open <strong>NVTF.ini</strong> in <strong>Fallout New Vegas/Data/nvse/plugins</strong></li>
-                    <li>Set <strong>bModifyDirectXBehavior</strong> to <strong>1</strong> (line 25)</li>
+                    <li>Change the following options:</li>
                         <ul>
-                            <li>With this setting enabled, you must run the game in exclusive fullscreen mode (the INI tweaks from the previous step already force the game to run in exclusive fullscreen)</li>
+                            <li>Set <strong>bModifyDirectXBehavior</strong> to <strong>1</strong> (line 25)</li>
+                            <li>Set <strong>bAlternateGTCFix</strong> to <strong>1</strong> (line 40)</li>
+                            <li>Set <strong>bAutomaticFPSFix</strong> to <strong>1</strong> (line 45)</li>
+                            <li>Leave the rest of the settings default</li>
                         </ul>
-                    <li>Set <strong>bUseD3D9Ex</strong> to <strong>1</strong> (line 66)</li>
-                    <li>Set <strong>iMaxFPSTolerance</strong> to 2 less than your monitor's refresh rate (line 45)</li>
                 </ul>
-            <p class="moddesc"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates <br>
-                NOTE: If you experience severe performance loss with this mod, try setting <strong>bUseD3D9Ex</strong> to <strong>0</strong>. This setting can rarely cause that on some systems
-            </p>
+            <p class="moddesc"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a></h2>
             <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
