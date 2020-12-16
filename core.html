@@ -3,7 +3,7 @@
 <!-- 
 MIT License
 
-Copyright (c) 2020 Quinn Olore
+Copyright (c) 2020 VivaNewVegas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,121 +28,153 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/ico" href="./img/icon.png"/>
-    <title>General Info | The Best of Times</title>
-    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide for Tale of Two Wastelands (TTW) that allows for any personal preference to be satisfied.">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="icon" href="https://thebestoftimes.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+    <title>Core | The Best of Times</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
     <meta property="og:title" content="The Best of Times" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://thebestoftimes.github.io/" />
     <meta property="og:image" content="https://thebestoftimes.github.io/img/logo.png" />
-    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide for Tale of Two Wastelands (TTW) that allows for any personal preference to be satisfied." /> 
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
 </head>
 <body>
-    <div>
-        <h1 class="maintitle">The Best of Times</h1>
-        <h4 class="subtitle"><em>A Comprehensive 2020 TTW Modding Guide</em></h4>
-        <hr class="line">
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>THE BEST OF TIMES</h1></a>
         <ul class="navbar">
-            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
-            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
-            <li class="navbarli"><a href="index.html">Home</a></li>
+            <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
+            <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
         </ul>
     </div>
-    <div>
-        <h1 class="coretitle">General Information</h1>   
-        <ul class="breadcrumb">
-            <li><a href="./index.html">Home</a></li>
-            <li>General Information</li>
-            <li><a href="./core-installation.html">Installation</a></li>
-            <li><a href="./core-mo2config.html">Mod Organizer 2</a></li>
-            <li><a href="./core-ttw.html">Installing TTW</a></li>
-            <li><a href="./core-utilities.html">Utilities</a></li>
-            <li><a href="./core-essentials.html">Essentials</a></li>
-            <li><a href="./core-optionals.html">Optionals</a></li>
-            <li><a href="./core-finish.html">Finish Line</a></li>
-        </ul>
-        <hr>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./ttw.html">TTW</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./core.html"><span style="color:#DCDCDC">Core</span></a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./finish.html">Final Steps</a>
+        <a href="./appendix.html">Appendix</a>
     </div>
-    <div>
-        <h2 class="coreheader">The Goal of the Guide:</h2>
-            <p class="moddesc">
-               This guide will walk you through installing Tale of Two Wastelands, a total conversion mod that merges Fallout New Vegas and Fallout 3 together, 
-              as well as installing essential mods for a perfectly stable and smooth experience. There will also be some optional gameplay/content mods at the end of the guide.
-            </p>
-        <hr>
-        <h2 class="coreheader">Requirements:</h2>
-        <ul class="corelist">
-            <li>
-                An English copy of <abbr title="Fallout New Vegas">FNV</abbr> and <abbr title="Fallout 3">FO3</abbr> with all the DLC from either 
-                <a class="modsublink" href="https://store.steampowered.com" target="_blank">Steam</a>    
-                or 
-                <a class="modsublink" href="https://www.gog.com" target="_blank">GOG</a>
-                (Instructions for properly installing them will be in the next step)
-                    <ul>
-                        <li>Only the English versions of FNV/FO3 are supported. If your game is not English, follow <a class="modsublink" href="https://taleoftwowastelands.com/faq#Game-versions" target="_blank">these steps</a> to switch it</li>
-                        <li>The Bethesda.net version has a recompiled executable and therefore will not work with this guide</li>
-                    </ul>
-            </li>
-            <li>
-                Windows 7 or higher (64bit)
-            </li>
-            <li>
-                A text editor (I recommend <a class="modsublink" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>, but default Windows notepad will work)
-            </li>
-            <li>
-                An archiving tool (I recommend <a class="modsublink" href="https://www.7-zip.org/" target="_blank">7-Zip</a>)
-            </li>
-            <li>
-                Latest GPU drivers (Either
-                <a class="modsublink" href="https://www.nvidia.de/Download/index.aspx" target="_blank">NVIDIA</a>
-                or
-                <a class="modsublink" href="https://www.amd.com/en/support" target="_blank">AMD</a>)
-            </li>
-            <li>At least 22 gigabytes of free drive space</li>
-            <li>A <a class="modsublink" href="https://users.nexusmods.com/register" target="_blank">Nexus Mods</a> account</li>
-        </ul>
-        <hr>
-        <h2 class="coreheader">My System Specs:</h2>
-            <ul class="corelist">
-                <li>Tale of Two Wastelands and this guide should make the game run much better than vanilla  (<a class="modsublink" href="https://help.bethesda.net/app/answers/detail/a_id/16744/~/what-are-the-system-requirements-for-fallout%3A-new-vegas%3F" target="_blank">here</a> are the minimum requirements for FNV). For reference, here are my specs (I get 100-130 FPS almost everywhere except for the most intensive of areas, such as the Strip or Point Lookout, where it stays around 85+ FPS):</li>
+    <div class="sidenavright">
+        <a href="./core.html">Core</a>
+            <ul>
+                <a href="./core.html#separator"><span style="font-size:.9vw;">Separator</span></a>
+                <a href="./core.html#stewie_tweaks"><span style="font-size:.9vw;">Stewie's Tweaks</span></a>
+                <a href="./core.html#custom_ini"><span style="font-size:.9vw;">Stewie's Tweaks INI</span></a>
+                <a href="./core.html#faster_pipboy"><span style="font-size:.9vw;">Faster Pip-Boy</span></a>
+                <a href="./core.html#uio"><span style="font-size:.9vw;">UIO</span></a>
+                <a href="./core.html#mcm"><span style="font-size:.9vw;">MCM</span></a>
+                <a href="./core.html#recipe_menu"><span style="font-size:.9vw;">Improved Recipe Menu</span></a>
+                <a href="./core.html#dlc_delay"><span style="font-size:.9vw;">Simple DLC Delay</span></a>
+                <a href="./core.html#vui+"><span style="font-size:.9vw;">Vanilla UI+</span></a>
+                <a href="./core.html#vhud_cleaned"><span style="font-size:.9vw;">Vanilla HUD Cleaned</span></a>
             </ul>
-            <table class="specstable" align="center">
-                <tr>
-                    <th>Part</th>
-                    <th>Model</th>
-                </tr>
-                <tr>
-                    <td>CPU</td>
-                    <td>Intel i5 7500</td>
-                </tr>
-                <tr>
-                    <td>RAM</td>
-                    <td>16GB 2400mhz DDR4</td>
-                </tr>
-                <tr>
-                    <td>GPU</td>
-                    <td>GTX 1060 6GB GDDR5</td>
-                </tr>
-                <tr>
-                    <td>Storage</td>
-                    <td>Samsung EVO 250GB SSD
-                        <br>
-                        Toshiba 1TB 7200RPM HDD
-                    </td>
-                </tr>
-                <tr>
-                    <td>Operating System</td>
-                    <td>Windows 10 Pro</td>
-                </tr>
-            </table>
     </div>
     <div>
+        <h2 class="fullheader">
+           Core
+        </h2>
+        <a class="internallink" href="#separator"><h2 class="smallheader" id="separator">Creating a Separator in MO2</h2></a>
+            <ol class="standard_ol">
+                <li>Right-click anywhere in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                <li>Name the separator <strong>Core</strong></li>
+            </ol>
+        <a class="internallink" href="#stewie_tweaks"><h2 class="smallheader" id="stewie_tweaks"><a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a></h2></a>
+            <h2 class="install">Installation instructions:</h2>
+                <ul class="standard_ol">
+                    <li><b>Main File - Stewie Tweaks 5.95</b></li>
+                </ul>
+                <br>
+            <p class="subparagraph"> - Collection of many configurable quality of life improvements/bug fixes. All features come disabled by default, but the next mod will take care of that</p>
+            <a class="internallink" href="#custom_ini"><h2 class="smallheader" id="custom_ini"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/lStewieAl's%20Tweaks%20Custom%20INI.7z" target="_blank">lStewieAl's Tweaks Custom INI</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li>Download the mod using the download button pictured below</li>
+                        <li>Finish the install normally through MO2</li>
+                    </ul>
+                    <br>
+                    <p class="subparagraph"><img style="width:90%;" src="./img/stewie ini install.png" alt="stewie's tweaks INI install"></p>
+                <p class="subparagraph"> - My personal INI for Stewie's Tweaks that enables many of the Bug Fixes/QOL Improvements of the mod. Gameplay changes will be covered in the <a href="./gameplay.html" target="_blank">Gameplay</a> section</p>
+                <blockquote class="blockquote">
+                    As these are just my personal preferences, my INI can be exchanged for any other preset INI (such as <a href="https://www.nexusmods.com/newvegas/mods/67185" target="_blank">Axonis's</a>), or you can download the <strong>Optional File - Stewie Tweaks INI 2.1</strong>
+                    from the Stewie's Tweaks page which has everything disabled, and go through the INI and tweak all the features to your own liking. 
+                    You will need some form of an INI in order for the mod to fully function.
+                </blockquote>
+            <a class="interallink" href="#faster_pipboy"><h2 class="smallheader" id="faster_pipboy"><a href="https://www.nexusmods.com/newvegas/mods/67761" target="_blank">Faster Pip-Boy Animation</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li><b>Main File - Faster Pip-Boy Animation (2x) 1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Doubles the speed of the Pip-Boy opening animation</p>
+            <a class="internallink" href="#uio"><h2 class="smallheader" id="uio"><a href="https://www.nexusmods.com/newvegas/mods/57174" target="_blank">User Interface Organizer</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - UIO - User Interface Organizer 2.0.9</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Automatically ensures that multiple HUD extensions work together</p>
+            <a class="internallink" href="#mcm"><h2 class="smallheader" id="mcm"><a href="https://www.nexusmods.com/newvegas/mods/42507" target="_blank">The Mod Configuration Menu</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - The Mod Configuration Menu 1.5</b></li>
+                        <li><b>Update File - MCM BugFix 2</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Allows select mods to be configured via a single in-game menu</p>
+            <a class="internallink" href="#recipe_menu"><h2 class="smallheader" id="recipe_menu"><a href="https://www.nexusmods.com/newvegas/mods/59638" target="_blank">JIP Improved Recipe Menu</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - JIP Improved Recipe Menu 1.20</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Optimizes the crafting menu to be less of a pain to use</p>
+            <a class="internallink" href="#dlc_delay" target="_blank"><h2 class="smallheader" id="dlc_delay"><a href="https://www.nexusmods.com/newvegas/mods/66690/" target="_blank">DLC Delay TTW</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Delay DLC 1.0 - TTW 3.2 1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Delays DLC pop-ups until you meet the level requirements or discover the entrances to the DLC areas</p>
+            <a class="internallink" href="#vui+"><h2 class="smallheader" id="vui+"><a href="https://www.moddb.com/mods/vanilla-ui-plus/downloads/vanilla-ui-plus-nv" target="_blank">Vanilla UI Plus</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Press the red <strong>Download Now!</strong> button to download the mod and begin the installation normally through MO2</li>
+                        <li>You will be prompted with a FOMOD installer, in which you should select the following options:</li>
+                        <img style="width: 70%;" src="./img/vui+fomod.png" alt="VUI+ FOMOD">
+                    </ol>
+                <p class="subparagraph"> - Greatly improves and fixes the UI while staying true to the vanilla</p>
+            <a class="internallink" href="#vhud_cleaned"><h2 class="smallheader" id="vhud_cleaned"><a href="https://www.nexusmods.com/newvegas/mods/70001" target="_blank">Vanilla HUD Cleaned</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Download the <strong>Main File - Vanilla Hud Cleaned 0.381</strong> and begin the installation normally through MO2</li>
+                        <li>You will be prompted with a FOMOD installer, in which you should select everything <u>EXCEPT</u> <strong>Clean Fonts for Darn</strong> then select <strong>Install</strong></li>
+                    </ol>
+                    <br>
+                <p class="subparagraph"> - Hand-made up-scaled/cleaned recreations of many vanilla HUD elements</p>
+    </div>
+    <div>
+        <br> <br>
         <hr>
-        <a class="arrows" href="./index.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./core-installation.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <br>
+        <a href="./core.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./visuals.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
     </div>
 </body>
-
 </html>

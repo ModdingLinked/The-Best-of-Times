@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2020 VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="icon" href="https://thebestoftimes.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+    <title>Gameplay | The Best of Times</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="The Best of Times" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://thebestoftimes.github.io/" />
+    <meta property="og:image" content="https://thebestoftimes.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>THE BEST OF TIMES</h1></a>
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
+            <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
+        </ul>
+    </div>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./core.html">Core</a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html"><span style="color:#DCDCDC">Gameplay</span></a>
+        <a href="./finish.html">Final Steps</a>
+        <a href="./appendix.html">Appendix</a>
+    </div>
+    <div class="sidenavright">
+        <a href="./gameplay.html">Gameplay</a>
+            <ul>
+                <a href="./gameplay.html#separator"><span style="font-size:.9vw;">Separator</span></a>
+                <a href="./gameplay.html#more_jip"><span style="font-size:.9vw;">More JIP</span></a>
+                <a href="./gameplay.html#more_stewie"><span style="font-size:.9vw;">More Stewie's Tweaks</span></a>
+                <a href="./gameplay.html#jsawyer"><span style="font-size:.9vw;">SawyerBatty</span></a>
+                <a href="./gameplay.html#fo3_economy"><span style="font-size:.9vw;">F3 Economy</span></a>
+                <a href="./gameplay.html#follower_tweaks"><span style="font-size:.9vw;">Follower Tweaks</span></a>
+                <a href="./gameplay.html#jlm"><span style="font-size:.9vw;">Just Loot Menu</span></a>
+                <a href="./gameplay.html#jdc"><span style="font-size:.9vw;">Just Dynamic Crosshair</span></a>
+                <a href="./gameplay.html#jhm"><span style="font-size:.9vw;">Just Hit Marker</span></a>
+                <a href="./gameplay.html#marathoner"><span style="font-size:.9vw;">Marathoner</span></a>
+                <a href="./gameplay.html#recoil"><span style="font-size:.9vw;">Real Recoil</span></a>
+                <a href="./gameplay.html#recoil_ini"><span style="font-size:.9vw;">Real Recoil INI</span></a>
+            </ul>
+    </div>
+    <div>
+        <h2 class="fullheader">
+           Gameplay
+        </h2>
+            <a class="internallink" href="#separator"><h2 class="smallheader" id="separator">Creating a Separator in MO2</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click anywhere in the left pane of MO2 and select <strong>All Mods -> Create Separator</strong></li>
+                    <li>Name the separator <strong>Gameplay</strong></li>
+                </ol>
+            <a class="internallink" href="#more_jip"><h2 class="smallheader" id="more_jip">Enabling More Features in JIP LN</h2></a>
+                <ol class="standard_ol">
+                    <li>Navigate to <code>Fallout New Vegas/Data/nvse/plugins/</code> in and open <strong>jip_nvse.ini</strong> in a text editor</li>
+                    <li>Set <strong>bEnableFO3Repair</strong> to <strong>1</strong> (line 6)</li>
+                        <ul>
+                            <li>Enables Fallout 3-style repair in which weapons can only be repaired up to a condition % equal to your repair skill</li>
+                        </ul>
+                    <li>Set <strong>bNPCWeaponMods</strong> to <strong>1</strong> (line 72)</li>
+                        <ul>
+                            <li>Allows NPCs to use weapon attachments</li>
+                        </ul>
+                </ol>
+            <a class="internallink" href="#more_stewie"><h2 class="smallheader" id="more_stewie">Enabling More Features in lStewieAl's Tweaks</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click on <strong>lStewieAl's Tweaks Custom INI</strong> mod (from the <a href="./core.html" target="_blank">Core</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
+                    <li>Navigate to <code>nvse/plugins/</code> and open <strong>nvse_stewie_tweaks.ini</strong> in a text editor</li>
+                    <li>Use Ctrl+F to easily find and change the following options:</li>
+                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong> </li>
+                        <ul>
+                            <li> Hides the [Speech], [Barter], etc. tags from dialogue skill checks</li>
+                        </ul>
+                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong></li>
+                        <ul>
+                            <li>Removes enemy markers from the compass unless they are shooting</li>
+                        </ul>
+                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong></li>
+                        <ul>
+                            <li>Stops the player from z-grabbing (not stealing) items owned by NPCs</li>
+                        </ul>
+                </ol>
+            <a class="internallink" href="#jsawyer"><h2 class="smallheader" id="jsawyer"><a href="https://taleoftwowastelands.com/viewtopic.php?t=6578" target="_blank">SawyerBatty</a></h2></a>
+                <h2 class="install">Installation instructions:</h2> 
+                    <ol class="standard_ol">
+                        <li>Follow the Google Drive link and download the mod using the download button pictured below</li>
+                        <li>Install the mod normally through MO2 </li>                       
+                        <img src="./img/wrist fix install.png" alt="JSawyer download">
+                    </ol>
+                <p class="subparagraph"> - An edited version of the gameplay re-balance mod made by the lead director of the game made to work with TTW. The original JSawyer changelog is available <a href="https://fallout-archive.fandom.com/wiki/JSawyer" target="_blank">here</a></p>
+            <blockquote class="blockquote">
+                With this mod installed, you need to play the game on <b>Hard</b> difficulty or lower.  
+                You will experience bullet-sponge enemies and frustratingly quick deaths on Very Hard difficulty. 
+                Hard difficulty with the mod will still be more difficult than Very Hard in vanilla.
+            </blockquote>
+            <a class="internallink" href="#fo3_economy"><h2 class="smallheader" id="fo3_economy"><a href="https://www.nexusmods.com/newvegas/mods/67919" target="_blank">Fallout 3 Economy</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Fallout 3 Economy 1.0.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Overhauls item values to be similar to Fallout 3's much tougher economy</p>
+            <a class="internallink" href="#follower_tweaks"><h2 class="smallheader" id="follower_tweaks"><a href="https://www.nexusmods.com/newvegas/mods/62180" target="_blank">Follower Tweaks</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Follower Tweaks 1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Reworks Boone, Ed-E, and Rexes' companion perks to be less intrusive/annoying</p>
+            <a class="internallink" href="#jlm"><h2 class="smallheader" id="jlm"><a href="https://www.nexusmods.com/newvegas/mods/68084" target="_blank">Just Loot Menu</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Just Loot Menu 1.6a</b></li>
+                        <li><b>Optional File - Container Animations 1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Adds a highly-customizable Fallout 4/76-style quick loot menu</p>
+            <a class="internallink" href="#jdc"><h2 class="smallheader" id="jdc"><a href="https://www.nexusmods.com/newvegas/mods/66676" target="_blank">Just Dynamic Crosshair</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Just Dynamic Crosshair 3.6a</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Adds a highly-customizable dynamic crosshair that varies based on your skill, weapon spread, etc</p>
+            <a class="internallink" href="#jhm"><h2 class="smallheader" id="jhm"><a href="https://www.nexusmods.com/newvegas/mods/66667" target="_blank">Just Hit Marker</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Just Hit Marker 3.3a</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Adds a highly-customizable FPS-style hit marker</p>
+            <a class="internallink" href="#marathoner"><h2 class="smallheader" id="marathoner"><a href="https://www.nexusmods.com/newvegas/mods/68485" target="_blank">Marathoner</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Marathoner v1.1</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Increases your movement speed 25% while not in combat</p>
+            <a class="internallink" href="recoil"><h2 class="smallheader" id="recoil"><a href="https://www.nexusmods.com/newvegas/mods/62153" target="_blank">Real Recoil</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Real Recoil v1.2.1</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Adds smooth, realistic, and configurable recoil</p>
+            <a class="internallink" href="#recoil_ini"><h2 class="smallheader" id="recoil_ini"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/Real%20Recoil%20Custom%20INI%20(TTW).7z" target="_blank">Real Recoil Custom INI</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li>Download the mod using the download button pictured below</li>
+                        <li>Finish the install normally through MO2</li>
+                    </ul>
+                    <br>
+                    <p class="subparagraph"><img style="width:90%;" src="./img/stewie ini install.png" alt="stewie's tweaks INI install"></p>
+                <p class="subparagraph"> - Fixes downward recoil and adds support for JSawyer</p>
+    </div>
+    <div>
+        <br> <br>
+        <hr>
+        <br>
+        <a href="./core.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
