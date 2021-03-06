@@ -125,13 +125,17 @@ SOFTWARE.
                                 <li>This pop-up will not show up if you have already registered a different instance of MO2</li>
                             </ul>
                     </ol>
-                    <blockquote class="blockquote">
-                        If at any point you get a pop-up called <strong>INI file is read-only</strong>,
-                        select <strong>Remember my choice</strong> from the drop-down at the bottom
-                        then click <strong>Clear the read-only flag</strong> 
-                    </blockquote>
                 <a class="internallink" href="#settings"><p class="smallheader" id="settings">Configuring Settings</p></a>
                     <ol class="standard_ol">
+                        <li>If there is a plugin called <strong>FalloutNV_lang.esp</strong> in the right pane of Mod Organizer 2, navigate to the game's <strong>Data</strong> folder and delete it</li>
+                            <ul>
+                                <li>If you do not know what the game's <strong>Data</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
+                            </ul>
+                    </ol>
+                    <blockquote class="blockquote">
+                        The translation plugin must be deleted because it directly edits 1000s of records to change the language, which will cause many incompatibilities with most mods.
+                    </blockquote>     
+                    <ol class="standard_ol" start="2">
                         <li>Select the <img src="./img/mo2 settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings</li>
                         <li>In the <strong>Theme</strong> tab, you can select a different style from the drop-down menu at the top</li>
                             <ul>
@@ -146,6 +150,11 @@ SOFTWARE.
                         <li>Once you authorize it, you can close out of your browser and of the MO2 settings</li>
                         <li>Allow MO2 to restart if it asks</li>
                     </ol>
+                    <blockquote class="blockquote">
+                        If at any point you get a pop-up called <strong>INI file is read-only</strong>,
+                        select <strong>Remember my choice</strong> from the drop-down at the bottom
+                        then click <strong>Clear the read-only flag</strong> 
+                    </blockquote>
             <a class="internallink" href="#profiles"><h2 class="subheader" id="profiles">Creating Profiles</h2></a>
                 <p class="subparagraph">
                     Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will setup a testing profile and a main profile. 
@@ -170,7 +179,7 @@ SOFTWARE.
                         In this step, we will configure the game's INI files to increase performance/stability.
                         We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes,
                         which allows for INI changes to be made safely without editing the default INIs. Because of this, these changes will not take affect until you install 
-                        JIP LN NVSE in the <a href="./utilities.html" target="_blank">Utilities</a> step.
+                        JIP LN NVSE in the <a href="./utilities.html#jip" target="_blank">Utilities</a> step.
                     </p>
                     <br>
                     <ol class="standard_ol">
@@ -251,7 +260,7 @@ SOFTWARE.
                 </p>
                 <br>
                 <p class="subparagraph">
-                    If at any point you get a message called <strong>Extract BSA</strong>, select <strong>No</strong>
+                    If at any point during mod installation you get a message called <strong>Extract BSA</strong>, select <strong>No</strong>
                 </p>
             
     </div>
