@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2021 VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="icon" href="https://thebestoftimes.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+    <title>Essential Mods | TTW INSTALLATION GUIDE</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="TTW INSTALLATION GUIDE" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://thebestoftimes.github.io/" />
+    <meta property="og:image" content="https://thebestoftimes.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div class="titlecontainer">
+        <a class="maintitle" href="./lite-index.html"><img src="./img/logo.png" alt="logo"></img><h1>TTW INSTALLATION GUIDE</h1></a>
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
+            <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
+            <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
+        </ul>
+    </div>
+    <div class="sidenavleft">
+        <a href="./lite-index.html">Home</a>
+        <a href="./lite-intro.html">Introduction</a>
+        <a href="./ttw-setup.html">Initial Setup</a>
+        <a href="./ttw-mo2.html">MO2</a>
+        <a href="./lite-ttw.html">TTW</a>
+        <a href="./lite-utilities.html"><span style="color:#DCDCDC">Essential Mods</span></a>
+        <a href="./lite-finish.html">Final Steps</a>
+
+    </div>
+    <div class="sidenavright">
+        <a href="./lite-utilities.html">Essential Mods</a>
+            <ul>
+                <a href="./lite-utilities.html#xnvse"><span style="font-size:.8vw;">xNVSE</span></a>
+                <a href="./lite-utilities.html#heap"><span style="font-size:.8vw;">Heap Replacer</span></a>
+                <a href="./lite-utilities.html#jip"><span style="font-size:.8vw;">JIP LN NVSE</span></a>
+                <a href="./lite-utilities.html#johnny"><span style="font-size:.8vw;">JohnnyGuitar</span></a>
+                <a href="./lite-utilities.html#nvac"><span style="font-size:.8vw;">NVAC</span></a>
+                <a href="./lite-utilities.html#nvtf"><span style="font-size:.8vw;">NVTF</span></a>
+                <a href="./lite-utilities.html#limit_fix"><span style="font-size:.8vw;">Mod Limit Fix</span></a>
+                <a href="./bugfix.html#stewie_tweaks"><span style="font-size:.8vw;">Stewie's Tweaks</span></a>
+                <a href="./bugfix.html#custom_ini"><span style="font-size:.8vw;">Stewie's Tweaks INI</span></a>
+                <a href="./lite-utilities.html#onetweak"><span style="font-size:.8vw;">OneTweak</span></a>
+                <a href="./lite-utilities.html#testing"><span style="font-size:.8vw;">Testing</span></a>
+            </ul>
+    </div>
+    <div>
+        <h2 class="fullheader">
+           Essential Mods
+        </h2>
+            <blockquote class="blockquote">
+                Make sure the <strong>Tale of Two Wastelands</strong> profile is active before proceeding.
+            </blockquote>
+            <a class="internallink" href="#xnvse"><h2 class="smallheader" id="xnvse"><a href="https://github.com/xNVSE/NVSE/releases" target="_blank">xNVSE</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Click the <strong>nvse_6_0_7.7z</strong> link to download the file</li>
+                        <li>From the downloaded archive, extract all files ending in <strong>.dll</strong> and the <strong>.exe</strong> (4 total files) to the game's <strong>Root</strong> folder</li>
+                            <img style="width:75%;" src="./img/nvse install.png" alt="nvse install">
+                            <ul>
+                                <li>If you do not know what the game's <strong>Root</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./ttw-setup.html#terms" target="_blank">Initial Setup</a> page</li>
+                            </ul>
+                    </ol>
+                    <blockquote class="blockquote">
+                        <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.
+                    </blockquote>
+                    <p class="subparagraph"> - An updated version of NVSE, which extends the scripting capabilities of the engine and is essential for most mods</p>
+            <a class="internallink" href="#heap"><h2 class="smallheader" id="heap"><a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Download the <strong>Main File - NVHR - AVX2 2.4</strong> using the <strong>Manual Download</strong> button</li>
+                        <li>From the downloaded archive, extract the <strong>.dll</strong> file to the game's <strong>Root</strong> folder</li>
+                    </ol>
+                    <blockquote class="blockquote">
+                        If you have an older CPU (pre-2013), use the <strong>Main File - NVHR - SSE2 2.4</strong> instead.
+                    </blockquote>
+                <p class="subparagraph"> - Replaces the game's heap management system with a much faster hand-written version, which can lead to large performance gains</p>
+            <a class="internallink" href="#jip"><h2 class="smallheader" id="jip"><a href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE Plugin</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - JIP LN NVSE Plugin 56.02</b></li>
+                    </ul>
+                    <blockquote class="blockquote">
+                        If you do not know what these instructions mean, or how to install mods with MO2, read the <strong>Mod Installation Advice</strong> section from the <a href="./ttw-mo2.html#advice" target="_blank">MO2</a> page
+                    </blockquote>
+                <p class="subparagraph"> - NVSE extension with 800+ new functions and many engine bug fixes</p>
+            <a class="internallink" href="#johnny"><h2 class="smallheader" id="johnny"><a href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">JohnnyGuitar NVSE</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - JohnnyGuitar NVSE 3.60</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Another NVSE extension similar to JIP LN</p>
+            <a class="internallink" href="#nvac"><h2 class="smallheader" id="nvac"><a href="https://www.nexusmods.com/newvegas/mods/53635" target="_blank">New Vegas Anti-Crash</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - NVAC - New Vegas Anti Crash 7.5.1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Works to greatly reduce the rate of game crashes</p>
+            <a class="internallink" href="#nvtf"><h2 class="smallheader" id="nvtf"><a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - NVTF 9.9.1c</b></li>
+                        <li><b>Optional File - NVTF stability and performance ini 9.9.2c</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates</p>
+            <blockquote class="blockquote">
+                In order for this mod to work properly, make sure you installed the DirectX and VC++ requirements from the <a href="./lite-intro.html#requirements" target="_blank">Introduction</a> page
+            </blockquote>
+            <a class="internallink" href="#limit_fix"><h2 class="smallheader" id="limit_fix"><a href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">Mod Limit Fix</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - FNVModLimitFix 2.5</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Raises the game's plugin limit to 255 and improves performance/load times, even if you are far below the plugin limit</p>
+            <a class="internallink" href="#stewie_tweaks"><h2 class="smallheader" id="stewie_tweaks"><a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li><b>Main File - Stewie Tweaks 6.15</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Collection of many configurable quality of life improvements/bug fixes. All features come disabled by default, but the next mod will take care of that</p>
+            <a class="internallink" href="#custom_ini"><h2 class="smallheader" id="custom_ini"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/lStewieAl's%20Tweaks%20Custom%20INI.7z" target="_blank">lStewieAl's Tweaks Custom INI</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li>Download the mod using the download button pictured below</li>
+                        <li>Finish the install normally through MO2</li>
+                    </ul>
+                    <br>
+                    <p class="subparagraph"><img style="width:90%;" src="./img/stewie ini install.png" alt="stewie's tweaks INI install"></p>
+                <p class="subparagraph"> - My personal INI for Stewie's Tweaks that enables many of the Bug Fixes/QOL Improvements of the modM</p>
+            <a class="internallink" href="#onetweak"><h2 class="smallheader" id="onetweak"><a href="https://www.nexusmods.com/skyrim/mods/40706" target="_blank">OneTweak</a></h2></a>
+                <blockquote class="blockquote">
+                    Although this mod is on the Skyrim Nexus, it will still work fine for New Vegas provided you follow the installation instructions.
+                </blockquote>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Download the <strong>Main File - OneTweak 2.1.0.2</strong> using the <strong>Manual Download</strong> button</li>
+                        <li>From the download archive, extract <strong>OneTweak.ini</strong> and <strong>OneTweak.dll</strong> from <code>OneTweak 2.1.0.2\SKSE\plugins\</code> to <code>Fallout New Vegas\Data\NVSE\Plugins\</code></li>
+                            <ul>
+                                <li>If the <strong>NVSE</strong> and/or <strong>Plugins</strong> folders do not exist in the game's <strong>Data</strong> folder, simply create them and extract the files there</li>
+                            </ul>
+                            <img width="70%" src="./img/onetweak install.png" alt="">
+                        <li>Once the files have been extracted, click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
+                        <li>Select the <strong>FalloutCustom.ini</strong> tab and paste in the following:</li>
+                            <p class="smalllist">
+                                [Display] <br>
+                                bFull Screen=0
+                            </p>
+                    </ol>
+                <p class="subparagraph"> - Enables borderless windowed mode for safe alt-tabbing</p>
+            <a class="internallink" href="#testing"><h2 class="smallheader" id="testing">Testing Essential Mods</h2></a>
+                <blockquote class="blockquote">
+                    In some rare cases, Mod Organizer 2 has issues handling .DLL files and they won't load in-game. If you can not get any of the mods in this section to work
+                    per the following instructions, then you should try installing the mods directly into the game's <strong>Data</strong> folder rather than through MO2. 
+                    The files from the mods should end up in <code>Fallout New Vegas\Data\NVSE\plugins</code> (the same folder as the files from <a href="./lite-utilities.html#onetweak">OneTweak</a>).
+                </blockquote>
+                <ol class="standard_ol">
+                    <li>Launch the game using the <strong>Tale of Two Wastelands</strong> option in MO2 (NOT the <strong>NVSE</strong> option)</li>
+                    <li>Once the game has reached the main menu, hit the <code>~</code> key (above the tab key) to open the console</li>
+                    <li>Enter <code>GetNVSEVersion</code>, and the console should print <code>NVSE version: 6</code></li>
+                        <ul>
+                            <li>If not, <a href="./lite-utilities.html#xnvse">xNVSE</a> is installed incorrectly</li>
+                        </ul>
+                    <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
+                        <ul>
+                            <li>If it prints <code>>> 1</code>, then you need to run Mod Organizer 2 as an administrator</li>
+                            <li>If it prints an error message, then <a href="./lite-utilities.html#jip">JIP LN NVSE</a> is installed incorrectly</li>
+                        </ul>
+                    <li>Next, enter <code>IsDLLLoaded d3dx9_38</code>, and the console should print <code>IsDLLLoaded "d3dx9_38.dll" >> 1</code></li>
+                        <ul>
+                            <li>If it prints <code>>> 0</code>, then <a href="./lite-utilities.html#heap">Heap Replacer</a> is installed incorrectly</li>
+                            <li>If it prints an error message, then <a href="./lite-utilities.html#johnny">JohnnyGuitar NVSE</a> is installed incorrectly</li>
+                        </ul>
+                    <li>Next, enter <code>IsDLLLoaded NVAC</code>, and the console should print <code>IsDLLLoaded "nvac.dll" >> 1</code></li>
+                        <ul>
+                            <li>If not, then <a href="./lite-utilities.html#nvac">NVAC</a> is installed incorrectly</li>
+                        </ul>
+                    <li>Next, enter <code>IsDLLLoaded NVTF</code>, and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code></li>
+                        <ul>
+                            <li>If not, then <a href="./lite-utilities.html#nvtf">NVTF</a> is installed incorrectly</li>
+                        </ul>
+                        <li>Next, enter <code>IsDLLLoaded mod_limit_fix</code>, and the console should print <code>IsDLLLoaded "mod_limit_fix.dll" >> 1</code></li>
+                            <ul>
+                                <li>If not, then <a href="./lite-utilities.html#limit_fix">Mod Limit Fix</a> is installed incorrectly</li>
+                            </ul>
+                        <li>Next, enter <code>IsDLLLoaded OneTweak</code>, and the console should print <code>IsDLLLoaded "onetweak.dll" >> 1</code></li>
+                            <ul>
+                                <li>If not, then <a href="./lite-utilities.html#onetweak">OneTweak</a> is installed incorrectly</li>
+                            </ul>
+                </ol>
+    </div>
+    <div>
+        <br> <br>
+        <hr>
+        <br>
+        <a href="./ttw-mo2.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./core.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
