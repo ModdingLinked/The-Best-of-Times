@@ -30,18 +30,18 @@ SOFTWARE.
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="https://thebestoftimes.github.io/img/logo.png">
     <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
-    <title>Mod Organizer 2 | The Best of Times</title>
-    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <title>Mod Organizer 2 | TTW Installation Guide</title>
+    <meta name="description" content="A guide that walks you through step-by-step how to install TTW and all essential mods.">
     <meta name="twitter:card" value="summary"> 
-    <meta property="og:title" content="The Best of Times" />
+    <meta property="og:title" content="TTW Installation Guide" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://thebestoftimes.github.io/" />
     <meta property="og:image" content="https://thebestoftimes.github.io/img/logo.png" />
-    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+    <meta property="og:description" content="A guide that walks you through step-by-step how to install TTW and all essential mods." /> 
 </head>
 <body>
     <div class="titlecontainer">
-        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>THE BEST OF TIMES</h1></a>
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>TTW INSTALLATION GUIDE</h1></a>
         <ul class="navbar">
             <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
             <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
@@ -54,12 +54,9 @@ SOFTWARE.
         <a href="./setup.html">Initial Setup</a>
         <a href="./mo2.html"><span style="color:#DCDCDC">MO2</span></a>
         <a href="./ttw.html">TTW</a>
-        <a href="./utilities.html">Utilities</a>
-        <a href="./core.html">Core</a>
-        <a href="./visuals.html">Visuals</a>
-        <a href="./gameplay.html">Gameplay</a>
-        <a href="./finish.html">Final Steps</a>
-        <a href="./appendix.html">Appendix</a>
+        <a href="./essentials.html">Essential Mods</a>
+        
+
     </div>
     <div class="sidenavright">
         <a href="./mo2.html#installing_mo2">Installation</a>
@@ -164,8 +161,8 @@ SOFTWARE.
                     <li>Name the new profile <strong>Testing</strong></li>
                     <li>Select the <strong>Testing</strong> profile and make sure both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong> are checked at the bottom</li>
                     <li>With the <strong>Testing</strong> profile selected, select <strong>Copy</strong></li>
-                    <li>Name the new profile <strong>The Best of Times</strong></li>
-                    <li>Exit out of the profiles menu and select the <strong>The Best of Times</strong> profile from the drop-down above the left pane</li>
+                    <li>Name the new profile <strong>Tale of Two Wastelands</strong></li>
+                    <li>Exit out of the profiles menu and select the <strong>Tale of Two Wastelands</strong> profile from the drop-down above the left pane</li>
                         <img src="./img/mo2 profile select.png" alt="profile select">
                 </ol>
             <a class="internallink" href="#ini_tweaks"><h2 class="subheader" id="ini_tweaks">INI Tweaks</h2></a>
@@ -174,11 +171,11 @@ SOFTWARE.
                         In this step, we will configure the game's INI files to increase performance/stability.
                         We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes,
                         which allows for INI changes to be made safely without editing the default INIs. Because of this, these changes will not take affect until you install 
-                        JIP LN NVSE in the <a href="./utilities.html#jip" target="_blank">Utilities</a> step.
+                        JIP LN NVSE in the <a href="./essentials.html#jip" target="_blank">Essential Mods</a> step.
                     </p>
                     <br>
                     <ol class="standard_ol">
-                        <li>Make sure the <strong>The Best of Times</strong> profile is active</li>
+                        <li>Make sure the <strong>Tale of Two Wastelands</strong> profile is active</li>
                         <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
                         <li>Select the <strong>FalloutCustom.ini</strong> tab, which should be blank</li>
                             <ul>
@@ -187,30 +184,21 @@ SOFTWARE.
                         <li>Paste in the following:</li>
                             <ul>
                                 <p class="smalllist">
-                                    [General] <br>
-                                    bUseThreadedAI=1 <br>
-                                    iNumHWThreads=2 <br>
-                                    bPreemptivelyUnloadCells=1<br><br>
-
-                                    [BackgroundLoad]<br>
-                                    bSelectivePurgeUnusedOnFastTravel=1<br><br>
-
-                                    [Display] <br>
-                                    bFull Screen=1 <br>
-                                    iTexMipMapSkip=0 <br> <br>
-
-                                    [Controls]<br>
-                                    fForegroundMouseAccelBase=0<br>
-                                    fForegroundMouseAccelTop=0<br>
-                                    fForegroundMouseBase=0<br>
-                                    fForegroundMouseMult=0<br><br>
-
-                                    [Audio]<br>
-                                    iAudioCacheSize=8192<br>
-                                    iMaxSizeForCachedSound=1024<br><br>
-
-                                    [Archive] <br>
-                                    SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa <br>
+                                [General]<br>
+                                bPreemptivelyUnloadCells=1<br>
+                                bUseThreadedAI=1<br>
+                                iNumHWThreads=2<br>
+                                SCharGenQuest=001FFFF8<br>
+                                SIntroMovie=<br><br>
+                                [Audio]<br>
+                                bUseAudioDebugInformation=0<br>
+                                iAudioCacheSize=8192<br>
+                                iMaxSizeForCachedSound=1024<br><br>
+                                [BackgroundLoad]<br>
+                                bBackgroundCellLoads=1<br>
+                                bSelectivePurgeUnusedOnFastTravel=1<br><br>
+                                [Grass]<br>
+                                fGrassStartFadeDistance=7000
                                 </p>
                             </ul>
                         <li>Repeat the INI changes on the <strong>Testing</strong> profile</li>
@@ -266,7 +254,7 @@ SOFTWARE.
         <div class="inner_footer">
             <div class="footer_third">
                 <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://discord.gg/zg46A6H" target="_blank"><i class="fab fa-discord"></i></a></li>
                 <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
                 <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
             </div>
