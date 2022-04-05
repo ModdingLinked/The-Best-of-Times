@@ -43,7 +43,7 @@ SOFTWARE.
 
 <body>
     <div class="titlecontainer">
-        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img>
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo">
             <h1>TTW INSTALLATION GUIDE</h1>
         </a>
         <ul class="navbar">
@@ -141,12 +141,11 @@ SOFTWARE.
             <img width="350px" src="./img/nvhr.png" alt="nvhr command prompt">
         </ol>
         <blockquote class="blockquote">
-            Pay attention to the line that says <b> => Use <= </b>. For me it says <strong>AVX2</strong>, but it may be different for you.
+            Pay attention to the line that says <b> =&gt; Use &lt;= </b>. For me it says <strong>AVX2</strong>, but it may be different for you.
         </blockquote>
         <ol class="standard_ol" start="4">
             <li>Back in the downloaded archive, open the folder's which name corresponds to the version that the command prompt told you to use</li>
-            <li>From that folder, extract the <strong>d3dx9_38.dll</strong> to the game's <strong>Root</strong> folder
-            </li>
+            <li>From that folder, extract the <strong>d3dx9_38.dll</strong> to the game's <strong>Root</strong> folder</li>
         </ol>
         <br>
         <p class="subparagraph"> - Replaces the game's heap management system with a much faster hand-written version, which can lead to large performance gains</p>
@@ -197,9 +196,6 @@ SOFTWARE.
         <p class="subparagraph"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates
         </p>
         <blockquote class="blockquote">
-            The mod name may be backwards, in another language, or otherwise malformed - there is no need to worry, you are on the correct page.
-        </blockquote>
-        <blockquote class="blockquote">
             In order for this mod to work properly, make sure you installed the DirectX and VC++ requirements from the
             <a href="./intro.html#requirements" target="_blank">Introduction</a> page
         </blockquote>
@@ -217,7 +213,7 @@ SOFTWARE.
         </a>
         <h2 class="install">Installation instructions:</h2>
         <ul class="standard_ol">
-            <li><b>Main File - Stewie Tweaks 7.50</b></li>
+            <li><b>Main File - Stewie Tweaks 7.56</b></li>
             <li>Download the <a href="./dl/Stewie Tweaks Essentials INI.7z"><b>Stewie Tweaks Essentials INI</b></a> and install it normally in MO2.</li>
         </ul>
         <blockquote class="blockquote">
@@ -235,25 +231,25 @@ SOFTWARE.
         <br>
         <p class="subparagraph"> - Automatically ensures that multiple HUD extensions work together, as well as fixing many bugs and improving performance</p>
         <a class="internallink" href="#onetweak">
-            <h2 class="smallheader" id="onetweak"><a href="https://www.nexusmods.com/newvegas/mods/75685" target="_blank">OneTweak</h2>
+            <h2 class="smallheader" id="onetweak"><a href="https://www.nexusmods.com/newvegas/mods/75685" target="_blank">OneTweak</a></h2>
         </a>
-                <blockquote class="blockquote">
-                    If you plan on playing in windowed mode, you should skip this mod.
-                </blockquote>
-                <h2 class="install">Installation instructions:</h2>
+        <blockquote class="blockquote">
+            If you plan on playing in windowed mode, you should skip this mod.
+        </blockquote>
+        <h2 class="install">Installation instructions:</h2>
 
-                <ol class="standard_ul">
-                    <li><b>Main File - OneTweak 2.1.0.2</b></li>
-                </ol>
-                <ol class="standard_ul" start="2">
-                    <li>In MO2, click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select
-                        <strong>INI Editor</strong></li>
-                    <li>Select the <strong>FalloutCustom.ini</strong> tab</li>
-                    <li>Set <strong>bFull Screen</strong> to <strong>0</strong></li>
-                </ol>
-                <p class="subparagraph"> - Enables borderless windowed mode for safe alt-tabbing</p>
-                <h2 class="smallheader" id="testing">Testing Mods</h2>
-        </a>
+        <ol class="standard_ul">
+            <li><b>Main File - OneTweak 2.1.0.2</b></li>
+        </ol>
+        <ol class="standard_ul" start="2">
+            <li>In MO2, click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select
+                <strong>INI Editor</strong></li>
+            <li>Select the <strong>FalloutCustom.ini</strong> tab</li>
+            <li>Set <strong>bFull Screen</strong> to <strong>0</strong></li>
+        </ol>
+        <p class="subparagraph"> - Enables borderless windowed mode for safe alt-tabbing</p>
+        <h2 class="smallheader" id="testing">Testing Mods</h2>
+
         <blockquote class="blockquote">
             In some rare cases, Mod Organizer 2 has issues handling .DLL files and they won't load in-game. If you can not get any of the mods in this section to work per the following instructions, then you should try installing the mods directly into the game's
             <strong>Data</strong> folder rather than through MO2. The files from the mods should end up in <code>Fallout New Vegas\Data\NVSE\plugins</code>
@@ -271,32 +267,32 @@ SOFTWARE.
             <ul>
                 <li>If not, <a href="./essentials.html#xnvse">xNVSE</a> is installed incorrectly</li>
             </ul>
-            <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
+            <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA &gt;&gt; 2</code></li>
             <ul>
-                <li>If it prints >> 0, then the 4GB Patch was applied incorrectly</li>
-                <li>If it prints <code>>> 1</code>, then you need to run Mod Organizer 2 as an administrator</li>
+                <li>If it prints <code>&gt;&gt; 0</code>, then the 4GB Patch was applied incorrectly</li>
+                <li>If it prints <code>&gt;&gt; 1</code>, then you need to run Mod Organizer 2 as an administrator</li>
                 <li>If it prints an error message, then <a href="./essentials.html#jip">JIP LN NVSE</a> is installed incorrectly
                 </li>
             </ul>
             <li>Next, enter <code>IsDLLLoaded d3dx9_38</code>, and the console should print
-                <code>IsDLLLoaded "d3dx9_38.dll" >> 1</code></li>
+                <code>IsDLLLoaded "d3dx9_38.dll" &gt;&gt; 1</code></li>
             <ul>
-                <li>If it prints <code>>> 0</code>, then <a href="./essentials.html#heap">Heap Replacer</a> is installed incorrectly
+                <li>If it prints <code>&gt;&gt; 0</code>, then <a href="./essentials.html#heap">Heap Replacer</a> is installed incorrectly
                 </li>
                 <li>If it prints an error message, then <a href="./essentials.html#johnny">JohnnyGuitar NVSE</a> is installed incorrectly</li>
             </ul>
             <li>Next, enter <code>IsDLLLoaded NVTF</code>, and the console should print
-                <code>IsDLLLoaded "nvtf.dll" >> 1</code></li>
+                <code>IsDLLLoaded "nvtf.dll" &gt;&gt; 1</code></li>
             <ul>
                 <li>If not, then <a href="./essentials.html#nvtf">NVTF</a> is installed incorrectly</li>
             </ul>
             <li>Next, enter <code>IsDLLLoaded mod_limit_fix</code>, and the console should print
-                <code>IsDLLLoaded "mod_limit_fix.dll" >> 1</code></li>
+                <code>IsDLLLoaded "mod_limit_fix.dll" &gt;&gt; 1</code></li>
             <ul>
                 <li>If not, then <a href="./essentials.html#limit_fix">Mod Limit Fix</a> is installed incorrectly</li>
             </ul>
             <li>Next, enter <code>IsDLLLoaded OneTweak</code>, and the console should print
-                <code>IsDLLLoaded "onetweak.dll" >> 1</code></li>
+                <code>IsDLLLoaded "onetweak.dll" &gt;&gt; 1</code></li>
             <ul>
                 <li>If not, then <a href="./essentials.html#onetweak">OneTweak</a> is installed incorrectly</li>
             </ul>
