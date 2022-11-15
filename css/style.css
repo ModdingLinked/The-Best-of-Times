@@ -469,3 +469,32 @@ strong {
     background-color: rgb(52, 52, 54);
     transition-duration: 300ms;
 }
+
+input,
+textarea {
+    border: 1px solid #d9d8dc;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #393F35;
+}
+
+textarea {
+    font-family: 'JetBrains Mono', monospace;
+    width: 50%;
+    font-size: 0.9vw;
+}
+
+textarea,
+select,
+input[type] {
+    color: #d9d8dc;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    background-color: #393a38;
+    border: 1px solid lime;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
