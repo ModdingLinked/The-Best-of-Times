@@ -146,33 +146,45 @@
                     <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab. </li>
                 </ul>
                 <li>Paste in the following:</li>
-                <textarea readonly="readonly" style="height: 28rem" onclick="this.focus();this.select()">[Audio]
+                <textarea readonly="readonly" style="height: 28rem; width: 100%;" onclick="this.focus();this.select()">
+[Audio]
+; Enables additional worker thread for minor performance improvement
 bMultiThreadAudio=1
+; Disables debug logging to save memory and CPU time
 bUseAudioDebugInformation=0
+; Increases memory buffers to reduce audio issues
 iAudioCacheSize=8192
 iMaxSizeForCachedSound=1024
 
 [BackgroundLoad]
+; Forces cell unload on fast travel to lessen memory usage
 bSelectivePurgeUnusedOnFastTravel=1
 
 [Controls]
+; Disables mouse acceleration
 fForegroundMouseAccelBase=0
 fForegroundMouseAccelTop=0
 fForegroundMouseBase=0
 fForegroundMouseMult=0
 
 [Display]
+; Enables Fullscreen mode
 bFull Screen=1
+; Forces highest texture quality so the game won't crash if you had it set to anything lower
 iTexMipMapSkip=0
 
 [General]
+; Forces faster cell unload to lessen memory usage
 bPreemptivelyUnloadCells=1
+; Spawns additional AI worker threads
 bUseThreadedAI=1
+; Enables multithreading for most operations
 iNumHWThreads=2
+; Sets TTW's starting quest
 SCharGenQuest=001FFFF8
-SIntroMovie=
 
 [Grass]
+; Increases grass draw distance to Fallout 3's amount
 fGrassStartFadeDistance=7000</textarea>
             </ol>
             <a class="internallink" href="#ini_notes">
