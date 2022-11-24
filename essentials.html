@@ -29,260 +29,391 @@ SOFTWARE.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="https://thebestoftimes.github.io/img/logo.webp">
-        <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="https://vivanewvegas.github.io/img/logo.webp">
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>Essential Mods | The Best of Times</title>
         <meta name="description" content="Essential stability and performance mods, required for any modded setup.">
         <meta name="twitter:card" value="summary">
         <meta property="og:title" content="The Best of Times" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://thebestoftimes.github.io/" />
-        <meta property="og:image" content="https://thebestoftimes.github.io/img/logo.webp" />
+        <meta property="og:url" content="https://vivanewvegas.github.io/" />
+        <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.webp" />
         <meta property="og:description" content="Essential stability and performance mods, required for any modded setup." />
     </head>
 
     <body>
+        <!-- Titlebar -->
         <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.webp" alt="Logo">
-                <h1>TTW INSTALLATION GUIDE</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> The Best of Times </a>
+            <div class="guideLinks">
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            </div>
         </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./ttw.html">TTW</a>
-            <a href="./essentials.html"><span style="color:#DCDCDC">Essential Mods</span></a>
-            <a href="./changelog.html">Changelog</a>
-        </div>
-        <div class="sidenavright">
-            <a href="./essentials.html">Essential Mods</a>
-            <ul>
-                <a href="./essentials.html#4gb_patcher"><span style="font-size:.8vw;">4GB Patcher</span></a>
-                <a href="./essentials.html#xnvse"><span style="font-size:.8vw;">xNVSE</span></a>
-                <a href="./essentials.html#heap"><span style="font-size:.8vw;">Heap Replacer</span></a>
-                <a href="./essentials.html#jip"><span style="font-size:.8vw;">JIP LN NVSE</span></a>
-                <a href="./essentials.html#johnny"><span style="font-size:.8vw;">JohnnyGuitar</span></a>
-                <a href="./essentials.html#cobb"><span style="font-size:.8vw;">Crash Logger</span></a>
-                <a href="./essentials.html#knvse"><span style="font-size: .8vw;">kNVSE</span></a>
-                <a href="./essentials.html#stewie_tweaks"><span style="font-size:.8vw;">lStewieAl's Tweaks</span></a>
-                <a href="./essentials.html#stewie_ini"><span style="font-size:.8vw;">lStewieAl's INI</span></a>
-                <a href="./essentials.html#nvtf"><span style="font-size:.8vw;">NVTF</span></a>
-                <a href="./essentials.html#limit_fix"><span style="font-size:.8vw;">Mod Limit Fix</span></a>
-                <a href="./essentials.html#roognvse"><span style="font-size:.8vw;">ROOGNVSE</span></a>
-                <a href="./essentials.html#showoff"><span style="font-size:.8vw;">ShowOff</span></a>
-                <a href="./essentials.html#uio"><span style="font-size:.8vw;">UIO</span></a>
-                <a href="./essentials.html#testing"><span style="font-size:.8vw;">Testing</span></a>
-                <a href="./essentials.html#finish"><span style="font-size:.8vw;">Finishing Notes</span></a>
-            </ul>
-        </div>
-        <div>
-            <h2 class="fullheader">Essential Mods</h2>
-            <blockquote>Make sure the <strong>Tale of Two Wastelands</strong> profile is active before proceeding.</blockquote>
-            <a class="internallink" href="#4gb_patcher">
-                <h2 class="smallheader" id="4gb_patcher"><a href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patch</a></h2>
-            </a>
-            <blockquote>This is required for both Steam & GOG users! The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration.</blockquote>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li>Download the <strong>Main File - 4GB Patcher</strong></li>
-                <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder</li>
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
                 <ul>
-                    <li>If you do not know what the game's <strong>Root</strong> folder is, read the <a class="sublink" href="./setup.html#terms" target="_blank">Key Terminology</a> section from the <strong>Initial Setup</strong> page</li>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./mo2.html">MO2</a>
+                    </li>
+                    <li>
+                        <a href="./ttw.html">TTW</a>
+                    </li>
+                    <li>
+                        <a href="./essentials.html" class="active">Essential Mods</a>
+                    </li>
+                    <li>
+                        <a href="./changelog.html">Changelog</a>
+                    </li>
                 </ul>
-                <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
-                <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
-                <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder</li>
-            </ol>
-            <p class="subparagraph">Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB</p>
-            <blockquote>From now on, you should run the game through the <strong>Tale of Two Wastelands</strong> option in MO2, rather than the <strong>NVSE</strong> option. This mod makes the game auto-load NVSE when you run the game through the default executable, which is generally the safer option.</blockquote>
-            <a class="internallink" href="#xnvse">
-                <h2 class="smallheader" id="xnvse"><a href="https://www.nexusmods.com/newvegas/mods/67883" target="_blank">xNVSE</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li><b>Main File - New Vegas Script Extender (NVSE)</b> (Manual Download)</li>
-                <li>From the downloaded archive, extract the contents of the archive to the game's <strong>Root</strong> folder</li>
-            </ol>
-            <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a> page.</blockquote>
-            <blockquote>Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote>
-            <p class="subparagraph">An updated version of the original NVSE, which extends the scripting capabilities of the game.</p>
-            <a class="internallink" href="#heap">
-                <h2 class="smallheader" id="heap"><a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a></h2>
-            </a>
-            <ol class="standard_ol">
-                <li>Download <strong>Main File - NVHR</strong> using the <strong>Manual Download</strong> button</li>
-                <li>From the downloaded archive, extract the <strong>Data</strong> folder and <strong>d3dx9_38.dll</strong> file to the game's <strong>Root</strong> folder
-            </ol>
-            <p class="subparagraph">Replaces the in-game heap with a faster, more optimized version, reducing load times & stutter and slightly improving frame rate.</p>
-            <a class="internallink" href="#jip">
-                <h2 class="smallheader" id="jip"><a href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE Plugin</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - JIP LN NVSE Plugin</b></li>
-                </ul>
-            </a>
-            <p class="subparagraph">NVSE extension with 800+ new functions and many engine bug fixes.</p>
-            <blockquote>After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
-            <a class="internallink" href="#johnny">
-                <h2 class="smallheader" id="johnny"><a href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">JohnnyGuitar NVSE</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - JohnnyGuitar NVSE</b></li>
-                </ul>
-            </a>
-            <p class="subparagraph">Another NVSE extension similar to JIP LN.</p>
-            <blockquote>After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it</blockquote>
-            <a class="internallink" href="#cobb">
-                <h2 class="smallheader" id="cobb"><a href="https://www.nexusmods.com/newvegas/mods/72317" target="_blank">Crash Logger</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - Crash Logger</b></li>
-                </ul>
-            </a>
-            <p class="subparagraph">A DLL that logs raw crash data.</p>
-            <a class="internallink" href="#knvse">
-                <h2 class="smallheader" id="knvse"><a href="https://www.nexusmods.com/newvegas/mods/71336" target="_blank">kNVSE Animation Plugin</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - kNVSE</b></li>
-                </ul>
-            </a>
-            <p class="subparagraph">xNVSE plugin fixing bugs & allowing custom animations for weapons and actors.</p>
-            <a class="internallink" href="#stewie_tweaks">
-                <h2 class="smallheader" id="stewie_tweaks"><a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - Stewie Tweaks</b></li>
-                </ul>
-            </a>
-            <p class="subparagraph">Collection of many configurable quality of life improvements and bug fixes.</p>
-            <a class="internallink" href="#stewie_ini">
-                <h2 class="smallheader" id="stewie_ini"><a href="https://www.nexusmods.com/newvegas/mods/76522" target="_blank">Stewie Tweaks Essentials INI</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Optional Files - Stewie Tweaks Essentials INI</b></li>
-                </ul>
-                <p class="subparagraph">Starter INI for the previous mod with the most essential options already enabled. Also improves the recipe menu.</p>
-            </a>
-            <a class="internallink" href="#nvtf">
-                <h2 class="smallheader" id="nvtf"><a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - NVTF</b></li>
-                </ul>
-                <p class="subparagraph">Works to fix micro-stuttering, improve performance, and allow playing at higher framerates.</p>
-                <blockquote>In order for this mod to work properly, make sure you installed the DirectX and VC++ requirements from the <a href="./intro.html#requirements" target="_blank">Introduction</a> page.</blockquote>
-            </a>
-            <a class="internallink" href="#limit_fix">
-                <h2 class="smallheader" id="limit_fix"><a href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">Mod Limit Fix</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - MLF</b></li>
-                </ul>
-            </a>
-            <p class="subparagraph">Raises the game's plugin limit to 255 and improves performance/load times, even if you are far below the plugin limit.</p>
-            <a class="internallink" href="#roognvse">
-                <h2 class="smallheader" id="roognvse"><a href="https://www.nexusmods.com/newvegas/mods/77415" target="_blank">ROOGNVSE</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - ROOGNVSE</b></li>
-                </ul>
-                <p class="subparagraph">xNVSE plugin fixing bugs & adding new functions; hard requirement for TTW.</p>
-            </a>
-            <a class="internallink" href="#showoff">
-                <h2 class="smallheader" id="showoff"><a href="https://www.nexusmods.com/newvegas/mods/72541" target="_blank">ShowOff NVSE</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - ShowOff NVSE</b></li>
-                    <li><b>Main File - ShowOff INI</b></li>
-                </ul>
-            </a>
-            <p class="subparagraph">NVSE plugin adding new functions and engine-level tweaks & bugfixes.</p>
-            <a class="internallink" href="#uio">
-                <h2 class="smallheader" id="uio"><a href="https://www.nexusmods.com/newvegas/mods/57174" target="_blank">User Interface Organizer</a></h2>
-                <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - UIO - User Interface Organizer</b></li>
-                </ul>
-                <p class="subparagraph">Automatically ensures that multiple HUD extensions work together, as well as fixing many bugs and improving performance.</p>
-            </a>
-            <h2 class="smallheader" id="testing">Testing Utilities</h2>
-            </a>
-            <ol class="standard_ol">
-                <li>Restart your PC (Otherwise some plugins will print out 0)</li>
-                <li>Launch the game using the <strong>Tale of Two Wastelands</strong> option in MO2 (NOT the <strong>NVSE</strong> option) </li>
-                <li>If you see a black console window appear, it means <strong>NVHR</strong> is working</li>
+            </div>
+            <div class="guideLinks">
+                <hr>
                 <ul>
-                    <li>If not, <a href="./essentials.html#heap">NVHR</a> is installed incorrectly</li>
+                    <li>
+                        <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas </a>
+                    </li>
+                    <li>
+                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                    </li>
+                    <li>
+                        <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                    </li>
                 </ul>
-                <li>Once the game has reached the main menu, hit the <code>~</code> key (Above the tab key) to open the console</li>
+            </div>
+            <div id="footer">
                 <ul>
-                    <li>You will need to unplug/disconnect any controllers to be able to use the keyboard</li>
+                    <li>
+                        <a href="https://github.com/TheBestofTimes/thebestoftimes.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/DhX5S27" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                    </li>
                 </ul>
-                <li>Enter <code>GetNVSEVersion</code>, and the console should print <code>NVSE version: 6</code>
-                </li>
-                <ul>
-                    <li>If not, <a href="./essentials.html#xnvse">xNVSE</a> is installed incorrectly</li>
-                </ul>
-                <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
-                <ul>
-                    <li>If it prints <code>>> 0</code>, then the <a href="./essentials.html#4gb_patcher">4GB Patch</a> was applied incorrectly</li>
-                    <li>If it prints an error message, then <a href="./essentials.html#jip">JIP LN NVSE</a> is installed incorrectly</li>
-                </ul>
-                <li>Next, enter <code>GetINISetting "bUseThreadedAI:General"</code> and the console should print <code>INISetting bUseThreadedAI:General >> 1</code>
-                </li>
-                <ul>
-                    <li>If not, then the <a href="./mo2.html#custom_ini" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly</li>
-                </ul>
-                <li>Next, enter <code>IsDLLLoaded CobbCrashLogger</code>, and the console should print <code>IsDLLLoaded "CobbCrashLogger.dll" >> 1</code>
-                </li>
-                <ul>
-                    <li>If not, then <a href="./essentials.html#cobb">Crash Logger</a> is installed incorrectly</li>
-                </ul>
-                <li>Next, enter <code>IsDLLLoaded NVTF</code>, and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code>
-                </li>
-                <ul>
-                    <li>If not, then <a href="./essentials.html#nvtf">NVTF</a> is installed incorrectly</li>
-                </ul>
-                <li>Next, enter <code>IsDLLLoaded mlf</code>, and the console should print <code>IsDLLLoaded "mlf.dll" >> 1</code>
-                </li>
-                <ul>
-                    <li>If not, then <a href="./essentials.html#limit_fix">Mod Limit Fix</a> is installed incorrectly </li>
-                </ul>
-            </ol>
-            <blockquote>REMINDER: Run the game using the Tale of Two Wastelands option in MO2! <br> <img src="./img/run ttw.webp" alt="Run TTW through MO2"></blockquote>
-            <a class="internallink" href="#finish">
-                <h2 class="smallheader" id="finish">Finishing Notes</h2>
-            </a>
-            <p class="subparagraph"> Congratulations! You now have modded Tale of Two Wastelands perfectly and can enjoy a completely stable/smooth experience. You may want to add your own mods on top of the guide, but that is only recommended if you are an experienced modder. If you do not know how to do manual conflict resolution in FNVEdit, how to sort your load order manually, or how to check if a mod is dangerous, it is highly recommended to NOT add any of your own mods. And remember, I do not provide support setups that have added mods. And remember, if you run into any trouble or have any questions, join the <a href="https://discord.gg/zg46A6H" target="_blank">Discord</a> and we'll be sure to help you out. <br>
-            <blockquote>DO NOT bother the authors of any of the mods in the guide if you have issues, that's what the Discord is for.</blockquote>
+            </div>
             </p>
         </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <br>
-            <a href="./ttw.html"><img class="backarrow" src="./img/leftarrow.webp" alt="Back Arrow"></a>
-            <a href="./changelog.html"><img class="forwardarrow" src="./img/rightarrow.webp" alt="Forward Arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/TheBestofTimes/TheBestofTimes.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/zg46A6H" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a>
-                    </li>
-                </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <div class="section">
+                <p>
+                <h1> Essential Mods </h1>
+                <blockquote>Make sure the <strong>The Best of Times</strong> profile is active before proceeding.</blockquote>
+                <h2>Creating a Separator in MO2</h2>
+                <ol>
+                    <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                    <li>Name the separator <strong>Essential Mods</strong>.</li>
+                </ol>
+                </p>
             </div>
+            <!-- xNVSE -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/67883" target="_blank">
+                        <h2 id="xnvse"> xNVSE </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ol>
+                    <li><b>Main File - New Vegas Script Extender (NVSE)</b> (Manual Download)</li>
+                    <li>From the downloaded archive, extract the contents of the archive to the game's <strong>Root</strong> folder</li>
+                </ol>
+                <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a> page.</blockquote>
+                <blockquote>Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote> An updated version of the original NVSE, which extends the scripting capabilities of the game. </p>
+            </div>
+            <!-- 4GB Patch -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">
+                        <h2 id="4gb_patcher"> 4GB Patcher </h2>
+                    </a>
+                <blockquote>This is required for both Steam & GOG users! The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration.</blockquote>
+                <h2 class="install">Installation instructions:</h2>
+                <ol>
+                    <li>Download the <strong>Main File - 4GB Patcher</strong></li>
+                    <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder</li>
+                    <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
+                    <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
+                    <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder</li>
+                </ol> Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB. <blockquote>From now on, you should run the game through the <strong>New Vegas</strong> option in MO2, rather than the <strong>NVSE</strong> option. This mod makes the game auto-load NVSE when you run the game through the default executable, which is generally the safer option. </blockquote>
+                </p>
+            </div>
+            <!-- NVHR -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">
+                        <h2 id="heap"> New Vegas Heap Replacer </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ol>
+                    <li>Download the <strong>Main File - NVHR</strong> using the <strong>Manual Download</strong> button </li>
+                    <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder </li>
+                </ol> Replaces the game's heap management system with a much faster version, which can lead to large performance gains. </p>
+            </div>
+            <!-- JIP -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">
+                        <h2 id="jip"> JIP LN NVSE Plugin </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - JIP LN NVSE Plugin</b></li>
+                </ul> NVSE extension with new functions and many engine bug fixes. <blockquote>After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
+                </p>
+            </div>
+            <!-- JG -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">
+                        <h2 id="johnny"> JohnnyGuitar NVSE </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - JohnnyGuitar NVSE</b></li>
+                </ul> Another NVSE extension similar to JIP LN. </p>
+            </div>
+            <!-- Crash Logger -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/72317" target="_blank">
+                        <h2 id="cobb"> Crash Logger </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Crash Logger</b></li>
+                </ul> A DLL that logs raw crash data. </p>
+            </div>
+            <!-- NVTF -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">
+                        <h2 id="nvtf"> New Vegas Tick Fix </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - NVTF</b></li>
+                </ul> Works to fix micro-stuttering, improve performance, and allow playing at higher framerates. <blockquote> In order for this mod to work properly, make sure you installed the DirectX and VC++ requirements from the <a href="./intro.html#requirements" target="_blank">Introduction</a> page. </blockquote>
+                </p>
+            </div>
+            <!-- Tweaks -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">
+                        <h2 id="stewie_tweaks"> lStewieAl's Tweaks and Engine Fixes </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Stewie Tweaks</b></li>
+                    <li><b>Main File - Stewie Tweaks Menu-Config</b></li>
+                    <li><b><a href="https://www.nexusmods.com/newvegas/mods/76522" target="_blank">lStewieAl's Tweaks Custom INI</a></b></li>
+                </ul> Collection of many configurable quality of life improvements/bug fixes. The INI file provided by the guide enables all of the bug fixes and many of the essential quality of life improvements. Settings can be further enabled/disabled/tweaked in the new <strong>Tweaks</strong> section added to the main menu. </p>
+            </div>
+            <!-- MLF -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">
+                        <h2 id="limit_fix"> Mod Limit Fix </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - MLF</b></li>
+                </ul> Raises the game's file handles limit and improves performance/load times, even if you are far below it. </p>
+            </div>
+            <!-- kNVSE -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/71336" target="_blank">
+                        <h2 id="knvse"> kNVSE Animation Plugin </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - kNVSE</b></li>
+                </ul> Resource for expanding and improving the game's limited animation system. </p>
+            </div>
+            <!-- Console Paste -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/65906" target="_blank">
+                        <h2 id="console_paste"> Console Paste Support </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Console Paste</b></li>
+                </ul> Adds Ctrl+V as a hotkey to paste into the in-game console, along with a few other helpful shortcuts. </p>
+            </div>
+            <!-- ShowOff -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/72541" target="_blank">
+                        <h2 id="ShowOff"> ShowOff NVSE </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - ShowOff NVSE</b></li>
+                    <li><b>Main File - ShowOff INI</b></li>
+                </ul> NVSE plugin adding new functions and engine-level tweaks & bugfixes. </p>
+            </div>
+            <!-- UIO -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/57174" target="_blank">
+                        <h2 id="uio"> User Interface Organizer </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - UIO - User Interface Organizer</b></li>
+                </ul> Automatically ensures that multiple HUD extensions work together, as well as fixing many bugs and improving performance. </p>
+            </div>
+            <!-- Perf guide -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://wallsogb.github.io/FalloutNV-Performance-Guide" target="_blank">
+                        <h2 id="flip"> Performance Guide </h2>
+                    </a> In-depth information about how to optimize the game's performance covering topics such as <strong>DXVK</strong> and fullscreen VS windowed mode, latency and HDR.
+                </p>
+            </div>
+            <!-- Testing -->
+            <div class="section">
+                <p>
+                    <a href="#testing">
+                        <h2 id="testing">Testing Essential Mods</h2>
+                    </a>
+                <ol>
+                    <li>Restart your PC (Otherwise some plugins will print out 0)</li>
+                    <li>Launch the game using the <strong>New Vegas</strong> option in MO2 (NOT the <strong>NVSE</strong> option) </li>
+                    <li>If you see a black console window appear, it means <strong>NVHR</strong> is working</li>
+                    <ul>
+                        <li>If not, <a href="./Essential Mods.html#heap">NVHR</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Once the game has reached the main menu, hit the <code>~</code> key (Above the tab key) to open the console</li>
+                    <ul>
+                        <li>You will need to unplug/disconnect any controllers to be able to use the keyboard</li>
+                    </ul>
+                    <li>Enter <code>GetNVSEVersion</code>, and the console should print <code>NVSE version: 6</code>
+                    </li>
+                    <ul>
+                        <li>If not, <a href="./Essential Mods.html#xnvse">xNVSE</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
+                    <ul>
+                        <li>If it prints <code>>> 0</code>, then the <a href="./Essential Mods.html#4gb_patcher">4GB Patch</a> was applied incorrectly</li>
+                        <li>If it prints an error message, then <a href="./Essential Mods.html#jip">JIP LN NVSE</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>GetINISetting "bUseThreadedAI:General"</code> and the console should print <code>INISetting bUseThreadedAI:General >> 1</code>
+                    </li>
+                    <ul>
+                        <li>If not, then the <a href="./mo2.html#custom_ini" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>IsDLLLoaded CobbCrashLogger</code>, and the console should print <code>IsDLLLoaded "CobbCrashLogger.dll" >> 1</code>
+                    </li>
+                    <ul>
+                        <li>If not, then <a href="./Essential Mods.html#cobb">Crash Logger</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>IsDLLLoaded NVTF</code>, and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code>
+                    </li>
+                    <ul>
+                        <li>If not, then <a href="./Essential Mods.html#nvtf">NVTF</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>IsDLLLoaded mlf</code>, and the console should print <code>IsDLLLoaded "mlf.dll" >> 1</code>
+                    </li>
+                    <ul>
+                        <li>If not, then <a href="./Essential Mods.html#limit_fix">Mod Limit Fix</a> is installed incorrectly </li>
+                    </ul>
+                </ol>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./mo2.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    <a href="./bugfix.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                </p>
+            </div>
+            </p>
+        </div>
+        <!-- Right Sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="#xnvse">xNVSE</a>
+                </li>
+                <li>
+                    <a href="#4gb_patcher">4GB Patcher</a>
+                </li>
+                <li>
+                    <a href="#heap">Heap Replacer</a>
+                </li>
+                <li>
+                    <a href="#jip">JIP</a>
+                </li>
+                <li>
+                    <a href="#johnny">JohnnyGuitar</a>
+                </li>
+                <li>
+                    <a href="#cobb">Crash Logger</a>
+                </li>
+                <li>
+                    <a href="#nvtf">NVTF</a>
+                </li>
+                <li>
+                    <a href="#stewie_tweaks">lStewieAl's Tweaks</a>
+                </li>
+                <li>
+                    <a href="#limit_fix">Mod Limit Fix</a>
+                </li>
+                <li>
+                    <a href="#knvse">kNVSE</a>
+                </li>
+                <li>
+                    <a href="#console_paste">Console Paste</a>
+                </li>
+                <li>
+                    <a href="#showoff">ShowOff</a>
+                </li>
+                <li>
+                    <a href="#uio">UIO</a>
+                </li>
+                <li>
+                    <a href="#flip">Performance Guide</a>
+                </li>
+                <li>
+                    <a href="#testing">Testing</a>
+                </li>
+            </ul>
+            </p>
         </div>
     </body>
 
