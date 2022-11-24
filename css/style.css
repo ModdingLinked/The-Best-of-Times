@@ -51,7 +51,7 @@ b {
 }
 
 strong {
-    color: rgb(250, 173, 121);
+    color: #9ffa7e;
 }
 
 code {
@@ -75,7 +75,7 @@ input[type] {
     padding: 0.5em 0.5em;
     margin-bottom: 1em;
     background-color: #393a38;
-    border: 2pt solid #eba91c;
+    border: 2pt solid #a1fa83;
     border-radius: 8pt;
     box-shadow: none;
     box-sizing: border-box;
@@ -378,7 +378,7 @@ img {
 blockquote {
     background-color: rgb(52, 52, 52);
     font-size: 1.05em;
-    border-left: 0.5em solid rgb(236, 150, 37);
+    border-left: 0.5em solid hsl(122, 55%, 43%);
     padding: 0.5em 0.75em;
     line-height: 1.4em;
     border-radius: 4pt;
@@ -397,7 +397,7 @@ blockquote a:hover {
 /* Headers */
 
 h1 {
-    color: #ffb61a;
+    color: #23ff29;
     font-size: 2.5em;
     word-wrap: break-word;
 }
@@ -409,7 +409,7 @@ h2 {
 }
 
 .install {
-    color: rgb(252, 183, 46);
+    color: #23ff29;
     font-size: 1.5em;
 }
 
