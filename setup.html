@@ -25,21 +25,21 @@ SOFTWARE.
 <html lang="en">
 
     <head>
-        <title>Initial Setup | The Best of Times</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="img/logo.webp">
         <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
         <script src="javascript.js"></script>
-        <meta property="og:url" content="https://vivanewvegas.github.io/" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="The Best of Times" />
-        <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.webp" />
-        <meta property="og:description" content="Clean install and initial launch of the vanilla game." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Initial Setup | The Best of Times</title>
+        <meta name="description" content="Clean install and initial launch of the vanilla game." />
         <meta name="twitter:card" value="summary">
-        <meta name="description" content="Clean install and initial launch of the vanilla game.">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="https://vivanewvegas.github.io/img/logo.webp">
+        <meta property="og:title" content="The Best of Times" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://thebestoftimes.github.io/" />
+        <meta property="og:image" content="img/logo.webp" />
+        <meta property="og:description" content="Clean install and initial launch of the vanilla game." />
     </head>
 
     <body>
@@ -82,6 +82,13 @@ SOFTWARE.
                         </li>
                         <li>
                             <a href="./changelog.html">Changelog</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="https://vivanewvegas.github.io/avoid-tools.html">Tools to Avoid</a>
+                        </li>
+                        <li>
+                            <a href="https://vivanewvegas.github.io/avoid-mods.html">Mods to Avoid</a>
                         </li>
                     </ul>
                 </div>
@@ -139,16 +146,14 @@ SOFTWARE.
                     <p>
                         <a href="#location">
                             <h2>Recommended Installation Location</h2>
-                        </a>
-                        A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location.
-                        Here is what you need to know when choosing where to install your game:
-                        <ul>
-                            <li><b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows UAC (or User Account Control), which heavily monitors and protects these folders. This can cause many issues with the game and any modding tools. As an example of a safe location, my Steam directory is <code>C:\Games\Steam</code>.</li>
-                            <br>
-                            <li><b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve load times and decrease stuttering. The game plus the guide should only take up about 12GB of space, but the importance of having extra free space on your drive should not be understated. Drives will generally performance worse as they get more full, so you won't see as much of an improvement with load times and stuttering with a full drive.</li>
-                            <br>
-                            <li><b>Fallout 3 Installation:</b> Fallout 3 only needs to be installed for running the TTW installer, and can be uninstalled after the installer completes. It still needs to be installed outside of any default Windows folder as outlined above.</li>
-                        </ul>
+                        </a> A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location. Here is what you need to know when choosing where to install your game:
+                    <ul>
+                        <li><b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows UAC (or User Account Control), which heavily monitors and protects these folders. This can cause many issues with the game and any modding tools. As an example of a safe location, my Steam directory is <code>C:\Games\Steam</code>.</li>
+                        <br>
+                        <li><b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve load times and decrease stuttering. The game plus the guide should only take up about 12GB of space, but the importance of having extra free space on your drive should not be understated. Drives will generally performance worse as they get more full, so you won't see as much of an improvement with load times and stuttering with a full drive.</li>
+                        <br>
+                        <li><b>Fallout 3 Installation:</b> Fallout 3 only needs to be installed for running the TTW installer, and can be uninstalled after the installer completes. It still needs to be installed outside of any default Windows folder as outlined above.</li>
+                    </ul>
                     </p>
                 </div>
                 <!-- Uninstall -->
@@ -200,10 +205,7 @@ SOFTWARE.
                         <a href="#install_steam">
                             <h3 id="install_steam">For Steam:</h3>
                         </a>
-                    <blockquote>It is <strong>required</strong> to install the game outside of any default Windows folders (Such as <code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break certain mods/tools. 
-                        Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders. 
-                        If you already have Steam installed outside of any default windows folders then skip this step and simply install the game to your custom Steam library.
-                    </blockquote>
+                    <blockquote>It is <strong>required</strong> to install the game outside of any default Windows folders (Such as <code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders. If you already have Steam installed outside of any default windows folders then skip this step and simply install the game to your custom Steam library. </blockquote>
                     <ol>
                         <li>Completely exit out of Steam using Task Manager or System Tray.</li>
                         <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a>.</li>
@@ -235,9 +237,7 @@ SOFTWARE.
                         <ul>
                             <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>). </li>
                         </ul>
-                        <li>
-                            Repeat for <strong>Fallout 3</strong>.
-                        </li>
+                        <li> Repeat for <strong>Fallout 3</strong>. </li>
                     </ol>
                     </p>
                     </p>
@@ -283,34 +283,33 @@ SOFTWARE.
                         <a href="#generating_inis">
                             <h3 id="generating_inis">Generating Fresh .INI Files</h3>
                         </a>
-                        <p>
-                            <h3>For New Vegas:</h3>
-                            <ol>
-                                <li>Run the game from Steam/GOG Galaxy, or through FalloutNVLauncher.exe in the game files if you are using an offline copy.</li>
-                                <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
-                                <ul>
-                                    <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\FalloutNV</code> and delete all the files ending in <strong>.INI</strong> then retry.</li>
-                                </ul>
-                                <li>Select <strong>Options</strong> then select the <strong>Ultra</strong> preset option.</li>
-                                <ul>
-                                    <li> If you have a lower-end PC, or want to squeeze as much performance out of the game as possible, you can select the <strong>High</strong> preset instead. It offers pretty similar visual quality for a decent performance improvement, especially on older hardware. You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns on performance. Another great way to improve performance without drastically changing the game's visuals is by disabling shadows. New Vegas does not have real dynamic object shadows (Like in Skyrim or Fallout 4), only actor shadows. Despite having a minor visual improvement, they can have a large performance impact if there are many NPCs in one area. </li>
-                                </ul>
-                                <li>Set the <strong>Resolution</strong> option to your preference (The launcher usually does not set it to your monitor's max resolution).</li>
-                                <li>Click <strong>OK</strong> then <strong>Exit</strong>.</li>
-                            </ol>
-                        </p>
-                        <p>
-                            <h3>For Fallout 3:</h3>
-                            <ol>
-                                <li>Run the game from Steam/GOG Galaxy, or through FalloutLauncher.exe in the game files if you are using an offline copy.</li>
-                                <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
-                                <ul>
-                                    <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\Fallout3</code> and delete all the files ending in <strong>.INI</strong> then retry.</li>
-                                </ul>
-                                <li>Exit the launcher..</li>
-                            </ol>
-                        </p>
-                    
+                    <p>
+                    <h3>For New Vegas:</h3>
+                    <ol>
+                        <li>Run the game from Steam/GOG Galaxy, or through FalloutNVLauncher.exe in the game files if you are using an offline copy.</li>
+                        <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
+                        <ul>
+                            <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\FalloutNV</code> and delete all the files ending in <strong>.INI</strong> then retry.</li>
+                        </ul>
+                        <li>Select <strong>Options</strong> then select the <strong>Ultra</strong> preset option.</li>
+                        <ul>
+                            <li> If you have a lower-end PC, or want to squeeze as much performance out of the game as possible, you can select the <strong>High</strong> preset instead. It offers pretty similar visual quality for a decent performance improvement, especially on older hardware. You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns on performance. Another great way to improve performance without drastically changing the game's visuals is by disabling shadows. New Vegas does not have real dynamic object shadows (Like in Skyrim or Fallout 4), only actor shadows. Despite having a minor visual improvement, they can have a large performance impact if there are many NPCs in one area. </li>
+                        </ul>
+                        <li>Set the <strong>Resolution</strong> option to your preference (The launcher usually does not set it to your monitor's max resolution).</li>
+                        <li>Click <strong>OK</strong> then <strong>Exit</strong>.</li>
+                    </ol>
+                    </p>
+                    <p>
+                    <h3>For Fallout 3:</h3>
+                    <ol>
+                        <li>Run the game from Steam/GOG Galaxy, or through FalloutLauncher.exe in the game files if you are using an offline copy.</li>
+                        <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
+                        <ul>
+                            <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\Fallout3</code> and delete all the files ending in <strong>.INI</strong> then retry.</li>
+                        </ul>
+                        <li>Exit the launcher..</li>
+                    </ol>
+                    </p>
                     </p>
                     </p>
                 </div>
@@ -367,9 +366,7 @@ SOFTWARE.
                     </ul>
                 </ul>
                 </p>
-                <ul>
             </div>
-        </div>
         </div>
     </body>
 
