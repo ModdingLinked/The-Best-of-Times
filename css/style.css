@@ -51,7 +51,7 @@ b {
 }
 
 strong {
-    color: #9ffa7e;
+    color: #1aa656;
 }
 
 code {
@@ -379,7 +379,7 @@ img {
 blockquote {
     background-color: rgb(52, 52, 52);
     font-size: 1.05em;
-    border-left: 0.5em solid hsl(122, 55%, 43%);
+    border-left: 0.5em solid #12733b;
     padding: 0.5em 0.75em;
     line-height: 1.4em;
     border-radius: 4pt;
@@ -398,7 +398,7 @@ blockquote a:hover {
 /* Headers */
 
 h1 {
-    color: #23ff29;
+    color: #23da71;
     font-size: 2.5em;
     word-wrap: break-word;
 }
@@ -410,7 +410,7 @@ h2 {
 }
 
 .install {
-    color: #23ff29;
+    color: #23da71;
     font-size: 1.5em;
 }
 
