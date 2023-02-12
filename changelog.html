@@ -43,182 +43,186 @@ SOFTWARE.
     </head>
 
     <body>
-        <div>
-            <!-- Titlebar -->
-            <div class="titlecontainer">
-                <div id="sideButton" onclick="toggleNav()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <img src="./img/logo.webp" alt="Logo" />
-                <a href="./index.html"> The Best of Times </a>
-                <div class="guideLinks">
-                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas </a>
-                    <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
-                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                    <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                </div>
+        <!-- Titlebar -->
+        <div class="titlecontainer">
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <!-- Left sidebar -->
-            <div id="sidenavLeft">
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> The Best of Times </a>
+            <div class="guideLinks">
+                <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
+            </div>
+        </div>
+        <!-- Left sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./mo2.html">MO2</a>
+                    </li>
+                    <li>
+                        <a href="./ttw.html">TTW</a>
+                    </li>
+                    <li>
+                        <a href="./essentials.html">Essential Mods</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./changelog.html" class="active">Changelog</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://taleoftwowastelands.com/faq" target="_blank">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="https://vivanewvegas.github.io/avoid-tools.html">Tools to Avoid</a>
+                    </li>
+                    <li>
+                        <a href="https://vivanewvegas.github.io/avoid-mods.html">Mods to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas </a>
+                    </li>
+                    <li>
+                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                    </li>
+                    <li>
+                        <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                    </li>
+                    <li>
+                        <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/TheBestofTimes/thebestoftimes.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/DhX5S27" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="paypal" onclick="toggleDonationMenu()">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                        <div id="paypalMenu" style="display: none;">
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                Author - Qolore7
+                            </a>
+                            <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
+                                Maintainer - VishVadeva50
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <div class="section">
                 <p>
+                <h1> Changelog </h1>
                 <div>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./intro.html">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="./setup.html">Initial Setup</a>
-                        </li>
-                        <li>
-                            <a href="./mo2.html">MO2</a>
-                        </li>
-                        <li>
-                            <a href="./ttw.html">TTW</a>
-                        </li>
-                        <li>
-                            <a href="./essentials.html">Essential Mods</a>
-                        </li>
-                        <li>
-                            <a href="./finish.html">Final Steps</a>
-                        </li>
-                        <li>
-                            <a href="./changelog.html" class="active">Changelog</a>
-                        </li>
-                    </ul>
+                    <p>
+                    <h2><strong>Time formatted in DD/MM/YY</strong></h2>
+                    <h2 class="install">26/11/22</h2>
+                    <p>
+                        <strong>Whole Guide:</strong> Recreated all pages with the help of Wall_SoGB, the guide is now responsive.<br>
+                        <strong>Whole Guide:</strong> Reformatted and edited a lot of steps and information.<br>
+                        <strong>Utilities:</strong> Added performance guide from Wall_SoGB.
+                    </p>
+                    <h2 class="install">15/11/22</h2>
+                    <p>
+                        <strong>MO2:</strong> Made some visual changes and updated Custom INI.<br>
+                        <strong>MO2:</strong> Switched to global instance (Don't worry about this if you already have the guide installed).<br>
+                        <strong>Essentials:</strong> Switched to the Nexus release of xNVSE.<br>
+                    </p>
+                    <h2 class="install">10/7/22</h2>
+                    <p>
+                        <strong>Whole Guide:</strong> Updated for 3.3.2 and removed NVAC.
+                    </p>
+                    <h2 class="install">12/5/22</h2>
+                    <p>
+                        <strong>TTW:</strong> Added steps to install hotfix to TTW section.
+                    </p>
+                    <h2 class="install">4/5/22</h2>
+                    <p>
+                        <strong>Whole Guide:</strong> Removed nearly all version numbers from the guide (Just download the latest).<br>
+                        <strong>Utilities:</strong> Re-added NVAC.<br>
+                        <strong>Utilities:</strong> Added ShowOff NVSE and integrated JIP Improved Recipe Menu into the Tweaks Essentials INI download as a scriptrunner. <strong>Visuals:</strong> Reworded steps for Clarity.
+                    </p>
+                    <h2 class="install">18/4/22</h2>
+                    <p>
+                        <strong>Bug Fixes:</strong> Added kNVSE.
+                    </p>
+                    <h2 class="install">15/4/22</h2>
+                    <p>
+                        <strong>Utilities:</strong> Removed OneTweak.
+                    </p>
+                    <h2 class="install">26/3/22</h2>
+                    <p>
+                        <strong>Utilities</strong>Added JIP Improved Recipe Menu.
+                    </p>
+                    <h2 class="install">16/3/22</h2>
+                    <p>
+                        <strong>Utilities</strong>Replaced custom INI with Stewie Tweaks Essentials INI. <strong>Utilities</strong>Removed anniversary anims and isControl.
+                    </p>
+                    <h2 class="install">10/3/22</h2>
+                    <p>
+                        <strong>Visuals:</strong> Added ISControl, Anniversary Anim Pack & its fixes after users reported broken ironsight anims (Vanilla bug).
+                    </p>
+                    <h2 class="install">5/3/22</h2>
+                    <p>
+                        <strong>Whole Guide:</strong> TTW 3.3 release: total rewrite of guide, do <strong>NOT</strong> recycle old setups from 3.2 as the INI is very different and the main quest will break among other things!
+                    </p>
                 </div>
                 <div>
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="https://vivanewvegas.github.io/avoid-tools.html">Tools to Avoid</a>
-                        </li>
-                        <li>
-                            <a href="https://vivanewvegas.github.io/avoid-mods.html">Mods to Avoid</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="guideLinks">
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas </a>
-                        </li>
-                        <li>
-                            <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
-                        </li>
-                        <li>
-                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                        </li>
-                        <li>
-                            <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/TheBestofTimes/thebestoftimes.github.io" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://discord.gg/DhX5S27" target="_blank">
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
-                                <i class="fab fa-patreon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="paypal" onclick="toggleDonationMenu()">
-                                <i class="fab fa-paypal"></i>
-                            </a>
-                            <div id="paypalMenu" style="display: none;">
-                                <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
-                                    Author - Qolore7
-                                </a>
-                                <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
-                                    Maintainer - VishVadeva50
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                    <p>
+                        <hr>
+                        <a href="./finish.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    </p>
                 </div>
                 </p>
             </div>
-            <!-- Content -->
-            <div class="content">
-                <p>
-                <div class="section">
-                    <p>
-                    <h1> Changelog </h1>
-                    <div class="section">
-                        <p>
-                        <h2><strong>Time formatted in DD/MM/YY</strong></h2>
-                        <h2 class="install">26/11/22</h2>
-                        <p>
-                            <strong>Whole Guide:</strong> Recreated all pages with the help of Wall_SoGB, the guide is now responsive.<br>
-                            <strong>Whole Guide:</strong> Reformatted and edited a lot of steps and information.<br>
-                            <strong>Utilities:</strong> Added performance guide from Wall_SoGB.
-                        </p>
-                        <h2 class="install">15/11/22</h2>
-                        <p>
-                            <strong>MO2:</strong> Made some visual changes and updated Custom INI.<br>
-                            <strong>MO2:</strong> Switched to global instance (Don't worry about this if you already have the guide installed).<br>
-                            <strong>Essentials:</strong> Switched to the Nexus release of xNVSE.<br>
-                        </p>
-                        <h2 class="install">10/7/22</h2>
-                        <p>
-                            <strong>Whole Guide:</strong> Updated for 3.3.2 and removed NVAC.
-                        </p>
-                        <h2 class="install">12/5/22</h2>
-                        <p>
-                            <strong>TTW:</strong> Added steps to install hotfix to TTW section.
-                        </p>
-                        <h2 class="install">4/5/22</h2>
-                        <p>
-                            <strong>Whole Guide:</strong> Removed nearly all version numbers from the guide (Just download the latest).<br>
-                            <strong>Utilities:</strong> Re-added NVAC.<br>
-                            <strong>Utilities:</strong> Added ShowOff NVSE and integrated JIP Improved Recipe Menu into the Tweaks Essentials INI download as a scriptrunner. <strong>Visuals:</strong> Reworded steps for Clarity.
-                        </p>
-                        <h2 class="install">18/4/22</h2>
-                        <p>
-                            <strong>Bug Fixes:</strong> Added kNVSE.
-                        </p>
-                        <h2 class="install">15/4/22</h2>
-                        <p>
-                            <strong>Utilities:</strong> Removed OneTweak.
-                        </p>
-                        <h2 class="install">26/3/22</h2>
-                        <p>
-                            <strong>Utilities</strong>Added JIP Improved Recipe Menu.
-                        </p>
-                        <h2 class="install">16/3/22</h2>
-                        <p>
-                            <strong>Utilities</strong>Replaced custom INI with Stewie Tweaks Essentials INI. <strong>Utilities</strong>Removed anniversary anims and isControl.
-                        </p>
-                        <h2 class="install">10/3/22</h2>
-                        <p>
-                            <strong>Visuals:</strong> Added ISControl, Anniversary Anim Pack & its fixes after users reported broken ironsight anims (Vanilla bug).
-                        </p>
-                        <h2 class="install">5/3/22</h2>
-                        <p>
-                            <strong>Whole Guide:</strong> TTW 3.3 release: total rewrite of guide, do <strong>NOT</strong> recycle old setups from 3.2 as the INI is very different and the main quest will break among other things!
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <hr>
-                            <a href="./finish.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
-                        </p>
-                    </div>
-                    </p>
-                </div>
+            </p>
+        </div>
     </body>
 
 </html>
