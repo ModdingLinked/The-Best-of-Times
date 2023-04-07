@@ -1,4 +1,32 @@
 window.addEventListener('resize', sizeChanged);
+window.addEventListener('load', setBackgroundByTime);
+
+function setBackgroundByTime() {
+    const date = new Date();
+    const hour = date.getHours();
+    const headerTitle = document.getElementById('headerTitle');
+
+    // set the background image based on the current time
+    if (hour >= 0 && hour < 7) {
+        document.body.style.backgroundImage = "url('./img/background/img0.webp')";
+    } else if (hour >= 7 && hour < 9) {
+        document.body.style.backgroundImage = "url('./img/background/img7.webp')";
+        headerTitle.style.color = "rgba(0, 0, 0, 0.75)";
+    } else if (hour >= 9 && hour < 12) {
+        document.body.style.backgroundImage = "url('./img/background/img9.webp')";
+        headerTitle.style.color = "rgba(0, 0, 0, 0.75)";
+    } else if (hour >= 12 && hour < 17) {
+        document.body.style.backgroundImage = "url('./img/background/img12.webp')";
+        headerTitle.style.color = "rgba(0, 0, 0, 0.75)";
+    } else if (hour >= 17 && hour < 20) {
+        document.body.style.backgroundImage = "url('./img/background/img17.webp')";
+        headerTitle.style.color = "rgba(0, 0, 0, 0.75)";
+    } else if (hour >= 20 && hour < 23) {
+        document.body.style.backgroundImage = "url('./img/background/img20.webp')";
+    } else {
+        document.body.style.backgroundImage = "url('./img/background/img23.webp')";
+    }
+}
 
 document.addEventListener('keyup', (e) => {
     if (e.code === "ArrowRight") {
