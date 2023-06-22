@@ -88,8 +88,8 @@ img {
   border-radius: 4pt;
 }
 
-#xnvse_root {
-  max-width: 40%;
+#xnvseRoot {
+  max-width: 60%;
 }
 
 /* Body classes */
@@ -209,6 +209,7 @@ img {
   box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.7);
   margin-bottom: auto;
   text-align: center;
+  z-index: 0;
 }
 
 .welcomeContent .welcomeButton strong {
@@ -300,7 +301,7 @@ img {
   font-size: 1.33em;
   color: hsl(0, 0%, 50%);
   text-decoration: none;
-  padding: 0.66em 0em 0.66em 0em;
+  padding: 0.55em 0em 0.55em 0em;
 }
 
 #sidenavLeft div {
@@ -490,13 +491,21 @@ h2 {
   scale: 100%;
 }
 
-.navigationArrow {
+.navigationArrow img {
   width: 7.5em;
   height: 7.5em;
   margin: 0.5em 1em 1em 1em;
 }
 
-.navigationArrow:hover {
+.navigationArrow .arrowText {
+  text-decoration: none;
+  font-size: 2.5em;
+  display: flex;
+  padding-top: 1.4em !important;
+  color: #ffffff;
+}
+
+.navigationArrow:hover img {
   scale: 90%;
   transform: scaleY(90%);
 }
@@ -538,6 +547,10 @@ h2 {
 }
 
 @media only screen and (max-width: 900px) {
+  .navigationArrow .arrowText {
+    display: none;
+  }
+
   .content {
     width: 100%;
     margin-left: 0;
@@ -586,7 +599,7 @@ h2 {
     line-break: anywhere;
   }
 
-  #xnvse_root {
+  #xnvseRoot {
     max-width: 90%;
   }
 }
@@ -606,4 +619,15 @@ h2 {
 .transparent {
   background-color: rgba(255, 255, 255, 0) !important;
   box-shadow: none !important;
+}
+
+#logoex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 12em;
 }
