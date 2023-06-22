@@ -237,86 +237,6 @@
             </ol>
             </p>
         </div>
-        <!-- INI Tweaks -->
-        <div class="section" id="ini_tweaks">
-            <p>
-                <a href="#ini_tweaks">
-                    <h2>INI Tweaks</h2>
-                </a>
-                <!-- Tweaking FalloutCustom.ini -->
-            <p>
-                <a href="#custom_ini">
-                    <h3 id="custom_ini">Tweaking FalloutCustom.ini</h3>
-                </a> In this step, we will configure the game's INI files to increase performance/stability. We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes, which allows for INI changes to be made safely without editing the default INIs. Because of this, these changes will not take affect until you install JIP LN NVSE in the <a href="essentials.html#jip" target="_blank">Essentials</a>
-            <ol>
-                <li>Make sure the <strong>The Best of Times</strong> profile is active.</li>
-                <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>. </li>
-                <li>Select the <strong>FalloutCustom.ini</strong> tab, which should be blank.</li>
-                <ul>
-                    <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab. </li>
-                </ul>
-                <li>Paste in the following:</li>
-                <textarea readonly="readonly" style="height: 51.5em; width: 95%;" onclick="this.focus();this.select()">
-[Audio]
-; Enables additional worker thread for minor performance improvement. Disable if you encounter audio stutter.
-bMultiThreadAudio=1
-; Disables debug logging to save memory and CPU time
-bUseAudioDebugInformation=0
-; Increases memory buffers to reduce audio issues
-iAudioCacheSize=8192
-iMaxSizeForCachedSound=1024
-
-[BackgroundLoad]
-; Forces cell unload on fast travel to lessen memory usage
-bSelectivePurgeUnusedOnFastTravel=1
-
-[Controls]
-; Disables mouse acceleration
-fForegroundMouseAccelBase=0
-fForegroundMouseAccelTop=0
-fForegroundMouseBase=0
-fForegroundMouseMult=0
-
-[Display]
-; Enables Fullscreen mode
-bFull Screen=1
-; Forces highest texture quality so the game won't crash if you had it set to anything lower
-iTexMipMapSkip=0
-; World FOV
-fDefaultFOV=75.0000
-; 1st person FOV
-fDefault1stPersonFOV=55.0000
-; Pip-Boy and terminal FOV
-fPipboy1stPersonFOV=47.0
-
-
-[General]
-; Forces faster cell unload to lessen memory usage
-bPreemptivelyUnloadCells=1
-; Enables multithreaded AI
-bUseThreadedAI=1
-iNumHWThreads=3
-; Sets TTW's starting quest
-SCharGenQuest=001FFFF8
-; Disables FNV intro movie
-SIntroMovie=
-
-[Grass]
-; Increases grass draw distance to Fallout 3's amount
-fGrassStartFadeDistance=7000
-
-[PipBoy]
-; Fixes flicker when opening Pip-Boy when its light is on
-fLightEffectFadeDuration=400</textarea>
-            </ol>
-            </p>
-            <p>
-                <a href="#ini_notes">
-                    <h3 id="ini_notes">Notes</h3>
-                </a> It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using tools like BethINI. You will realistically not need any other tweaks than the ones already in the guide.
-            </p>
-            </p>
-        </div>
         <!-- Instructions -->
         <div class="section" id="installation_instructions">
             <p>
@@ -391,17 +311,6 @@ fLightEffectFadeDuration=400</textarea>
             <li>
                 <a href="#profiles">Profiles</a>
             </li>
-            <li>
-                <a href="#ini_tweaks">INI Tweaks</a>
-            </li>
-            <ul>
-                <li>
-                    <a href="#custom_ini">FalloutCustom.ini</a>
-                </li>
-                <li>
-                    <a href="#ini_notes">Notes</a>
-                </li>
-            </ul>
             <li>
                 <a href="#installation_instructions">Installation Instructions</a>
             </li>
