@@ -26,7 +26,7 @@
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="The Best of Times">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://thebestoftimes.moddinglinked.com/">
+    <meta property="og:url" content="https://thebestoftimes.moddinglinked.com">
     <meta property="og:image" content="https://thebestoftimes.moddinglinked.com/img/card.webp">
     <meta property="og:description" content="The official installation guide for Tale of Two Wastelands and all essential mods.">
 </head>
@@ -79,78 +79,84 @@
 <body>
     <style>
         body {
+            background-image: url('./img/background.webp');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
         }
     </style>
-    <div>
-        <!-- Titlebar -->
-        <div class="titlecontainer transparent">
-            <div id="sideButton" onclick="toggleNav()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <img src="./img/logo.webp" alt="Logo">
-            <a href="./index.html" id="headerTitle"> The Best of Times </a>
-            <div class="guideLinks" id="headerLinks">
-                <a href="https://vivanewvegas.moddinglinked.com/" target="_blank" rel="nofollow">Fallout New Vegas </a>
-                <a href="https://themidnightride.moddinglinked.com/" target="_blank" rel="nofollow">Fallout 4 </a>
-                <a href="https://dragonbornsfate.moddinglinked.com/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                <a href="https://gloryofcyrodiil.moddinglinked.com/" target="_blank" rel="nofollow">Oblivion</a>
-            </div>
+
+    <!-- Titlebar -->
+    <div class="titlecontainer transparent">
+        <div id="sideButton" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <!-- Left Sidebar -->
-        <div id="sidenavLeft" class="transparent">
-            <div class="guideLinks">
-                <hr>
-                <ul>
-                    <li>
-                        <a href="https://vivanewvegas.moddinglinked.com/" target="_blank" rel="nofollow">Fallout New Vegas </a>
-                    </li>
-                    <li>
-                        <a href="https://themidnightride.moddinglinked.com/" target="_blank" rel="nofollow">Fallout 4 </a>
-                    </li>
-                    <li>
-                        <a href="https://dragonbornsfate.moddinglinked.com/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                    </li>
-                    <li>
-                        <a href="https://gloryofcyrodiil.moddinglinked.com/" target="_blank" rel="nofollow">Oblivion</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="footer">
-                <ul>
-                    <li>
-                        <a href="https://discord.gg/moddinglinked-659108573485465620" target="_blank">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
-                            <i class="fab fa-patreon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="paypal" onclick="toggleDonationMenu()">
-                            <i class="fab fa-paypal"></i>
-                        </a>
-                        <div id="paypalMenu" style="display: none;">
-                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
-                                Author - Qolore7
-                            </a>
-                            <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
-                                Maintainer - VishVadeva
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <img src="./img/logo.webp" alt="Logo">
+        <a href="./index.html">The Best of Times</a>
+        <div class="guideLinks">
+            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
+            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+            <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
         </div>
     </div>
+
+    <!-- Left Sidebar -->
+    <div id="sidenavLeft" class="transparent">
+        <div class="guideLinks">
+            <hr>
+            <ul>
+                <li>
+                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                </li>
+                <li>
+                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                </li>
+                <li>
+                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                </li>
+                <li>
+                    <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <ul>
+                <li>
+                    <a href="https://discord.gg/moddinglinked-659108573485465620" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
+                        <i class="fab fa-patreon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a id="paypal" onclick="toggleDonationMenu()">
+                        <i class="fab fa-paypal"></i>
+                    </a>
+                    <div id="paypalMenu" style="display: none;">
+                        <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://www.paypal.com/paypalme/wallsogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content -->
     <div id="backdrop" class="welcomeContent">
         <h1 id="title">Welcome to The Best of Times!</h1>
-        <a id="next" class="welcomeButton" href="./intro.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)" rel="next"><strong>Get Started</strong></a><a href="./intro.html"></a>
+        <a id="next" class="welcomeButton" href="./intro.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Get Started</strong></a><a href="./intro.html"></a>
+        <a id="next" class="welcomeButtonYT" href="https://youtu.be/coHkojrXPmQ" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Video Guide</strong></a><a href="https://youtu.be/coHkojrXPmQ"></a>
     </div>
 </body>
 
