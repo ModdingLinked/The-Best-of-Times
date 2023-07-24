@@ -6,17 +6,32 @@
 		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/index.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2023-04-08</lastmod>
-	</url>
-	<url>
 		<loc>https://thebestoftimes.moddinglinked.com/intro.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2023-07-16</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/setup.html</loc>
+		<loc>https://thebestoftimes.moddinglinked.com/index.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2023-04-08</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/changelog.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-07-16</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/finish.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-07-16</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/essentials.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/ttw.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2023-07-16</lastmod>
 	</url>
@@ -26,22 +41,7 @@
 		<lastmod>2023-07-16</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/ttw.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-16</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/essentials.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-18</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/finish.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-16</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/changelog.html</loc>
+		<loc>https://thebestoftimes.moddinglinked.com/setup.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2023-07-16</lastmod>
 	</url>
