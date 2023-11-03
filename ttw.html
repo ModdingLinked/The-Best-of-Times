@@ -154,40 +154,57 @@
                     <h2 id="installingTTW">Installing TTW</h2>
                 </a>
             </p>
-            <blockquote>If you run into any errors when installing, check the <a href="https://taleoftwowastelands.com/faq" target="_blank">FAQ</a> to see if it has the solution.</blockquote>
             <ol>
-                <li>Make sure both Mod Organizer 2 and the game are closed.</li>
-                <li>From the <a href="https://taleoftwowastelands.com/dl" target="_blank">TTW Download</a> page, download the <strong>3.3.2 Installer</strong> file.</li>
-                <li>Extract the contents of the <strong>3.3.2 Installer</strong> archive to a new folder called <strong>TTW Installer</strong> in a safe location <abbr title="Do not use any folder falling under UAC such as Program Files, Desktop, Documents, Downloads, etc. Use a simple location like C:/Modding">outside of any default Windows folders.</abbr></li>
-                <li>Once everything has been extracted, open MO2, select the <img style="width:2%" src="./img/mo2 folders.webp" alt="MO2 Folders"> button at the top and select <strong>Open Mods folder</strong>, then create a folder named <strong>Tale of Two Wastelands</strong>.</li>
-                <li><strong>Copy the path</strong> to the folder you just created.</li>
+                <li>Download the <a href="https://taleoftwowastelands.com/dl" target="_blank">3.3.2a Installer</a> and extract the contents of the archive anywhere outside of the default Windows folders.</li>
+                <li>Open Mod Organizer 2, select the <img style="width:2%" src="./img/mo2 folders.webp" alt="MO2 Folders"> button at the top and select <strong>Open Mods folder</strong>.</li>
+                <li>Here, create a folder named <strong>Tale of Two Wastelands</strong> and then <strong>copy its path</strong>.</li>
+                <li>Close MO2.</li>
                 <li>Back in the <strong>TTW Installer</strong> folder, right-click the <strong>TTW Install.exe</strong> and select <strong>Run As Administrator</strong>.</li>
                 <li>In the installer, verify that the automatically set file paths for both your Fallout 3 and Fallout New Vegas installations are correct.</li>
-                <li><strong>Paste the path</strong> you copied in step 4 in the last text field.</li>
+                <li><strong>Paste the path</strong> you copied in step 3 in the last text field.</li>
                 <img src="./img/install.webp" alt="Installation Paths" style="height: 40em;">
-                <li>Ensure your paths look similar to the example above, then select <strong>Install</strong>.</li>
+                <li>Ensure your paths look similar to the example above, then <strong>Install</strong>.</li>
             </ol>
-            <blockquote>The install may take a long time as the .ogg encoding is very CPU-intensive. It takes about 40 minutes on my 5600x but could take several hours or even longer on a slower CPU. It is recommended to leave your computer alone and have any CPU-intensive applications closed during this time so as to not overheat your CPU and cause the TTW installation to fail.</blockquote>
+            <blockquote>
+                The installation might take a long time as the audio encoding section is very CPU-intensive. It takes about 40 minutes on a Ryzen 5 5600x but could take several hours or even longer on a slower CPU. It is recommended to close any other CPU-intensive application during this time to avoid slowdowns.
+                <br>
+                <br>
+                If you run into any errors while installing, check the <a href="https://taleoftwowastelands.com/faq" target="_blank">FAQ</a> to see if it has the solution.
+            </blockquote>
+
 
             <!-- MO2 -->
             <p>
-                <a href="#activatingTTW">
-                    <h2 id="activatingTTW">Activating TTW in Mod Organizer 2</h2>
+                <a href="#activating&Size">
+                    <h2 id="activating&Size">Activating and Size Check</h2>
                 </a>
             </p>
             <ol>
-                <li>Launch Mod Organizer 2, or if you kept it open, click the <img src="./img/mo2 refresh.webp" alt="MO2 refresh"> button at the top to refresh the left pane.</li>
-                <li>If you installed TTW correctly with the correct filepaths, you should see the <strong>Tale of Two Wastelands</strong> mod in the left pane of MO2.</li>
+                <li>Open Mod Organizer 2.</li>
+                <li>If you installed TTW correctly, you should see the <strong>Tale of Two Wastelands</strong> mod in the left pane of MO2.</li>
                 <ul>
-                    <li>If you do not see anything, you did not install TTW to the correct folder.
+                    <li>If you do not see anything or the mod name is greyed out, you did not install TTW to the correct folder.
                         Find out where the files were installed to and move them to the <strong title="In MO2, select the folder button at the top and select Open Mods folder">mods folder</strong>.
                         <br>
-                        The path should look like this:
-                        <br>
-                        <code><strong title="Folder that contains ModOrganizer.exe">YOUR MOD ORGANIZER FOLDER</strong>\mods\Tale of Two Wastelands</code>
+                        The path should look like this: <code><strong title="Folder that contains ModOrganizer.exe">YOUR MOD ORGANIZER FOLDER</strong>\mods\Tale of Two Wastelands</code>
                     </li>
                 </ul>
                 <li>Click the checkbox next to it in the left pane and the right pane should fill with plugins.</li>
+                <li>In MO2, right-click <strong>Tale of Two Wastelands</strong> and <strong>Open in Explorer</strong>.</li>
+                <li>Right-click anywhere in the folder (do not select any file inside) and open its <strong>Properties</strong>.</li>
+                <li>If your folder has a size different from <strong>15.7GB</strong>, reinstall Tale of Two Wastelands by wiping this folder then following the same steps as before.</li>
+            </ol>
+
+            <!-- Hotfix -->
+            <p>
+                <a href="#hotfix">
+                    <h2 id="hotfix">Installing the Hotfix</h2>
+                </a>
+            </p>
+            <blockquote>If you don't know how to install a mod that isn't from Nexus, refer to the <a href="./mo2.html#installation_instructions">Mod Installation Instructions</a> section again.</blockquote>
+            <ol>
+                <li>Download and install the <a target="_blank" href="https://github.com/ModdingLinked/The-Best-of-Times/raw/master/files/TTWHotfix.zip">TTW 3.3.2a Hotfix</a> manually in MO2.</li>
+                <li>Make sure it is ordered below <strong>Tale of Two Wastelands</strong> and enable its checkbox.</li>
             </ol>
         </div>
 
@@ -207,6 +224,9 @@
             </li>
             <li>
                 <a href="#activatingTTW">Activation</a>
+            </li>
+            <li>
+                <a href="#hotfixes">Installing the Hotfix</a>
             </li>
         </ul>
     </div>
