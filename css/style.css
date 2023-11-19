@@ -36,7 +36,7 @@ body {
   font-weight: 400;
   line-height: 1.25em;
   font-family: arial, helvetica, sans-serif;
-  color: rgb(220, 220, 220);
+  color: #ffffff;
   background-color: rgb(64, 64, 64);
   font-size: 0.75em;
 }
@@ -159,7 +159,7 @@ img {
 
 .section ul,
 .section ol {
-  color: #DCDCDC;
+  color: #ffffff;
   line-height: 2em;
 }
 
@@ -172,7 +172,7 @@ img {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  color: rgb(220, 220, 220);
+  color: #ffffff;
   font-size: 2.2em;
   line-height: 2em;
   text-decoration: none;
@@ -190,7 +190,7 @@ img {
 }
 
 .welcomeContent h1 {
-  color: #DCDCDC;
+  color: #ffffff;
   font-size: 1.8em;
   word-wrap: break-word;
   text-align: center;
@@ -201,7 +201,7 @@ img {
 }
 
 .welcomeContent .welcomeButton {
-  color: rgb(220, 220, 220);
+  color: #ffffff;
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
@@ -212,12 +212,12 @@ img {
   border-radius: 12pt;
   text-shadow: none;
   box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.6);
-  text-align: center;
   z-index: 1;
+  text-align: center;
 }
 
 .welcomeContent .welcomeButtonYT {
-  color: rgb(220, 220, 220);
+  color: #ffffff;
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
@@ -247,7 +247,7 @@ img {
 
 .welcomeContent .welcomeButtonYT:hover {
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgb(200, 0, 0);
+  background-color: #960f2a;
   box-shadow: 0em 0em 0.6em rgba(64, 8, 8, 0.37);
 }
 
@@ -305,7 +305,7 @@ img {
 }
 
 .titlecontainer .guideLinks a {
-  color: rgb(220, 220, 220);
+  color: #ffffff;
   font-size: 1.2em;
   margin-top: 0.75em;
 }
@@ -459,7 +459,7 @@ h1 {
 }
 
 h2 {
-  color: #DCDCDC;
+  color: #ffffff;
   font-size: 1.8em;
   word-wrap: break-word;
 }
@@ -467,38 +467,6 @@ h2 {
 .install {
   color: #23da71;
   font-size: 1.5em;
-}
-
-.optional::after {
-  display: inline-flex;
-  position: absolute;
-  transform: translateY(-0.4em);
-  content: "Optional";
-  text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.15em 6pt hsla(0, 0%, 0%, 0.3);
-  color: #fada78;
-  background-image: linear-gradient(to top, hsl(45, 93%, 12.5%), hsl(45, 93%, 15%));
-  border: 2pt solid hsl(45, 93%, 25%);
-  border-radius: 12pt;
-  font-size: 0.7em;
-  padding: 0.25em 0.5em 0.25em 0.5em;
-  margin-left: 1em;
-}
-
-.performance::after {
-  display: inline-flex;
-  position: absolute;
-  transform: translateY(-0.4em);
-  content: "Performance Hit";
-  text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.15em 6pt hsla(0, 0%, 0%, 0.3);
-  color: #d16759;
-  background-image: linear-gradient(to top, hsl(7, 57%, 12.5%), hsl(7, 57%, 18%));
-  border: 2pt solid hsl(7, 57%, 25%);
-  border-radius: 12pt;
-  font-size: 0.7em;
-  padding: 0.25em 0.5em 0.25em 0.5em;
-  margin-left: 1em;
 }
 
 #footer {

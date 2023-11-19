@@ -6,43 +6,43 @@
 		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/intro.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2023-08-23</lastmod>
-	</url>
-	<url>
 		<loc>https://thebestoftimes.moddinglinked.com/index.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/changelog.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-11-05</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/finish.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-26</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/essentials.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-10-14</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/ttw.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-11-05</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/mo2.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-26</lastmod>
+		<loc>https://thebestoftimes.moddinglinked.com/intro.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2023-11-19</lastmod>
 	</url>
 	<url>
 		<loc>https://thebestoftimes.moddinglinked.com/setup.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2023-07-26</lastmod>
+		<lastmod>2023-11-19</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/mo2.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-11-19</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/ttw.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-11-19</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/essentials.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-11-19</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/finish.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-11-19</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/changelog.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-11-19</lastmod>
 	</url>
 </urlset>
