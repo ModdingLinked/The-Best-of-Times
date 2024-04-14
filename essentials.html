@@ -131,6 +131,10 @@
         <div class="section">
             <h1>Essential Mods</h1>
 
+            <h3>In this step, we will install mods that are required by the game and Tale of Two Wastelands to function properly</h3>
+
+            <hr>
+
             <!-- EGS Patcher -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/newvegas/mods/81281" target="_blank">
@@ -162,11 +166,13 @@
             <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
             <blockquote>Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote>
             An updated version of the original NVSE, which extends the scripting capabilities of the game.
-            <blockquote>
-                After proper install, your <strong>Root Folder</strong> should look like this:
-                <br>
-                <img src="./img/root.webp" alt="Screenshot of the root folder showcasing correct xNVSE install" id="xnvseRoot">
-            </blockquote>
+            <ol start="3">
+                <li>
+                    After proper install, your <strong>Root Folder</strong> should look like this:
+                    <br>
+                    <img src="./img/root.webp" alt="Screenshot of the root folder showcasing correct xNVSE install" id="xnvseRoot">
+                </li>
+            </ol>
 
             <!-- 4GB Patch -->
             <p>
@@ -550,46 +556,49 @@ fLightEffectFadeDuration=400</textarea>
             <!-- Testing -->
             <p>
                 <a href="#testing">
-                    <h2 id="testing">Testing Essential Mods</h2>
+                    <h2 id="testing">Testing Utilities</h2>
                 </a>
             </p>
             <ol>
-                <li>Restart your PC (otherwise some plugins will print out 0).</li>
-                <li>Launch the game using the <strong>Tale of Two Wastelands</strong> option in MO2 (not the <strong>NVSE</strong> option).</li>
-                <img src="./img/run ttw.webp" alt="Run Tale of Two Wastelands through MO2">
+                <li>Restart your PC (otherwise some plugins may fail to load).</li>
+                <li>Launch the game using the <strong>New Vegas</strong> option in MO2 (not the <strong>NVSE</strong> option).</li>
+                <img src="./img/Launch/Game.webp" alt="Run New Vegas through MO2" class="width-very-limited">
                 <li>If you see a black console window appear, it means <strong>NVHR</strong> is working.</li>
                 <ul>
-                    <li>If not, <a href="./essentials.html#heap">NVHR</a> is installed incorrectly.</li>
+                    <li>If not, <a href="./utilities.html#heap">NVHR</a> is installed incorrectly.</li>
                 </ul>
-                <li>Once the game has reached the main menu, hit the <code>~</code> key (above the tab key) to open the console.</li>
+                <li>Once the game has reached the main menu, hit the <code>~</code> key (above the tab key) to open the console. Don't start a new game.</li>
                 <ul>
                     <li>You will need to unplug/disconnect any controllers to be able to use the keyboard.</li>
                 </ul>
                 <li>Enter <code>GetNVSEVersion</code> and the console should print <code>NVSE version: 6</code></li>
                 <ul>
-                    <li>If not, <a href="./essentials.html#xnvse">xNVSE</a> is installed incorrectly.</li>
+                    <li>If not, <a href="./utilities.html#xnvse">xNVSE</a> is installed incorrectly.</li>
                 </ul>
                 <li>Next, enter <code>GetIsLAA</code> and the console should print <code>GetIsLAA >> 2</code></li>
                 <ul>
-                    <li>If it prints <code>>> 0</code>, then the <a href="./essentials.html#4gbPatcher">4GB Patch</a> was applied incorrectly.</li>
-                    <li>If it prints an error message, then <a href="./essentials.html#jip">JIP LN NVSE</a> is installed incorrectly.</li>
+                    <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html#4gbPatcher">4GB Patch</a> was applied incorrectly.</li>
+                    <li>If it prints an error message, then <a href="./utilities.html#jip">JIP LN NVSE</a> is installed incorrectly.</li>
                 </ul>
                 <li>Next, enter <code>GetINISetting "iNumHWThreads:General"</code> and the console should print <code>INISetting iNumHWThreads:General >> 3</code></li>
                 <ul>
-                    <li>If not, then the <a href="./essentials.html#customIni" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly.</li>
+                    <li>If not, then the <a href="./utilities.html#customIni">Tweaking FalloutCustom.ini</a> step was done incorrectly.</li>
                 </ul>
                 <li>Next, enter <code>IsDLLLoaded CrashLogger</code> and the console should print <code>IsDLLLoaded "CrashLogger.dll" >> 1</code></li>
                 <ul>
-                    <li>If not, then <a href="./essentials.html#cobb">Crash Logger</a> is installed incorrectly.</li>
+                    <li>If not, then <a href="./utilities.html#crashLog">Crash Logger</a> is installed incorrectly.</li>
                 </ul>
                 <li>Next, enter <code>IsDLLLoaded NVTF</code> and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code></li>
                 <ul>
-                    <li>If not, then <a href="./essentials.html#nvtf">NVTF</a> is installed incorrectly.</li>
+                    <li>If not, then <a href="./utilities.html#nvtf">NVTF</a> is installed incorrectly.</li>
                 </ul>
                 <li>Lastly, enter <code>IsDLLLoaded mlf</code> and the console should print <code>IsDLLLoaded "mlf.dll" >> 1</code></li>
                 <ul>
-                    <li>If not, then <a href="./essentials.html#limitFix">Mod Limit Fix</a> is installed incorrectly.</li>
+                    <li>If not, then <a href="./utilities.html#limitFix">Mod Limit Fix</a> is installed incorrectly.</li>
                 </ul>
+                <li>
+                    Close the game.
+                </li>
             </ol>
         </div>
 
