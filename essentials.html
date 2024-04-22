@@ -143,13 +143,17 @@
             </p>
             <blockquote>You obviously need to skip this mod if you have the Steam or GOG version of the game.</blockquote>
             <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Epic Games Patcher</b> (Manual download).</li>
-                <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
-                <li>Double-click on <strong>Patcher.exe</strong> to run it.</li>
-                <li>A command prompt window will open and after processing it should say <b>Press any key to continue...</b></li>
-                <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
-            </ol>
+            <ul>
+                <li>
+                    <b>Main Files - Epic Games Patcher</b> (Manual download).
+                    <ol>
+                        <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                        <li>Double-click on <strong>Patcher.exe</strong> to run it.</li>
+                        <li>A command prompt window will open and after processing it should say <b>Press any key to continue...</b></li>
+                        <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
+                    </ol>
+                </li>
+            </ul>
             Downgrades the Epic Games EXE for xNVSE and mod support.
 
             <!-- xNVSE -->
@@ -159,20 +163,22 @@
                 </a>
             </p>
             <h2 class="install">Installation instructions:</h2>
-            <ol>
+            <ul>
                 <li><b>Main Files - New Vegas Script Extender (xNVSE)</b> (Manual download).</li>
-                <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
-            </ol>
-            <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
-            <blockquote>Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote>
+                <ol>
+                    <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                </ol>
+                <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
+                <blockquote>Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote>
+                <ol start="2">
+                    <li>
+                        After proper install, your <strong>Root Folder</strong> should look like this:
+                        <br>
+                        <img src="./img/root.webp" alt="Screenshot of the root folder showcasing correct xNVSE install" id="xnvseRoot">
+                    </li>
+                </ol>
+            </ul>
             An updated version of the original NVSE, which extends the scripting capabilities of the game.
-            <ol start="3">
-                <li>
-                    After proper install, your <strong>Root Folder</strong> should look like this:
-                    <br>
-                    <img src="./img/root.webp" alt="Screenshot of the root folder showcasing correct xNVSE install" id="xnvseRoot">
-                </li>
-            </ol>
 
             <!-- 4GB Patch -->
             <p>
@@ -186,13 +192,17 @@
                 Epic Games Store users already have this patch thanks to the Epic Games Patcher used before, so they can skip this.
             </blockquote>
             <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - 4GB Patcher</b> (Manual download).</li>
-                <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder.</li>
-                <li>Double-click on <strong>FNVpatch.exe</strong> to run it.</li>
-                <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
-                <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
-            </ol>
+            <ul>
+                <li>
+                    <b>Main Files - 4GB Patcher</b> (Manual download).
+                    <ol>
+                        <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder.</li>
+                        <li>Double-click on <strong>FNVpatch.exe</strong> to run it.</li>
+                        <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
+                        <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
+                    </ol>
+                </li>
+            </ul>
             Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB.
             <blockquote>From now on, you should run the game through the <strong>Tale of Two Wastelands</strong> option in MO2, rather than the <strong>NVSE</strong> option. This mod makes the game auto-load NVSE when you run the game through the default executable, which is generally the safer option.</blockquote>
 
@@ -203,10 +213,14 @@
                 </a>
             </p>
             <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - NVHR</b> (Manual download).</li>
-                <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
-            </ol>
+            <ul>
+                <li>
+                    <b>Main Files - NVHR</b> (Manual download).
+                    <ul>
+                        <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                    </ul>
+                </li>
+            </ul>
             Replaces the game's heap management system with a much faster version, which can lead to large performance gains.
 
             <br>
@@ -228,7 +242,7 @@
             <h2 class="install">Installation instructions:</h2>
             <ul>
                 <li><b>Main Files - ROOGNVSE</b></li>
-                <li>If you see a pop-up called <strong>No category found</strong>, select <strong>Disable</strong>.</li>
+                <blockquote>If you see a pop-up called <strong>No category found</strong>, select <strong>Disable</strong>.</blockquote>
             </ul>
             xNVSE plugin fixing bugs & adding new functions; hard requirement for TTW.
             <blockquote>This is the first mod in the guide that is installed with the <strong>Mod Manager Download</strong> button, you will need to click that button then head to the <strong>Downloads</strong> section of Mod Organizer 2 to install it. Once installed, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
@@ -279,15 +293,20 @@
             <h2 class="install">Installation instructions:</h2>
             <ul>
                 <li><b>Main Files - NVTF</b></li>
-                <li><a class="link" href="https://www.nexusmods.com/newvegas/mods/81231" target="_blank">Viva Default Preset</a></li>
+                <li><b><a class="link" href="https://www.nexusmods.com/newvegas/mods/81231" target="_blank">NVTF - INI Presets</a></b>
+                    <ul>
+                        <li><b>Main Files - Viva Default Preset</b></li>
+                    </ul>
+                    <blockquote>
+                        <b>IMPORTANT:</b>
+                        <br>
+                        If you are planning to install texture mods, use <b>Texture Modding Preset</b> instead!
+                        <br>
+                        Warning: Alt-Tab will be non functional when using this preset - make sure to follow <b>Performance and Stability Guide</b> in the next section for a fix.
+                    </blockquote>
+                </li>
             </ul>
-            <blockquote>
-                <b>IMPORTANT:</b>
-                <br>
-                If you are planning to install texture mods, use <b>Texture Modding Preset</b> instead!
-                <br>
-                Warning: Alt-Tab will be non functional when using this preset - make sure to follow <b>Performance and Stability Guide</b> later below for a fix.
-            </blockquote>
+
             Fixes micro-stuttering, performance and allows playing at higher framerates (up to a safe maximum of 120).
 
             <!-- Tweaks -->
