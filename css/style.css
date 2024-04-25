@@ -688,14 +688,6 @@ h2 {
 }
 
 /* Setup Expanders */
-.width-limited {
-  max-width: 90%;
-}
-
-.width-very-limited {
-  max-width: 70%;
-}
-
 @keyframes slide-up {
   from {
     max-height: 1000px;
