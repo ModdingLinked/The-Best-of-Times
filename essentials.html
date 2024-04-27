@@ -493,6 +493,12 @@
                 </ul>
                 <li>Paste in the following:</li>
                 <textarea readonly="readonly" style="height: 51.5em; width: 95%;" onclick="this.focus();this.select()">
+; Value types (prefixes):
+; i = integer (whole number)
+; f = float (decimal number)
+; s = string (text)
+; b = boolean (0 = Off, 1 = On)
+
 [Audio]
 ; Enables additional worker thread for minor performance improvement
 bMultiThreadAudio=1
@@ -524,11 +530,11 @@ fForegroundMouseMult=0
 ; Refer to the Performance Guide for more info
 bFull Screen=1
 
-; V-Sync control (the Launcher setting doesn't work)
-; 0 = Off, 1 = On
+; Use this for V-Sync control (the Launcher setting doesn't work)
+; 0 = Off, 1 = On, Higher values toggle fractional V-Sync (not recommended, very laggy and disables Variable Refresh Rate)
 iPresentInterval=1
 
-; Forces highest texture quality so the game won't crash if you had it set to anything lower
+; Forces highest texture quality so textures won't break if you had it set to anything lower
 iTexMipMapSkip=0
 
 ; Disables actor shadows due to their low visual impact and high performance cost
@@ -536,9 +542,9 @@ bDrawShadows=0
 iActorShadowCountInt=0
 iActorShadowCountExt=0
 
-; World FOV
+; Camera FOV
 fDefaultWorldFOV=75.0000
-; 1st person FOV
+; Viewmodel FOV
 fDefault1stPersonFOV=55.0000
 ; Pip-Boy and terminal FOV
 fPipboy1stPersonFOV=47.0
@@ -547,8 +553,8 @@ fPipboy1stPersonFOV=47.0
 ; Forces faster cell unload to lessen memory usage
 bPreemptivelyUnloadCells=1
 
-; Enables multithreaded AI
-; Values above 3 don't change anything
+; Spreads AI and game logic updates across 2 threads for better performance
+; Values above 3 don't change anything, and the setting has nothing to do with the number of CPU cores
 iNumHWThreads=3
 
 ; Tale of Two Wastelands specific

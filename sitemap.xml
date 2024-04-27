@@ -6,34 +6,19 @@
 		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/index.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2023-04-08</lastmod>
-	</url>
-	<url>
 		<loc>https://thebestoftimes.moddinglinked.com/intro.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2024-04-23</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/setup.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-04-25</lastmod>
+		<loc>https://thebestoftimes.moddinglinked.com/index.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/mo2.html</loc>
+		<loc>https://thebestoftimes.moddinglinked.com/changelog.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2024-04-25</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/ttw.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-04-22</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/essentials.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-04-26</lastmod>
+		<lastmod>2024-02-01</lastmod>
 	</url>
 	<url>
 		<loc>https://thebestoftimes.moddinglinked.com/finish.html</loc>
@@ -41,8 +26,23 @@
 		<lastmod>2024-04-14</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/changelog.html</loc>
+		<loc>https://thebestoftimes.moddinglinked.com/essentials.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2024-02-01</lastmod>
+		<lastmod>2024-04-27</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/ttw.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2024-04-22</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/mo2.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2024-04-25</lastmod>
+	</url>
+	<url>
+		<loc>https://thebestoftimes.moddinglinked.com/setup.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2024-04-25</lastmod>
 	</url>
 </urlset>
