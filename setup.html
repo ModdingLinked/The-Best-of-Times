@@ -113,7 +113,7 @@
                 <li class="kofi">
                     <a href="https://ko-fi.com/wall_sogb" target="_blank">
                         <i class="fa fa-coffee"></i>
-                        Support us
+                        Donate
                     </a>
                 </li>
                 <li class="github">
@@ -133,11 +133,6 @@
         <div class="section">
             <h1>Setup</h1>
             <h3>In this step, we will do a clean installation and configuration of the game, which is required for the guide.</h3>
-            <blockquote>
-                If you run into any issues at any point in the guide, please be sure to check the <a href="https://taleoftwowastelands.com/faq" target="_blank">FAQ</a>.
-                <br>
-                If your issue is not addressed there, join the <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
-            </blockquote>
 
             <hr>
 
@@ -152,26 +147,44 @@
             By default, File Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable visible file extensions:
             <ol>
                 <li>Open File Explorer.</li>
-                <li>Select the <strong>View</strong> tab at the top.</li>
-                <li>Enable <strong>File name extensions</strong> in the <strong>Show</strong> section.</li>
+                <li>Select the <b>View</b> tab at the top.</li>
+                <li>Enable <strong>File name extensions</strong> in the <b>Show</b> section.</li>
                 <img src="./img/show file extensions.webp" alt="Show file extensions" class="width-very-limited">
             </ol>
+
+            <!-- Key Terminology -->
+            <p>
+                <a href="#terms">
+                    <h3 id="terms">Key Terminology</h3>
+                </a>
+            </p>
+            Now that the game is installed, there are two folders from it that will be referred to in the guide often:
+            <ul>
+                <li><strong>Root</strong> folder: Where the game is installed.</li>
+                <ul>
+                    <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas</code></li>
+                    <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas</code> (unless you manually changed the installation path).</li>
+                    <li>For Epic Games: <code>Epic Games\FalloutNewVegas\Fallout New Vegas English</code> (unless you manually changed the installation path).</li>
+                </ul>
+                <li><strong>Data</strong> folder: Where all of the game's assets are located.</li>
+                <ul>
+                    <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas\Data</code></li>
+                    <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas\Data</code></li>
+                    <li>For GOG: <code>Epic Games\FalloutNewVegas\Fallout New Vegas English\Data</code></li>
+                </ul>
+            </ul>
 
             <!-- Recommended Location -->
             <p>
                 <a href="#location">
-                    <h2 id="location">Install Location</h2>
+                    <h2 id="location">Choosing a Location</h2>
                 </a>
             </p>
             A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location. Here is what you need to know when choosing where to install your game:
             <br>
             <ul>
                 <li>
-                    <b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code> and your <code>Documents</code> folders.
-                    <br>
-                    This is because users lack write access to Program Files, while Desktop and Documents are often managed by OneDrive. This can cause many issues with the game and any modding tools.
-                    <br>
-                    An example of a safe location is <code>C:\Games</code>
+                    <b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code> and your <code>Documents</code> folders. This is because users lack write access to Program Files, while Desktop and Documents are often managed by OneDrive. This can cause many issues with the game and any modding tools. An example of a safe location is <code>C:\Games</code>
                 </li>
                 <li>
                     <b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve loading times and decrease stuttering.
@@ -179,13 +192,15 @@
                 <li><b>Fallout 3 Installation:</b> Fallout 3 only needs to be installed for running the TTW installer, and can be uninstalled after the installer completes. It still needs to be installed outside of any default Windows folder as outlined above.</li>
             </ul>
 
+            <hr>
+
             <!-- Uninstall -->
             <p>
                 <a href="#uninstall">
                     <h2 id="uninstall">Uninstalling the Games</h2>
                 </a>
             </p>
-            <blockquote>If you never installed the games before, skip this section.</blockquote>
+            <blockquote>If you never installed the games before, go directly to the install section.</blockquote>
             As the games are available on Steam, GOG, and Epic Games, there are separate instructions for each version. You obviously only need to follow the directions for the versions you have.
 
             <div class="expander-top colors-steam clickable width-very-limited" onclick="expandCard(this, uninstallSteamExpander)" id="uninstallSteam">
@@ -263,8 +278,6 @@
             <br>
             <br>
 
-            <hr>
-
             <!-- Install -->
             <p>
                 <a href="#install">
@@ -285,7 +298,7 @@
                 </blockquote>
                 <ol>
                     <li>Completely exit out of Steam using Task Manager or System Tray.</li>
-                    <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a>.</li>
+                    <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases" target="_blank">here</a>.</li>
                     <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
                     <li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
                     <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
@@ -365,34 +378,14 @@
             <br>
             <br>
 
+            <hr>
+
             <!-- Post-Installation -->
             <p>
                 <a href="#postInstall">
                     <h2 id="postInstall">Post-Installation</h2>
                 </a>
             </p>
-
-            <!-- Key Terminology -->
-            <p>
-                <a href="#terms">
-                    <h3 id="terms">Key Terminology</h3>
-                </a>
-            </p>
-            Now that the game is installed, there are two folders from it that will be referred to in the guide often:
-            <ul>
-                <li><b>Root</b> folder: Where the game is installed.</li>
-                <ul>
-                    <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas</code></li>
-                    <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas</code> (unless you manually changed the installation path).</li>
-                    <li>For Epic Games: <code>Epic Games\FalloutNewVegas\Fallout New Vegas English</code> (unless you manually changed the installation path).</li>
-                </ul>
-                <li><b>Data</b> folder: Where all of the game's assets are located.</li>
-                <ul>
-                    <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas\Data</code></li>
-                    <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas\Data</code></li>
-                    <li>For GOG: <code>Epic Games\FalloutNewVegas\Fallout New Vegas English\Data</code></li>
-                </ul>
-            </ul>
 
             <!-- INI Files -->
             <p>
@@ -433,6 +426,9 @@
         <ul>
             <li>
                 <a href="#fileExtensions">File Extensions</a>
+            </li>
+            <li>
+                <a href="#terms">Key Terms</a>
             </li>
             <li>
                 <a href="#location">Install Location</a>
