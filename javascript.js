@@ -19,8 +19,11 @@ document.addEventListener('keydown', (e) => {
 });
 
 function sizeChanged() {
-    if (document.documentElement.clientWidth > 760) {
-        document.getElementsByClassName("left-sidebar")[0].style.width = "";
+    var sidebar = document.getElementsByClassName("left-sidebar");
+    if (sidebar && sidebar.length > 0) {
+        if (document.documentElement.clientWidth > 760) {
+            document.getElementsByClassName("left-sidebar")[0].style.width = "";
+        }
     }
 }
 function toggleNav() {
@@ -164,11 +167,17 @@ function createRightSidebar() {
 };
 
 function markActivePage() {
-    const currentPage = "./" + window.location.pathname.split("/").pop();
-
     const leftSidebar = document.querySelector(".pageLinks");
 
+    if (!leftSidebar)
+        return;
+
     const sidebarLinks = leftSidebar.querySelectorAll(".sidebar a");
+
+    if (!sidebarLinks)
+        return;
+
+    const currentPage = "./" + window.location.pathname.split("/").pop();
 
     let currentIndex = -1;
 
@@ -216,9 +225,16 @@ function markActivePage() {
 }
 
 function createImageHandlers() {
-    const images = document.querySelectorAll('.content-img');
+
     const overlay = document.getElementById('image-overlay');
     const enlargedImage = document.getElementById('enlarged-image');
+
+    if (!enlargedImage || !overlay)
+        return;
+
+    const images = document.querySelectorAll('.content-img');
+    if (!images)
+        return;
 
     images.forEach(image => {
         image.addEventListener('click', function () {
