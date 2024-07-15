@@ -1,48 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/</loc>
-		<priority>1.00</priority>
-		<lastmod>2023-04-08</lastmod>
+		<loc>https://www.thebestoftimes.moddinglinked.com/essentials.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2024-07-15</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/index.html</loc>
+		<loc>https://www.thebestoftimes.moddinglinked.com/intro.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2024-07-15</lastmod>
+	</url>
+	<url>
+		<loc>https://www.thebestoftimes.moddinglinked.com/ttw.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2023-04-08</lastmod>
+		<lastmod>2024-07-15</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/intro.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2024-06-28</lastmod>
+		<loc>https://www.thebestoftimes.moddinglinked.com/mo2.html</loc>
+		<priority>0.70</priority>
+		<lastmod>2024-07-15</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/setup.html</loc>
-		<priority>0.64</priority>
+		<loc>https://www.thebestoftimes.moddinglinked.com/ttwintro.html</loc>
+		<priority>0.50</priority>
 		<lastmod>2024-06-17</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/mo2.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-06-17</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/ttw.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-06-17</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/essentials.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-06-28</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/finish.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-06-17</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/changelog.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-06-17</lastmod>
+		<loc>https://www.thebestoftimes.moddinglinked.com/setup.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-15</lastmod>
 	</url>
 </urlset>

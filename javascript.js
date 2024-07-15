@@ -1,4 +1,13 @@
+var menuIsOpen = false;
+
 window.addEventListener('resize', sizeChanged);
+document.addEventListener('DOMContentLoaded', function () {
+    updateProgressBarAndFadeIn();
+    createRightSidebar();
+    createImageHandlers();
+    markActivePage();
+});
+window.onscroll = updateProgressBarAndFadeIn;
 
 document.addEventListener('keydown', (e) => {
     if (e.code === "ArrowRight") {
@@ -9,70 +18,22 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-function closeAllDonoMenus() {
-    var items = document.getElementsByClassName("donoMenu");
-    for (var i = 0; i < items.length; i++) {
-        if (items[i].style.display == "block") {
-            items[i].style.display = "none";
-        }
-    }
-}
-
 function sizeChanged() {
     if (document.documentElement.clientWidth > 760) {
-        document.getElementById("sideButton").style.marginLeft = "";
-        document.getElementById("sidenavLeft").style.width = "";
-        closeAllDonoMenus();
+        document.getElementsByClassName("left-sidebar")[0].style.width = "";
     }
 }
-
 function toggleNav() {
-    if (document.getElementById("sidenavLeft").style.width == 0) {
-        document.getElementById('sideButton').classList.add('pressed');
-        document.getElementById("sidenavLeft").style.width = "21.5em";
+    var sidbear = document.getElementsByClassName("sidebar left-sidebar")[0];
+    if (sidbear.style.width == 0) {
+        sidbear.style.width = "75%";
+        globalThis.menuIsOpen = true;
     }
     else {
-        document.getElementById("sidenavLeft").style.width = "";
-        document.getElementById('sideButton').classList.remove('pressed');
-        closeAllDonoMenus();
+        sidbear.style.width = "";
+        globalThis.menuIsOpen = false;
     }
 }
-
-function titleGlow(enable) {
-    if (enable) {
-        document.getElementById("title").classList.add("glow");
-        document.getElementById("backdrop").classList.add("blur");
-    }
-    else {
-        document.getElementById("title").classList.remove("glow");
-        document.getElementById("backdrop").classList.remove("blur");
-    }
-}
-
-function handleButtonClick(event, element) {
-    event.stopPropagation();
-
-    toggleDonationMenu(element);
-}
-
-function toggleDonationMenu(element) {
-    closeAllDonoMenus();
-    if (element.style.display == "none") {
-        element.style.display = "block";
-
-        // Close the popup after 20 seconds
-        setTimeout(function() {
-            element.style.display = "none";
-        }, 20000);
-    }
-    else {
-        element.style.display = "none";
-    }
-}
-
-document.addEventListener('click', function(event) {
-    closeAllDonoMenus();
-});
 
 function fadeOut(element) {
     element.style.opacity = "0%";
@@ -83,17 +44,210 @@ function rotate(element, rotation = 180) {
 }
 
 function expandCard(thisObj, $open, $dontReset) {
-    const chevron = thisObj.getElementsByClassName("expander-info")[0]
+    const chevron = thisObj.getElementsByClassName("chevron")[0]
     if ($open.classList.contains('expander-opened') && !$dontReset) {
-        chevron.textContent = "Show";
+        rotate(chevron, 0)
         $open.classList.remove('expander-opened');
         setTimeout(() => $open.style.display = "none", 400);
         thisObj.classList.remove('active');
     }
     else {
         $open.classList.add('expander-opened');
-        chevron.textContent = "Hide";
+        rotate(chevron, 180);
         $open.style.display = "block";
         thisObj.classList.add('active');
     }
 }
+
+function emToPixels(em) {
+    const baseFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    return em * baseFontSize;
+}
+
+function updateProgressBarAndFadeIn() {
+    var sections = document.getElementsByClassName("section");
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = window.innerHeight;
+
+    if (sections) {
+        for (var i = 0; i < sections.length; i++) {
+            var sectionTop = sections[i].getBoundingClientRect().top;
+            var sectionHeight = sections[i].clientHeight;
+
+            if (sectionTop < height && sectionTop + sectionHeight > 0) {
+                sections[i].classList.add("fade-in");
+            }
+        }
+    }
+
+    var progressBar = document.getElementsByClassName("progress-bar")[0];
+    if (progressBar) {
+        height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scroll = (winScroll / height);
+        var bottomMargin = (height - 25) / height;
+        progressBar.style.width = scroll * 100 + "%";
+    }
+
+    var sidebars = document.getElementsByClassName("sidebar");
+    if (sidebars) {
+        var styleVal = "calc(100vh - 7em)";
+
+        if (document.documentElement.clientHeight > 900 && scroll > bottomMargin) {
+            styleVal = "calc(100vh - 9em)";
+        }
+
+        for (var i = 0; i < sidebars.length; i++) {
+            sidebars[i].style.height = styleVal;
+        }
+    }
+}
+
+function createRightSidebar() {
+    const content = document.getElementsByClassName('content')[0];
+    if (!content)
+        return;
+
+    const sections = content.getElementsByClassName('section');
+    if (!sections)
+        return;
+
+    var sidebarContent = document.getElementById('sidebarContent');
+    if (!sidebarContent)
+        return;
+
+    for (var i = 0; i < sections.length; i++) {
+        var section = sections[i];
+        const headers = section.querySelectorAll('h2');
+        const cards = section.querySelectorAll('.card');
+
+        headers.forEach(header => {
+            if (!header.innerHTML || header.innerHTML.length == 0)
+                return;
+
+            // Create the section div
+            const sectionDiv = document.createElement('div');
+            sidebarContent.appendChild(sectionDiv);
+
+            // Create the header link
+            const bold = document.createElement('b');
+            sectionDiv.appendChild(bold);
+
+            const separator = document.createElement('a');
+            separator.href = `#${section.id}`;
+            separator.textContent = header.innerHTML;
+            bold.appendChild(separator);
+
+            // Create section links
+            cards.forEach(card => {
+                var text;
+                const title = card.getAttribute('title');
+                if (title && title.length > 0) {
+                    text = title;
+                }
+                else {
+                    text = card.id.replace(/([A-Z])/g, ' $1').trim();
+                }
+
+                if (!text || text.length == 0) {
+                    return;
+                }
+
+                const cardId = card.id;
+                const cardLink = document.createElement('a');
+                cardLink.href = `#${cardId}`;
+                cardLink.textContent = text;
+
+                sectionDiv.appendChild(cardLink);
+            })
+        });
+    };
+};
+
+function markActivePage() {
+    const currentPage = "./" + window.location.pathname.split("/").pop();
+
+    const leftSidebar = document.querySelector(".pageLinks");
+
+    const sidebarLinks = leftSidebar.querySelectorAll(".sidebar a");
+
+    let currentIndex = -1;
+
+    // Loop through the links to find the current page index
+    sidebarLinks.forEach((link, index) => {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+            currentIndex = index;
+        }
+    });
+
+    // Set the previous and next links if the current page is found
+    // Otherwise default to the home page
+    const prevLink = document.getElementById("previous");
+    const nextLink = document.getElementById("next");
+    if (currentIndex !== -1) {
+        if (prevLink) {
+            if (currentIndex > 0) {
+                const prevPage = sidebarLinks[currentIndex - 1];
+                prevLink.href = prevPage.getAttribute("href");
+                prevLink.querySelector(".arrowText").textContent = prevPage.textContent.trim();
+            } else {
+                prevLink.style.display = "none";
+            }
+        }
+
+        if (nextLink) {
+            if (currentIndex < sidebarLinks.length - 1) {
+                const nextPage = sidebarLinks[currentIndex + 1];
+                nextLink.href = nextPage.getAttribute("href");
+                nextLink.querySelector(".arrowText").textContent = nextPage.textContent.trim();
+            } else {
+                nextLink.style.display = "none";
+            }
+        }
+    }
+    else if (prevLink) {
+        console.log("Current page not found in sidebar links");
+        const prevPage = sidebarLinks[0];
+        prevLink.href = prevPage.getAttribute("href");
+        prevLink.querySelector(".arrowText").textContent = prevPage.textContent.trim();
+    }
+}
+
+function createImageHandlers() {
+    const images = document.querySelectorAll('.content-img');
+    const overlay = document.getElementById('image-overlay');
+    const enlargedImage = document.getElementById('enlarged-image');
+
+    images.forEach(image => {
+        image.addEventListener('click', function () {
+            overlay.style.display = "flex";
+            enlargedImage.src = this.src;
+        });
+    });
+
+    overlay.addEventListener('click', function () {
+        overlay.style.display = "none";
+        enlargedImage.src = '';
+    });
+}
+
+function isChildOfSidebar(element) {
+    while (element) {
+        if (element.classList && element.classList.contains('sidebar') && element.classList.contains('left-sidebar')) {
+            return true;
+        }
+        element = element.parentElement;
+    }
+    return false;
+}
+
+document.addEventListener('click', function (event) {
+    if (globalThis.menuIsOpen) {
+        const target = event.target;
+        if (target.id != "navButton" && isChildOfSidebar(target) == false) {
+            toggleNav();
+        }
+    }
+});

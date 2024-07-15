@@ -1,0 +1,22 @@
+{
+  "background_color": "#141918",
+  "description": "The official installation guide for Tale of Two Wastelands and all essential mods.",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "The Best of Times",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "The Best of Times",
+  "start_url": "/",
+  "theme_color": "#202524",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "https://thebestoftimes.moddinglinked.com/img/Coco/Logo.webp",
+      "type": "image/webp"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "en"
+}

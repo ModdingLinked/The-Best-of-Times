@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://thebestoftimes.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Changelog | The Best of Times</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands">
     <meta name="description" content="Catalog of all changes made to the guide.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -21,418 +19,471 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thebestoftimes.moddinglinked.com">
     <meta property="og:image" content="https://thebestoftimes.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Catalog of all changes made to the guide.">
+    <meta name="description" content="Catalog of all changes made to the guide.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#202524">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
+<body class="theme dark-scheme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Best of Times</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">The Best of Times</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./ttw.html" title="TTW">
+                    Tale of Two Wastelands
+                </a>
+
+                <a href="./essentials.html" title="Essential Mods">
+                    Essential Mods
+                </a>
+
+                <a href="./finish.html" title="Final Steps">
+                    Final Steps
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="https://vivanewvegas.moddinglinked.com/resources.html" target="_blank" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="https://vivanewvegas.moddinglinked.com/avoid-tools.html" target="_blank" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="https://vivanewvegas.moddinglinked.com/avoid-mods.html" target="_blank" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Best-of-Times" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <!-- Introduction -->
+            <span id="Changelog" class="section">
+                <h2 onclick="location.href='#Changelog'">Changelog (DD/MM/YY)</h2>
+
+                <div class="expander-top clickable" onclick="expandCard(this, year2024expander)" id="year2024">
+                    <p>
+                    <h3>2024</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="year2024expander">
+                    <p>
+                    <h2 class="install">15/7/24</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Improved styling and rewrote a large number of instructions to be clearer.</li>
+                    </ul>
+                    <h2><strong>FAQ</strong></h2>
+                    <ul>
+                        <li>Included the official TTW FAQ with many corrections and additions.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">9/7/24</h2>
+                    <h2><strong>Introduction</strong></h2>
+                    <ul>
+                        <li>Re-added VC++ Runtime Libraries installation steps as a fallback to mysteriously missing libraries from MO2's installer.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">4/6/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Setup</strong></h2>
+                    <ul>
+                        <li>Added steps to disable Base Address Randomization.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">2/6/24</h2>
+                    <h2><strong>Introduction</strong></h2>
+                    <ul>
+                        <li>Removed VC++ Runtime Libraries installation steps, as the Mod Organizer 2 installer now handles it (2.5.1rc2-ML1.3 onwards).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">29/5/24</h2>
+                    <h2><strong>Essentials</strong></h2>
+                    <ul>
+                        <li>Replaced the Stewie Tweaks Essentials INI with Stewie Tweaks - VNV INI.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">29/4/24</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Switched to the MO2 installer over the archive download in order to prevent missing AV exclusions.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, year2023expander)" id="year2023">
+                    <p>
+                    <h3>2023</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="year2023expander">
+                    <p>
+                    <h2 class="install">29/12/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated to Mod Organizer 2.5.1 RC2.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">23/12/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Essentials</strong></h2>
+                    <ul>
+                        <li>Removed Preferred Pathing Combat Fix because of a critical bug.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/12/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Added support for Epic Games copies of Fallout: New Vegas.</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated to Mod Organizer 2.5.1 RC1.</li>
+                        <li>Removed the profile configuration section since it is now a step during instance creation.</li>
+                    </ul>
+                    <h2><strong>Essentials</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Epic Games Patcher</li>
+                                <li>Preferred Pathing Combat Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/11/23</h2>
+                    <h2><strong>TTW</strong></h2>
+                    <ul>
+                        <li>Removed the TTW 3.3.2a hotfix since it is now merged into the second release of 3.3.2a (this hotfix is still available in the repository or through a link, so reinstalling TTW won't be necessary).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">4/11/23</h2>
+                    <h2><strong>TTW</strong></h2>
+                    <ul>
+                        <li>Added the TTW 3.3.2a hotfix (same as what the 3.3.2 hotfix plugin had, all the other fixes are part of the first release of 3.3.2a).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/9/23</h2>
+                    <h2><strong>TTW</strong></h2>
+                    <ul>
+                        <li>Removed the TTW 3.3.2 hotfix (this was still needed for the first release of 3.3.2a).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">30/7/23</h2>
+                    <h2><strong>TTW</strong></h2>
+                    <ul>
+                        <li>Updated the TTW 3.3.2 hotfix (YUPTTW 12.8).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">26/7/23</h2>
+                    <h2><strong>Essentials</strong></h2>
+                    <ul>
+                        <li>Fixed world FOV in the Custom INI.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">23/7/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Switched back to portable instance for consistency with the TBoT video guide and the Wabbajack lists.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/7/23</h2>
+                    <h2><strong>Home</strong></h2>
+                    <ul>
+                        <li>Added a video guide by Cloudisms.</li>
+                    </ul>
+                    <h2><strong>TTW</strong></h2>
+                    <ul>
+                        <li>Updated the TTW 3.3.2 hotfix (YUPTTW 12.7).</li>
+                    </ul>
+                    <h2><strong>Essentials</strong></h2>
+                    <ul>
+                        <li>Removed the ShowOff INI since it is no longer needed.</li>
+                        <li>Added Basic Console Autocomplete.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">27/5/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated to MO2 2.4.5 Alpha 3 version to fix the alphabetic load order issues and bring some QoL features.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">7/5/23</h2>
+                    <h2><strong>Essentials</strong></h2>
+                    <ul>
+                        <li>Added Improved Console.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/4/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added ActorCause Save Bloat Fix.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, year2022expander)" id="year2022">
+                    <p>
+                    <h3>2022</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="year2022expander">
+                    <p>
+                    <h2 class="install">26/11/22</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Recreated the website with the help of Wall_SoGB, it is now responsive.</li>
+                    </ul>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Reformatted and edited a lot of steps and information.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added a performance guide by Wall_SoGB.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/11/22</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Made some visual changes and updated Custom INI.</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Switched to global instance (don't worry about this if you already have the guide installed).</li>
+                    </ul>
+                    <h2><strong>Essentials</strong></h2>
+                    <ul>
+                        <li>Switched to the Nexus release of xNVSE.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">10/7/22</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Updated for 3.3.2.</li>
+                        <li>Removed NVAC.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">12/5/22</h2>
+                    <h2><strong>TTW</strong></h2>
+                    <ul>
+                        <li>Added steps to install the TTW hotfix.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">4/5/22</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Made every mod instruction version agnostic.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added NVAC.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added ShowOff NVSE.</li>
+                        <li>Removed JIP Improved Recipe Menu, it is now part of Stewie Tweaks Essentials INI as a scriptrunner.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Reworded steps for Clarity.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">18/4/22</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added kNVSE.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/4/22</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed OneTweak.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">26/3/22</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added JIP Improved Recipe Menu.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">16/3/22</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Replaced the Stewie Tweaks Custom INI with Stewie Tweaks Essentials INI.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>ISControl</li>
+                                <li>Anniversary Anim Pack</li>
+                                <li>Anniversary Anim Pack - General Bugfix</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">10/3/22</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>ISControl</li>
+                                <li>Anniversary Anim Pack</li>
+                                <li>Anniversary Anim Pack - General Bugfix</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/3/22</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>TTW 3.3 release: total rewrite of guide, do <b>NOT</b> recycle old setups from 3.2 as the INI is very different and the main quest will break among other things!</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./ttw.html">TTW</a>
-                </li>
-                <li>
-                    <a href="./essentials.html">Essential Mods</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Final Steps</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html" class="active">Changelog</a>
-                </li>
-                <li>
-                    <a href="https://taleoftwowastelands.com/faq" target="_blank">FAQ</a>
-                </li>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com/avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com/avoid-mods.html">Mods to Avoid</a>
-                </li>
-            </ul>
-        </div>
+    <footer>ModdingLinked 2024</footer>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Best-of-Times" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Changelog</h1>
-            <h2>Time formatted in DD/MM/YY</h2>
-
-            <hr>
-
-            <!-- Post below this comment -->
-
-            <h2 class="install">9/7/24</h2>
-            <h2><strong>Introduction</strong></h2>
-            <ul>
-                <li>Re-added VC++ Runtime Libraries installation steps as a fallback to mysteriously missing libraries from MO2's installer.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">4/6/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Setup</strong></h2>
-            <ul>
-                <li>Added steps to disable Base Address Randomization.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">2/6/24</h2>
-            <h2><strong>Introduction</strong></h2>
-            <ul>
-                <li>Removed VC++ Runtime Libraries installation steps, as the Mod Organizer 2 installer now handles it (2.5.1rc2-ML1.3 onwards).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">29/5/24</h2>
-            <h2><strong>Essentials</strong></h2>
-            <ul>
-                <li>Replaced the Stewie Tweaks Essentials INI with Stewie Tweaks - VNV INI.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">29/4/24</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Switched to the MO2 installer over the archive download in order to prevent missing AV exclusions.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">29/12/23</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Updated to Mod Organizer 2.5.1 RC2.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">23/12/23</h2>
-            <h3>Safe Mid-game</h3>
-            <h2><strong>Essentials</strong></h2>
-            <ul>
-                <li>Removed Preferred Pathing Combat Fix because of a critical bug.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">22/12/23</h2>
-            <h3>Safe Mid-game</h3>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Added support for Epic Games copies of Fallout: New Vegas.</li>
-            </ul>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Updated to Mod Organizer 2.5.1 RC1.</li>
-                <li>Removed the profile configuration section since it is now a step during instance creation.</li>
-            </ul>
-            <h2><strong>Essentials</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Epic Games Patcher</li>
-                        <li>Preferred Pathing Combat Fix</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">5/11/23</h2>
-            <h2><strong>TTW</strong></h2>
-            <ul>
-                <li>Removed the TTW 3.3.2a hotfix since it is now merged into the second release of 3.3.2a (this hotfix is still available in the repository or through a link, so reinstalling TTW won't be necessary).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">4/11/23</h2>
-            <h2><strong>TTW</strong></h2>
-            <ul>
-                <li>Added the TTW 3.3.2a hotfix (same as what the 3.3.2 hotfix plugin had, all the other fixes are part of the first release of 3.3.2a).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">6/9/23</h2>
-            <h2><strong>TTW</strong></h2>
-            <ul>
-                <li>Removed the TTW 3.3.2 hotfix (this was still needed for the first release of 3.3.2a).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">30/7/23</h2>
-            <h2><strong>TTW</strong></h2>
-            <ul>
-                <li>Updated the TTW 3.3.2 hotfix (YUPTTW 12.8).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">26/7/23</h2>
-            <h2><strong>Essentials</strong></h2>
-            <ul>
-                <li>Fixed world FOV in the Custom INI.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">23/7/23</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Switched back to portable instance for consistency with the TBoT video guide and the Wabbajack lists.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">15/7/23</h2>
-            <h2><strong>Home</strong></h2>
-            <ul>
-                <li>Added a video guide by Cloudisms.</li>
-            </ul>
-            <h2><strong>TTW</strong></h2>
-            <ul>
-                <li>Updated the TTW 3.3.2 hotfix (YUPTTW 12.7).</li>
-            </ul>
-            <h2><strong>Essentials</strong></h2>
-            <ul>
-                <li>Removed the ShowOff INI since it is no longer needed.</li>
-                <li>Added Basic Console Autocomplete.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">27/5/23</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Updated to MO2 2.4.5 Alpha 3 version to fix the alphabetic load order issues and bring some QoL features.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">7/5/23</h2>
-            <h2><strong>Essentials</strong></h2>
-            <ul>
-                <li>Added Improved Console.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">5/4/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added ActorCause Save Bloat Fix.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">26/11/22</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Recreated the website with the help of Wall_SoGB, it is now responsive.</li>
-            </ul>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Reformatted and edited a lot of steps and information.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added a performance guide by Wall_SoGB.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">15/11/22</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Made some visual changes and updated Custom INI.</li>
-            </ul>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Switched to global instance (don't worry about this if you already have the guide installed).</li>
-            </ul>
-            <h2><strong>Essentials</strong></h2>
-            <ul>
-                <li>Switched to the Nexus release of xNVSE.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">10/7/22</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Updated for 3.3.2.</li>
-                <li>Removed NVAC.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">12/5/22</h2>
-            <h2><strong>TTW</strong></h2>
-            <ul>
-                <li>Added steps to install the TTW hotfix.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">4/5/22</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Made every mod instruction version agnostic.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added NVAC.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added ShowOff NVSE.</li>
-                <li>Removed JIP Improved Recipe Menu, it is now part of Stewie Tweaks Essentials INI as a scriptrunner.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Reworded steps for Clarity.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">18/4/22</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added kNVSE.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">15/4/22</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Removed OneTweak.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">26/3/22</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added JIP Improved Recipe Menu.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">16/3/22</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Replaced the Stewie Tweaks Custom INI with Stewie Tweaks Essentials INI.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Removed the following mods:
-                    <ul>
-                        <li>ISControl</li>
-                        <li>Anniversary Anim Pack</li>
-                        <li>Anniversary Anim Pack - General Bugfix</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">10/3/22</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>ISControl</li>
-                        <li>Anniversary Anim Pack</li>
-                        <li>Anniversary Anim Pack - General Bugfix</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">5/3/22</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>TTW 3.3 release: total rewrite of guide, do <h2><strong>NOT</strong></h2> recycle old setups from 3.2 as the INI is very different and the main quest will break among other things!</li>
-            </ul>
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 </body>

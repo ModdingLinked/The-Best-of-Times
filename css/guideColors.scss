@@ -1,0 +1,68 @@
+
+/* h1 {
+    color: cyan;
+} */
+
+/* h2 {
+    color: rgba(148, 255, 196, 0.9);
+} */
+
+/* h3 {
+    color: hsla(147, 100%, 65%, 0.9);
+} */
+
+strong {
+    color: #57FFA2E6;
+}
+
+/* b {
+    color: rgba(26, 255, 129, 0.9);
+} */
+
+body {
+    background-color: rgb(20, 25, 24) !important;
+}
+
+.sidebar,
+.header {
+    // Color derived from normal cards
+    background: rgb(32, 37, 36) !important;
+}
+
+.sidebar .active::before {
+    background-color: #57FFA2E6 !important;
+}
+
+textarea {
+    border-color: #57FFA2E6 !important;
+}
+
+/* h1 {
+    color: cyan;
+}
+
+h2 {
+    color: rgb(255, 181, 66);
+}
+
+h3 {
+    color: rgba(255, 181, 66, 0.95);
+}
+
+strong {
+    color: rgba(255, 181, 66, 0.85);
+}
+
+b {
+    color: rgba(255, 181, 66, 0.75);
+}
+
+body {
+    background-color: hsl(36, 6%, 15%) !important;
+}
+
+.sidebar,
+.header {
+    // Color derived from normal cards
+    background: rgb(52, 50, 47) !important;
+} */
