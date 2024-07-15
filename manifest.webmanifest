@@ -9,7 +9,6 @@
   "start_url": "/",
   "theme_color": "#202524",
   "background_color": "#141918",
-  "categories": [],
   "icons": [
     {
       "src": "img/Coco/PWA/windows11/SmallTile.scale-100.png",
@@ -460,5 +459,29 @@
       "sizes": "1024x1024"
     }
   ],
-  "lang": "en"
+  "lang": "en",
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "fullscreen",
+    "browser",
+    "window-controls-overlay"
+  ],
+  "shortcuts": [
+    {
+      "name": "Introduction",
+      "url": "https://thebestoftimes.moddinglinked.com/intro.html",
+      "description": "Preamble about the guide's goals and requirements."
+    },
+    {
+      "name": "Setup",
+      "url": "https://thebestoftimes.moddinglinked.com/setup.html",
+      "description": "Clean install and initial launch of the vanilla game."
+    },
+    {
+      "name": "Mod Organizer 2",
+      "url": "/mo2",
+      "description": "Installing and configuring Mod Organizer 2."
+    }
+  ]
 }
