@@ -469,19 +469,37 @@
   ],
   "shortcuts": [
     {
-      "name": "Introduction",
-      "url": "https://thebestoftimes.moddinglinked.com/intro.html",
-      "description": "Preamble about the guide's goals and requirements."
+      "name": "Mod Organizer 2",
+      "url": "/mo2",
+      "description": "Installing and configuring Mod Organizer 2.",
+      "icons": [
+        {
+          "src": "img/Coco/PWA/windows11/Square44x44Logo.targetsize-96.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
       "name": "Setup",
       "url": "https://thebestoftimes.moddinglinked.com/setup.html",
-      "description": "Clean install and initial launch of the vanilla game."
+      "description": "Clean install and initial launch of the vanilla game.",
+      "icons": [
+        {
+          "src": "img/Coco/PWA/windows11/Square44x44Logo.targetsize-96.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
-      "name": "Mod Organizer 2",
-      "url": "/mo2",
-      "description": "Installing and configuring Mod Organizer 2."
+      "name": "Introduction",
+      "url": "https://thebestoftimes.moddinglinked.com/intro.html",
+      "description": "Preamble about the guide's goals and requirements.",
+      "icons": [
+        {
+          "src": "img/Coco/PWA/windows11/Square44x44Logo.targetsize-96.png",
+          "sizes": "96x96"
+        }
+      ]
     }
   ]
 }
