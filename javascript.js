@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     createRightSidebar();
     createImageHandlers();
     markActivePage();
+    resizeAllTextAreas();
 });
 window.onscroll = updateProgressBarAndFadeIn;
 
@@ -25,7 +26,10 @@ function sizeChanged() {
             document.getElementsByClassName("left-sidebar")[0].style.width = "";
         }
     }
+
+    resizeAllTextAreas();
 }
+
 function toggleNav() {
     var sidbear = document.getElementsByClassName("sidebar left-sidebar")[0];
     if (sidbear.style.width == 0) {
@@ -59,7 +63,29 @@ function expandCard(thisObj, $open, $dontReset) {
         rotate(chevron, 180);
         $open.style.display = "block";
         thisObj.classList.add('active');
+
+        const textareas = $open.querySelectorAll('.auto-resize');
+        if (textareas) {
+            console.log("Found textareas: " + textareas.length);
+            for (var i = 0; i < textareas.length; i++) {
+                autoResize(textareas[i]);
+            }
+        }
     }
+}
+
+function resizeAllTextAreas() {
+    const textareas = document.querySelectorAll('.auto-resize');
+    if (textareas) {
+        for (var i = 0; i < textareas.length; i++) {
+            autoResize(textareas[i]);
+        }
+    }
+}
+
+function autoResize(textarea) {
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px';
 }
 
 function emToPixels(em) {
@@ -194,16 +220,10 @@ function markActivePage() {
     const allowedPageLinks = leftSidebar.querySelectorAll(".pageLinks");
     if (allowedPageLinks) {
         let linkCount = 0;
-        console.log("Allowed page links found: " + allowedPageLinks.length);
 
         for (let i = 0; i < allowedPageLinks.length; i++) {
             linkCount += allowedPageLinks[i].children.length;
         }
-
-        console.log("Allowed page links count: " + linkCount);
-
-        console.log("Current page index: " + currentIndex);
-        console.log("Page count: " + sidebarLinks.length);
 
         if (currentIndex > linkCount - 1)
             currentIndex = -1;
@@ -249,7 +269,6 @@ function createPageArrows(currentIndex) {
         }
     }
     else if (prevLink) {
-        console.log("Current page not found in sidebar links");
         const prevPage = sidebarLinks[0];
         prevLink.href = prevPage.getAttribute("href");
         prevLink.querySelector(".arrowText").textContent = prevPage.textContent.trim();
@@ -318,7 +337,5 @@ const registerServiceWorker = async () => {
         }
     }
 };
-
-// …
 
 registerServiceWorker();
