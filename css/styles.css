@@ -59,6 +59,20 @@ h3 {
   line-height: 1.25em;
 }
 
+#logoBig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logoBig img {
+  width: 100%;
+  max-width: 220px;
+  margin: 0;
+  padding: 0;
+}
+
 .flex {
   display: flex;
 }
@@ -181,19 +195,19 @@ footer {
   rotate: 180deg;
 }
 
-.width-limited {
+.width-90 {
   max-width: 90% !important;
 }
 
-.width-very-limited {
+.width-70 {
   max-width: 70% !important;
 }
 
-.width-ultra-limited {
+.width-60 {
   max-width: 60% !important;
 }
 
-.width-insanely-limited {
+.width-40 {
   max-width: 40% !important;
 }
 
@@ -252,16 +266,19 @@ textarea {
   .content {
     padding: 4px;
   }
-  .width-limited {
+  .width-90 {
     max-width: 100% !important;
   }
-  .width-very-limited {
+  .width-70 {
     max-width: 90% !important;
   }
-  .width-ultra-limited {
+  .width-60 {
     max-width: 80% !important;
   }
-  .width-insanely-limited {
+  .width-40 {
     max-width: 70% !important;
+  }
+  #logoBig {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
