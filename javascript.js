@@ -192,6 +192,7 @@ function createRightSidebar() {
     };
 };
 
+
 function markActivePage() {
     const leftSidebar = document.querySelector(".sidebar.left-sidebar");
 
@@ -214,6 +215,10 @@ function markActivePage() {
         if (linkPage === currentPage) {
             link.classList.add("active");
             currentIndex = index;
+
+            if (link.classList.contains("sublink")){
+                link.setAttribute('style', 'display:flex !important');
+            }
         }
     });
 
@@ -233,20 +238,25 @@ function markActivePage() {
 }
 
 function createPageArrows(currentIndex) {
-    const leftSidebar = document.querySelector(".pageLinks");
+    const linkSections = document.querySelectorAll(".pageLinks");
 
-    if (!leftSidebar)
+    if (!linkSections)
         return;
 
-    const sidebarLinks = leftSidebar.querySelectorAll(".sidebar a");
+    const prevLink = document.getElementById("previous");
+    const nextLink = document.getElementById("next");
 
-    if (!sidebarLinks)
-        return;
+    let sidebarLinks = [];
+
+    for (let i = 0; i < linkSections.length; i++) {
+        var list = linkSections[i].querySelectorAll(".sidebar a");
+        for (let j = 0; j < list.length; j++) {
+            sidebarLinks.push(list[j]);
+        }
+    }
 
     // Set the previous and next links if the current page is found
     // Otherwise default to the home page
-    const prevLink = document.getElementById("previous");
-    const nextLink = document.getElementById("next");
     if (currentIndex !== -1) {
         if (prevLink) {
             if (currentIndex > 0) {
