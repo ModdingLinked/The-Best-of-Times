@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.thebestoftimes.moddinglinked.com/intro.html</loc>
-		<priority>0.90</priority>
-		<lastmod>2024-09-10</lastmod>
-	</url>
-	<url>
 		<loc>https://www.thebestoftimes.moddinglinked.com/essentials.html</loc>
 		<priority>0.90</priority>
-		<lastmod>2024-09-10</lastmod>
+		<lastmod>2024-09-12</lastmod>
+	</url>
+	<url>
+		<loc>https://www.thebestoftimes.moddinglinked.com/intro.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2024-09-12</lastmod>
 	</url>
 	<url>
 		<loc>https://www.thebestoftimes.moddinglinked.com/ttw.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2024-09-10</lastmod>
+		<lastmod>2024-09-12</lastmod>
 	</url>
 	<url>
 		<loc>https://www.thebestoftimes.moddinglinked.com/mo2.html</loc>
 		<priority>0.70</priority>
-		<lastmod>2024-09-10</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thebestoftimes.moddinglinked.com/setup.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-09-10</lastmod>
+		<lastmod>2024-09-12</lastmod>
 	</url>
 	<url>
 		<loc>https://www.thebestoftimes.moddinglinked.com/ttwintro.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-06-17</lastmod>
+	</url>
+	<url>
+		<loc>https://www.thebestoftimes.moddinglinked.com/setup.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-09-12</lastmod>
 	</url>
 </urlset>
