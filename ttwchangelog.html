@@ -129,6 +129,802 @@
             <span id="Changelog" class="section">
                 <h2 onclick="location.href='#Changelog'">TTW Changelog (3.3 onwards, DD/MM/YY)</h2>
 
+                <div class="expander-top clickable" onclick="expandCard(this, v333expander)" id="v333">
+                    <p>
+                    <h3>3.3.3 (6/10/24)</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="v333expander">
+                    <p>
+                        <textarea readonly class="auto-resize" onclick="this.focus();this.select()">
+From Hairy:
+Fixed a GNR BOS guard to not go hostile towards the player and cause the BOS in the area to go hostile as well
+Fixed the faction relationship between the GNR BOS and the Player (None existed)
+Restored Behemoth to throw boulders
+Fixed to account for if the vault 101 overseer's office door is locked/unlocked/lock broken or has the key or not when talking to the Overseer before leaving the vault
+Fixed to account for if the vault 101 overseer's terminal is hacked/locked out or has the password or not when talking to the Overseer before leaving the vault
+Fixed the vault 101 overseer to only give the player his office key and/or password depending on if the player has them, or door is still locked, or terminal hacked, etc
+Fixed the dialogue topic "Oh, great. Let me guess, more psychotic little girls..." the player says to Protector McGraw to appear only if the player completes the Tranquility Lane quest. Not stage 70 of Picking Up The Trail quest
+Fixed Butch to not call for Officer Kendall if he's dead. In the scenario when the player refuses to help Butch save her mom from Radroaches, then Butch calls for Officer Kendall
+Fixed/Reverted back to vanilla 3 dialogue lines with The Brain that cut the topic choices out involving The Brain rewarding the player with death
+Fixed The Brain's robots that wouldn't attack involving 4 dialogue lines
+Fixes Lucas Simms not attacking the player when messing with him in the first conversation. Figured out a much easier simpler solution without altering anything else
+Fixed the dialogue line "Enclave troops have fortified the purifier complex. With those vertibirds, they're able to transport personnel at a remarkable rate." to not appear too early. There was no condition for them appearing in the Wasteland yet
+Fixed the dialogue line "They're savage! They're brutal! They're here to keep this worker in his place -- the undefeated Bear Brothers!" to cut out "his" since there's no female line
+Fixed the dialogue line "Let's find out if the newcomer can hold his own against real fighters! Release! Fight!" to cut out "his own" since there's no female line
+Fixed the dialogue prompt "Tell me about Allistair Tenpenny." to not appear when Tenpenny is dead
+Fixed the dialogue line "Oh my... It's brilliant! Even I'm astounded by my genius! No, it's more than that. By OUR genius!" Moira says that was missing some words in the subtitles
+Fixed the dialogue line "It's named after Allistair Tenpenny, who runs this building. Got a bunch of rich guys that pay him to live in it." for one of the voice types that said "He's got" in the audio file
+Fixed the dialogue prompt "You said you were looking for Nuka-Cola?" to show up when asking Zip
+Fixed Jenny Wilson to be blocked from kid karma greetings to not access her unvoiced dialogue topics
+Fixed/Reworked Ymir's bartender scene to block the player. If the player attacked PF before the bar tender scene ended, then killed Ymir, the player was unable to open his corpse inventory
+Fixed all the beds in the PF Slaver Barracks. Including ownership fixes and assigning Ymir/Jotun their routine bed locations
+Fixed all the karma Hello/Greeting PF resident dialogue lines
+Restored Atomization Critical on death effect for nuke weapons
+Added the Player shielding eyes and stagger from the Megaton explosion only if in 3rd person camera view. 1st person these idles will not trigger
+Injected/Restored "Who do we have here?" as the 1st dialogue line for Burke's first force greet to the player in the Saloon
+Fixed being able to tell Mister Burke yourself that you disarmed the bomb if he didn't see you do it if he was in a Megaton interior, and the player hasn't told Lucas Simms yet "I've disarmed the bomb, Burke. That thing will never explode now."
+Fixed Burke to force a confrontation if he hasn't yet and the player told Lucas Simms the bomb is disarmed ending the quest (Opportunity to tell Burke yourself that the bomb is disarmed is lost since when the quest ends, the quest dialogue involved is gone)
+Fixed Mister Burke to confront the player when the bomb is disarmed, he's in the Megaton WorldSpace (not in an interior), and the player hasn't told Lucas Simms yet
+Fixed Burke's Hitmen to only appear in random encounters if Burke actually knows the bomb is disarmed and he threatened the player, or the player made him mad
+Fixed/Restored the dialogue line "Do it! Detonate the bomb and together we'll usher in a new age of prosperity!"
+Burke randomly says to the player on the Balcony when waiting to blow up Megaton
+Fixed most of Burke's random Hello/Greeting dialogue to account for the new changes
+Fixed/Adjusted Burkes AI behavior for some of his packages (able to say Hello dialogue, ignoring combat he's not involved in, etc)
+Fixed Bleak's Greeting dialogue if the player killed the PF NPC guards beforehand. She said the incorrect generic line "What do you need?"
+Fixed Cutter to be included in the PF hostile scripting. She'll be hostile no matter what if the player attacks PF NPCs, or attacking her triggers all the PF NPCs to go hostile
+Fixed Cutter's leveled item weapon to not be a raider style, NPC one
+Fixed all the Big Town residents to do cheer animations for all their dialogue lines when the player returns Red/Shorty and after the invading super mutants die
+Fixed Kimba and Bittercup to lay mines when the player teaches them how to lay mines. They just stood there doing nothing. Weapon drawn flag on their AI behavior was preventing them to do it
+Fixed all the Big Town residents except Flash to place their mines in the exact spots. Their dedicated spots weren't assigned
+Fixed Flash, Kimba, and Shorty to follow Red like the others when learning how to sneak, lay a mine, or see the robots get repaired. Missing packages
+Fixed Timebomb to sneak when the player teaches Big Town residents. No scripting existed for it in his script
+Fixed the dialogue line "Thanks for helping us. I just hope we can survive another attack. Probably won't." Big Town residents say to require talking to the player already to not interfere with their first dialogue lines
+Fixed the dialogue line "Wow. I can't believe that you were able to help Timebomb. And here I was sure that you were ready to just let him die. I guess I had you wrong." Red says to the player to require angering her beforehand
+Fixed the free healing option "Heal me up, Red." with Red to show up if the player saved TimeBomb
+Fixed the dialogue line "Well, I'll be damned... That little so-and-so... why didn't I think of that when I was sixteen?" Mr. Brotch says to himself when seeing Wally's GOAT test to trigger before or after the player turns in his/her test
+Fixed the dialogue prompt "You know what? Forget I said anything." choices to have the correct response from the topic "Out there in the Wastes, man. You must be bored to tears in this town." with Jericho
+Fixes to hiring RL3 through Tinker Joe's dialogue involving karma, TTW's speech perk, and having a companion or not
+Fixed 8 PF residents that should be in the ParadiseFallsSlaverFaction
+Fixed Jotun to have the ParadiseFallsSlaverScript assigned like all the other PF residents. This properly makes all the PF residents hostile if the player attacks him. Also adds to the kill count of how many guards have been killed
+Fixed Jotun to not warn/attack the player when near Ymir in the Slaver Barracks
+Fixed Clover, Crimson, and the Child Slaver that was missing the PF hostile scripting if the player attacks them
+Fixed all the PF residents to not go hostile if the player attacks them if they're already dead and the player didn't kill them
+Fixed 2 lines with Maggie
+Disabled/Fixed the player being unable to mezz captives. Player can't talk those NPCs and mezzing NPCs requires initiating dialogue
+Fixed 2 subtitle mismatches with Bill Seward
+Fixes 2 speech check failure lines with Macready
+Fixed the dialogue line "Moriarty pisses in his still -- crazy bastard thinks it's hilarious. Besides, you'll get your throat cut in that pit. You're much better off here." Andy Stahl says to the player to require him being in The Brass Lantern
+Fixed Silver to only force a dialogue greeting to the player when either the player hasn't talked to Moriarty yet, or the player has and Moriarty asked for a favor. Talking to Moriarty but not asking for a favor will result in no forced greeting and no available topics to appear. No topics exist for Silver in that scenario
+Fixed the dialogue greeting "Yeah? What is it?" Silver says to the player to trigger when the side quest with her isn't active
+Fixed 3 dialogue options the player says to Silver after Moriarty asks for a favor, to require Moriarty asking the player for a favor
+Fixed the dialogue prompt "You don't still offer your... services, do you?" the player says to Silver to require the favor being resolved
+Fixed the dialogue prompt "What will you do now?" the player says to Silver to require the favor being resolved
+Fixed Pronto's vendor chest upgrade to add the stimpacks that it originally had before the upgrade (Developers forgot to add it back in)
+Fixed the dialogue prompt "Can someone in the Citadel train me to wear Power Armor?" the player says to random Citadel NPCs to not appear anymore when the player already has permission from Elder Lyons
+Fixed any related power armor training topics from showing up if the player already has the Power Armor Training perk
+Fixed being able to fast travel freely from the The Temple Of The Union after the player tells Hannibal Hamlin to promise to not reveal their location
+Fixed a gate and a door to be unlocked inside the Farragut West Station at the start of The Temple Of The Union journey to the Memorial. They blocked the NPCs path to get there
+Fixed 2 slavers that are killed on purpose when Walker begins traveling to the Temple to be accounted for. Depending on where the player goes, they could easily not get counted as dead in scripting which easily broke the quest
+Fixed the quest Head Of State objective "Kill all the slavers near the Lincoln Memorial." target conditions
+Fixed the quest Head Of State objective "Join Leroy Walker in attacking the Temple of the Union." target conditions
+Fixed Hannibal to not warn/attack the player when in the Temple for no reason. His guard package behavior didn't have the "no warn/attack" behavior flag on
+Fixed Hannibal to switch to his guard package behavior after speaking to the player once and the player didn't promise yet
+Fixed Hannibal to switch to his guard defend package behavior when the slavers are going to attack. Incorrect conditions
+Fixed Silas to be part of the Paradise Falls Slaver Faction like the rest of the Memorial slavers
+Fixed/Added missing scripting for when Walker and his other slavers go back to Paradise Falls. Including PF hostile scripting and adding to the guard count deaths
+Fixed The Temple Of The Union to go hostile towards the player if the player picklocks the front gate before telling Hannibal Hamlin to promise to not reveal their location and doesn't have the key yet
+Fixed The Temple Of The Union to go hostile towards the player if the player enters The Temple Of The Union then escapes before telling Hannibal Hamlin to promise to not reveal their location
+Fixed the dialogue prompt "Not around here, but there is a group of them up north near Old Olney." the player says to Leroy Walker to appear if the player stepped foot inside the Temple Of The Union, hasn't betrayed the Temple yet, and the Temple isn't on their journey yet
+Fixed the dialogue prompt "I'm looking for runaway slaves." the player says to Simone to only appear after agreeing to help Walker find Hannibal. Not if the player talked to Walker once. Also fixed so it sets the player as an enemy towards the Temple, not just starting combat with Simone only
+Fixed the dialogue prompt "Actually, I already know he's up north, near Old Olney." the player says to Leroy Walker to appear if the player entered the Temple, talked to Hannibal, and the Temple hasn't begun their journey yet
+Fixed the dialogue prompt "Maybe. How much is it worth to find these slaves for you?" the player says to Leroy Walker to appear if the player hasn't agreed to find Hannibal yet. Not if Hannibal has asked the player to help or not
+Fixed the dialogue prompt "That's a really stupid idea." choices the player says to Hannibal
+Fixed the dialogue greeting "So the Super Mutants are dead? This is wonderful news!" Hannibal says to the player to always trigger when he asked the player to go to the Memorial and returning back knowing the super mutants are dead
+Fixed the dialogue line "Yeah, I killed them all after telling you not to." Walker says to the player to be a goodbye
+Fixed the dialogue line "That's close enough. What the hell are you doing wandering around here?" Silas says to the player to set the player knowing the super mutants are dead. Obviously talking to the slavers the player knows they're dead and makes sense with the prompts towards Hannibal when returning the news
+Fixed the dialogue line "The slaves know their place now, thanks to you." Walker says to the player to not be a goodbye that blocked topics showing up to sell Lincoln artifacts to him
+Fixed the dialogue line "You have been good to your word. You are welcome at the Temple of the Union anytime." Hannibal says to the player to be a goodbye
+Fixed the dialogue line "Stay sharp. The Wasteland is dangerous." Simone Cameron says to the player to trigger while traveling to the Memorial (incorrect condition)
+Fixed 6 dialogue lines involving Hannibal being informed of what's going on at the Memorial. Including prompts only appearing once telling him the super mutants are dead, soldiers are there, slavers are there, or slavers are dead. New developments can be chosen, but repeating the same news in different ways won't appear since he already knows
+Fixed/Added a new dialogue line to say to Hannibal to account for when the player killed all the Slavers before agreeing to help Hannibal. No choice existed for that circumstance
+Fixed all the Temple Of The Union NPC greetings when they're near the memorial, and they'll only say those lines when all 8 slavers aren't dead yet
+Fixed all the Temple Of The Union NPC greetings when the slavers are near the Temple, and they'll only say those lines when all 8 slavers aren't dead yet (Only 6 show up but the counter in the coding is still 8)
+Fixed all the Temple Of The Union NPC greetings when the player talks to Hannibal once, and before promising to him, to not be goodbyes to unlock a dialogue topic
+Restored/Fixed the dialogue prompt "Hannibal wants me to promise to keep this place safe. Why should I do that?" the player asks to all Temple Of The Union NPCs after talking to Hannibal once and before promising to Hannibal
+Restored/Fixed the dialogue prompt "What's the story with Hannibal?" the player asks to all Temple Of The Union NPCs after promising to Hannibal
+Fixed/Adjusted Dukov, Cherry, and Fantasia's behavior when outside to ignore enemies nearby and combat they're not involved in
+Fixed/Added being able to tell Lucy West her parents are dead and updated information on her brother Ian after the Blood Ties quest if she doesn't know yet still
+Fixed Mabel Henderson's robot to not stay hostile after switching the robot back to normal on the terminal inside her house
+Added a new Pristine Nuka Machine Key to the game (Roy request)
+Added the Pristine Nuka Machine Key to Sierra's inventory (Roy request)
+Pristine Nuka Machine Key unlocks Sierra's Pristine Vending Machine (Roy request)
+Added the Schematics - Nuka-Cocktail to Sierra when she dies (It won't get added if the player already received it from her through dialogue)(Roy request)
+Fixed Lucas Simms to only trigger his dialogue to Burke when near him. Not across the room or very far away in Megaton
+Fixed Harkness to be reset by Zimmer after he says the line "A3-21, initialize factory reset, authorization code: Beta, 5, 3, Alpha." and then Harkness says "What?". He'll fall to the ground, go unconscious, then get back up and follow Zimmer
+Fixed the Harkness and Zimmer confrontation distances when the dialogue triggers. Zimmer was talking to Harkness at the bottom of the stairwell lol
+Fixed the Harkness and Zimmer confrontation to not continue if either of them dies so they'll immediately change to another routine
+Fixed/Disabled the player from interrupting the Harkness and Zimmer confrontation, including pickpocketing
+Fixed Harkness to always have his weapon when shooting Zimmer. Safety script in case he has no weapon or ammo
+Fixed/Improved the objective "Visit Rivet City to learn more about the android from the Commonwealth." to have a target inside Rivet City. The target will only display if the player has either discovered the Rivet City map marker, or the Marker is visible on the map, but not fast travel enabled yet. Target won't be visible when inside Rivet City
+Fixed/Restored the prompt "I'm still looking, don't worry. I'll find him." the player says to Zimmer. It will only show up if Pinkerton hasn't revealed to the player who the android is yet
+Fixed/Restored the prompt "I took a little peek at the files in your computer. Tell me about the android." the player says to Pinkerton. Fixed it to be "Say Once", have custom dialogue choices, fixed the emotion types, adjusted all the conditions, and will complete the objective "Find out what Pinkerton at Rivet City knows about the android."
+Fixed Pinkerton's Private Computer to be "Very Hard" locked difficulty in accordance with the restored dialogue line
+Fixed Sydney to move to the 9th Circle when she's on her way there and when the player isn't in the same cell as her
+Fixed the dialogue line "Before we go, there's one last thing." Wernher says to the player before leaving to the Pitt with companions to be said only once
+Fixed/Improved all enslaves to be moved to the Paradise Falls slave pen when they're not in the same cell as the player (Beth poorly tried to do this)
+Fixed/Improved all non-quest enslaves to be disabled when they're not in the same cell as the player (Beth poorly tried to do this)
+Fixed Grouse to force greet with the correct response to whether the enslave died on the way there or not
+Fixed TTW's incremented enslave challenge to only happen once per slave. Also after each time Grouse talks to the player giving the caps reward
+Fixed the dialogue line "Good! Good... now, come speak with me. We have matters to discuss..." The Brain says to the player to be heard after Desmond has been killed inside the Underground Lab. Brain was too far away from the player to hear it
+Fixed the dialogue line "So, Crowley is dead, eh?" Tenpenny says to the player to take priority over most of his other greetings. The Ghouls are attacking greetings still take priority overall
+Fixed the dialogue line "I presume you are still honoring our previous arrangement? I enjoy being alive, at least for the moment." Tenpenny says to the player to not be said when Crowley is dead
+Fixed the dialogue line "I'm mighty appreciative of your straightening things out. Perhaps next time I go on safari I'll take you along." Tenpenny says to the player once to take priority over the line "Hello, hello!" that Tenpenny says once a day to the player
+Fixed/Restored a bandit ambush at a bridge in Point Lookout. The bridge has "Help Us" painted on the top. It will trigger the NPCs to show up when the player walks through it. Moved 2 of the NPCs so they don't instantly appear in front of the player, but instead they're hiding in the water on both sides. The sniper will appear on the top. Ammo and cinder blocks enabled always on the top
+Fixed/Restored 13 random encounter Enclave NPCs in the Wasteland (Enabled when they show up in the Wasteland during the Waters Of Life quest)
+Fixed/Restored 2 random encounter Talon NPCs in the Wasteland
+Fixed/Restored 2 Raider NPCs in the Evergreen Mills exterior
+Fixed/Restored 2 dogs and 1 Raider NPC that trigger before the player reaches the Pitt main gate involving slaves trying to escape
+Fixed/Restored 2 metro robots to appear inside the Adams AFB Metro Exit
+Fixed/Restored 4 spray jets and 1 mist that blows out of pipes inside the Memorial Sub-Basement
+Fixed/Removed linked Xmarkers to many NPCs that did nothing
+Fixed Forty to stay distracted when talking to Eulogy and not have a time limit on the player to go back to Squirrel
+Fixed Crimson and Clover to not initiate broken dialogue conversations with Eulogy outside his pad. They'll only initiate conversations with him inside his pad
+Fixed 4 dialogue lines Eulogy says when doing his rounds outside mentioning "ladies" to only be said when Clover and Crimson are following him
+Fixed 3 random greeting lines Forty says to the player to be goodbyes and not open up dialogue options. There's none left
+Fixed Karl from The Family to sell items only in his store and no Bloodpacks from first aid kits
+Fixed the Vault 87 fire alarm model's lights to turn on when freeing Fawkes. Only their fake lights were on
+Fixed Lucy West and Lucas Simms to be moved to their original positions if they're stuck up where Stockholm is above the Megaton gate entrance (Script will work any time they're up there)
+Fixed 2 stools in Vault 101 to be unable to sit on them. They're too close to the wall causing the player to go through the wall and go out of bounds when trying to sit on them
+Fixed the dialogue greeting line "That fight was impressive. One more to go." conditions Midea says to the player
+Fixed Midea to have an added dialogue line "What do you need? Make it fast." from after winning in the arena up until the player has a chosen path in the Free Labor quest. Her greeting was blank
+Fixed the random Megaton Refugees that attack the player after blowing up Megaton to only be males since no female attack lines exist
+Fixed/Improved the Lincoln Memorial border for if Walker's trust is gained. The Slavers won't confusingly attack the player when following Silas as instructed. The stairs will be the trespass warning that engages unique trespass dialogue. Beyond the stairs will initiate combat being enemies towards the player, including the entire square perimeter around the Memorial
+Fixed the Slavers to not set off their own tripwire traps
+Fixed the dialogue choice "So... Can I take a peek at the Memorial now?" the player says to Leroy Walker so it shows up when gaining his trust if the player already sells him a lincoln artifact in the 1st conversation
+Fixed Silas to change his routine immediately when gaining Walker's trust. He was standing there gaurding Walker still
+Fixed all the Temple NPCs to prepare for their journey to the Memorial immediately after Hannibal says they will
+Fixes a GNR Radio line cutting out "his" since no female variant exists
+Fixed the Who Dares Wins quest objective "(Optional) Clear the security breach in the Presidential Metro." to be cleared in every way including killing the Ghouls regardless if the robots are friendly or not, and whether the player helped kill the Ghouls or not while the robots are friendly
+Fixed the Presidential Metro Sentinel Unit to recognize the Ghoul breach is over so it can fix the main power for the subway using the fuse
+Fixed the Who Dares Wins scripts to account for if the player's companions/followers have killed the robots and/or Ghouls
+Fixed Amata that wasn't turning in her G.O.A.T exam when the player turned it in before her
+Restored missing giving/taking dialogue NPC animations in the entire game for any type of transactions with the player (They only work for NPCs that are standing)
+Fixed dialogue timings of when items are added/removed from the player. Or at best improved. Items added/removed in between multiple dialogue lines occur after they're said. This works best for their 1st lines
+Fixed Dave's kid's dialogue greetings when Dave didn't give an ok to the player yet
+Fixed the Republic of Dave adults to not get stuck after voting
+Added a NPC giving animation so it looks like the Republic of Dave adults are placing their votes in the ballot box
+Fixed the dialogue line "All robots! Activate! Destroy Desmond!" the Brain says to trigger when the player betrays the Brain, sides with Desmond, and activates the 1st locked door in the Brain's Underground Lab
+Fixed the Klaxon alarm glow to not be on too early before the Brain's robots attack the player and Desmond when the 1st locked door is activated in the Brain's Underground Lab
+Restored a drop down ramp that triggers after The Brain says the player will die in dialogue or if the player keeps shooting the Brain. The 2 ramps that can be walked on switch to being against the wall. Player drops down into the lower level full of protectrons
+Restored all the static protectrons to be regular ones that activate in The Brain's Underground Lab
+Restored The Brains' lower level robots to all activate when the player drops into the lower level and the same for the top level ones when returning. They will all activate if the player keeps shooting the Brain
+Fixed/Restored Mary saying "Man, I hate the graveyard shift." at the beginning of her shift at the front gate
+Fixed/Restored 7 dialogue lines Wasteland Hunters say randomly talking about finding Yao Guai
+Fixed/Restored the Megaton Craterside Supply Mercenary saying "I'd put that weapon away if I were you." when the player aims at him
+Fixed/Restored Dukov saying "You're drawing on me, clown shoes? I don't think so!" when the player aims at him and causes him to be hostile
+Fixed/Restored Dukov saying "You're drawing on me, bitch? I don't think so!" when the player aims at him and causes him to be hostile
+Fixed/Restored the player saying "I... uh... only drink for medicinal reasons." to Mother Maya when asking if there's a bar in town
+Fixed/Restored the player saying "I'm actually just looking for some food." to Mother Maya when asking if there's a bar in town
+Fixed/Restored the player asking "Can you help me find something else?" to Mother Maya when asking if there's a bar in town
+Fixed/Restored Mr. Brotch saying "Time for the G.O.A.T. Find a seat and wait for instructions." randomly before taking the test
+Fixed/Restored the player asking the Vault 101 Security Guards "So, who's the Overseer now?" during the Trouble on the Homefront quest
+Fixed/Restored the player saying "Whatever you say." to Bittercup after telling her her name is the dumbest name you ever heard
+Fixed/Restored all of Doctor Barrows unique healing dialogue lines. He was using the wrong lines that the Ghoul wastelander doctors say. Also fixed all the cap amounts to match what he says in the unique lines
+Fixed/Restored the player asking "You don't get a lot of customers, do you?" to Tulip
+Fixed/Restored the player asking the Big Town residents "Who's that guy in the clinic?"
+Fixed/Restored the player asking the Big Town residents "Who's in charge here?"
+Fixed/Restored the player asking the Big Town residents "Who lives here?"
+Fixed/Restored the player asking Red "Maybe I can help him."
+Fixed/Restored sticky to force a conversation by saying "Hey you. Yeah you! Don't bother with the children at Little Lamplight. Let's go to Big Town instead!" to the player after he's rejected being taken to Big Town waiting in front of the Little Lamplight gate
+Fixed/Restored Sticky's goodbye line "I'll wait over here for you. When you're done playing with the children we'll go to Big Town." when he's waiting to be escorted to Big Town
+Fixed/Restored the player asking Pronto "What have you made?" to be available after asking him if he makes a lot of his own stuff
+Fixed/Restored the player asking Pronto "Wow... your own stuff. That's... just stupid. Why take apart good guns?" to be available after asking him if he makes a lot of his own stuff
+Fixed/Restored the last 2 random dialogue lines Clover says to Eulogy Jones when they're randomly having a conversation
+Fixed/Restored/Implemented the player saying to Leroy Walker "How about I buy all the Temple of the Union slaves from you?" and accounted for in the entire quest
+Fixed/Restored the player saying to Simone Cameron "I'm an escaped slave. I was told you help runaways like me. <Lie.>" before entering the Temple of The Union
+Fixed/Restored the player saying "Nah. I've got things to do. But thanks for the compliment." to Donovan after saving The Rangers and they returned back to their headquarters
+Fixed/Restored the player saying "That would be great. Maybe I'll speak to Reilly about it." to Donovan after saving The Rangers and they returned back to their headquarters
+Fixed/Restored the player saying "Well, since I saved your ass, shouldn't you be joining me?" to Donovan after saving The Rangers and they returned back to their headquarters
+Fixed/Restored the player saying "Where can I get some more ammo around here?" to Reilly's Rangers while helping them
+Fixed/Restored the player saying "Got anything for these injuries?" to Butcher while helping them
+Fixed/Restored the player saying "Tell me how this all happened." to Butcher
+Fixed/Restored the player saying "Um... no. I've still got more important things to do." to Abraham Washington when still not appecting to help him
+Fixed/Restored the player saying to Abraham Washington "So, you really care about these relics?"
+Fixed/Restored the player saying to Abraham Washington "Okay pops, just hand over the reward and you can get back to your history books."
+Fixed the player saying to Button Gwinnett "I'm Thomas Jefferson and I've returned to liberate the Declaration." to require being a male character
+Fixed/Restored the player saying to Button Gwinnett "I'm an agent of Thomas Jefferson and I've returned to liberate the Declaration." (This requires being a female character by default)
+Fixed/Restored the player asking Knight Captain Dusk "Do you know about the Enclave?"
+Fixed/Restored the player saying to Knight Captain Gallows "Yeah, no thanks." when asking for help
+Fixed/Restored the player saying to Elder Lyons "I was captured by the Enclave."
+Fixed/Restored the player saying to Elder Lyons "I escaped from Raven Rock."
+Fixed/Restored the player saying to Elder Lyons "Fine, whatever. Let's get to it."
+Fixed/Restored Sentinel Lyons to randomly say 4 extra dialogue lines when the player is supposed to step into the Purifier but hasn't yet
+Fixed/Restored the player saying to Colin Moriarty "Tell me what you know! Tell me everything!" when asking him about Dad
+Fixed/Restored the player saying to Mister Burke "Forget I mentioned it" when telling him that Simms wants the player to disarm the bomb
+Fixed/Restored the Tenpenny Security Guard near the front gate to open the gate for the player when directly spoken to with 4 different dialogue responses
+Fixed/Restored the player asking Dr. Li "I've never heard Dad talk about you. Why is that?"
+Fixed/Restored the player asking Dr. Li "Why is my father so determined to work on this project again?" when asking about Project Purity
+Fixed/Restored the player asking Dr. Li "Why wouldn't you help him when he came to you?" when asking about Project Purity
+Fixed/Restored the player saying to Dad "Okay. I'll be back soon." when he asks the player to kill everything remaining inside the Memorial
+Fixed/Restored the player saying to Fawkes "Yikes! I'd say whoever beat you with the ugly stick overdid it." inside Vault 87 Test Labs
+Fixed/Restored the player asking Daniel Agincourt "Where can I find the fuse box?"
+Fixed/Restored the player asking Daniel Agincourt "Where are the flood control pumps?"
+Fixed/Restored the player asking Alex Dargon "Where are the flood control pumps?"
+Fixed/Restored the player saying to President Eden "I'd like to ask you a few questions."
+Fixed/Restored the player asking President Eden "Can we talk about how I get out of here?"
+Fixed/Restored the player asking the Enclave Officer "Who the hell are you?" that notices when the player leaves his holding cell inside Raven Rock
+Fixed/Restored the player saying to Initiate Pek "Mock you? I'd rather kill you."
+Fixed/Restored the player asking Rivet City Residents "Where can I find Ted Strayer?" during the You Gotta Shoot 'Em in the Head quest
+Fixed/Restored the player saying to James Hargrave "You're too chicken to run away." with 3 different random responses when he's provoked to run away
+Fixed/Restored the player saying to Sierra Petrovita "Yoo-hoo! Anyone home?" when she keeps talking about Ronald
+Fixed/Restored the player saying to Moira Brown "Hold on. I need to know more before I agree to anything."
+Fixed/Restored the player saying to Moira Brown "Wait. How? I mean, how many people even read anymore?"
+Fixed/Restored Moira Brown saying "Hey, now. That's my stuff. If you want something, you gotta buy it." when the player looks at something owned by her that's locked
+Fixed/Restored Moira Brown saying "Whoa, whoa, whoa, hands off the goods." when the player looks at something owned by her that's locked
+Fixed/Restored the player saying to the Talking Tree Harold "They're worshipping a tree? Ha ha ha!"
+Fixed/Restored the player saying to Sapling Yew "Did you know your god wants to die?"
+Fixed/Restored Vault 112 Robots to say "Hostilities will not be tolerated." when attacking them
+Fixed/Restored Vault 112 Robots to say 2 dialogue lines when the player tries to use an occupied Tranquility Lounger pod
+Fixed the message "This Tranquility Lounger is occupied." to appear when the player tries to use an occupied Tranquility Lounger pod
+Fixed the message "You are no longer authorized to use the Tranquility Loungers." to appear when the player tries to use a Tranquility Lounger pod after completing the Tranquility Lane quest
+Fixed/Restored the player saying to Betty "Sure did. And now you're all alone." after triggering the Vault 112 simulation failsafe
+Fixed/Restored the player saying to Old Lady Dithers "Sure, sure. I'm working on it. Really." when talking about the Vault 112 simulation failsafe
+Fixed/Restored the player saying to Janet Rockwell "It's your basement, lady. You tell me." when she discovers someone else's undies
+Fixed/Restored the player saying to Timmy Neusbaum "I've got a game you can play. It's called Hide and Go Fuck Yourself."
+Fixed/Restored the player saying to the main Pitt NPCs "Tell me about The Pitt."
+Fixed/Restored the player asking Midea "So, what's the catch?" when talking about collecting steel ingots
+Fixed/Restored Raiders saying to Werhner "Go! Get him! Get the traitor!" when starting to attack him near a tower in the Wasteland
+Fixed/Restored Sandra saying "Now, stay still while mommy takes a few readings. Don't worry, dear, you're perfectly safe!" while she randomly takes notes in front of her crib
+Fixed/Restored the player asking Catherine "So, what's the catch?" when talking about helping finding her daughter
+Fixed/Restored the dialogue line "That's enough. McGraw's in charge, so we follow his orders, no matter how much we don't like it." at the end of the conversation the player hears while going down the Anchorage elevator for the 1st time
+Fixed/Restored the player saying to Protector McGraw "First let's talk about what I get out of this." before entering the simulation
+Fixed/Restored the player saying to Protector McGraw "Maybe I should just be going." before entering the simulation
+Restored cut words "Please! Don't shoot!" into one of Stiggs greeting lines
+Restored cut words "What is that?? What the hell is going on?" into one of Paladin Tristan's greeting lines after seeing Prime destroyed
+Fixed/Restored extra dialogue lines involved with the conversation between 2 NPCs in front of Megaton about the water beggar dying due to drinking Aqua Cura
+Fixed/Restored the player saying to Obadiah Blackhall "What are you talking about?" when he mentions death is involved
+Fixed/Restored a luck dialogue choice "I think it would be good for the Republic, Mister President." towards Dave when trying to obtain Dave's special key
+Fixed/Restored the player saying to Jack Smith "The families around here seem very close." with 2 cut topics attached to it when the player learns suspicious relations
+Fixed Shorty to die when he hasn't been rescued yet and completing Big Trouble In Big Town quest
+Fixed 3 Evergreen Mills slaves inside pens to have the correct dialogue responses for when freed and not freed
+Fixed 2 Evergreen Mills slaves inside pens to escape when the gate is unlocked (the other slave doesn't escape and reveals that when talking to him)
+Fixed Fawkes to force greet the player after retrieving the geck
+Fixed the Enclave Officer in Raven Rock that confronts the player when leaving the starting room to flee for many dialogue lines. He was just standing there
+Fixed the Enclave Officer in Raven Rock to force greet the player saying "I guess you'd better be on your way... Sorry for the uhh, for the interruption." after talking to the President
+Fixed the player saying to Fawkes "A friendly Super Mutant. Well, now I've seen everything." to not show up if the player talked to Uncle Leo already
+Fixed the player saying to Uncle Leo "Who are you? I've never met a friendly Super Mutant before." to not show up if the player talked to Fawkes already
+Fixed/Added the player saying to Uncle Leo "Who are you?" to show up if the player talked to Fawkes already
+Fixed the player asking Doctor Lesko "What do you know about Bryan Wilks?" to require talking to Bryan Wilks. Not if the player found his father
+Fixed the player asking Doctor Lesko "What should I do about Bryan Wilks?" to require talking to Bryan Wilks. Not if the player found his father
+Fixed the player asking Doctor Lesko "Can't you take responsibility for his father's death?" to require if the player found his father
+Fixed the player saying to Doctor Lesko "Hey! You're that egghe... I mean scientist the kid was talking about." to only show up when Bryan mentions Doctor Lesko and mentions him being referred to as an egghead
+Improved Those! Quest script shortening the block towards the ants being frenzied when the player sends out the pulse through Lesko's terminal (Scripting cosmetics)
+Fixed Scavengers saying to the player "I’m headed to Big Town. There’s good money to be made there. They ordered a ton of supplies, and now that it’s safe, I’m heading up there!" and other similar greetings only when they aren't in Big Town
+Bog hallucinations will no longer spoil things if the player hasn't experienced them yet. If the player hasn't talked to Moira Brown, Elder Lyons, Lucas Simms, or Mister Burke, they won't appear. If the player hasn't done anything yet with the Megaton bomb, it also won't appear. If the player hasn't talked to Agatha then the violin trees won't appear (Roy requested this along time ago)
+Fixed/Switched positions with 2 bathroom gender signs in the L.O.B. Enterprises East Wing
+Fixed/Restored all barter transaction NPC dialogue giving animations
+Fixed Rory to only say "Thanks for saving me" at the right time
+Improved the Vault 112 Robobrain's force greet
+Fixed Sticky to go wait for the player outside of the Little Lamplight gate after he says "So, when you're done with those little kids, we can go to Big Town together! I'll wait outside for you." No scripting at all existed for this line
+Fixed Sticky's dialogue line "I'll wait over here for you. When you're done playing with the children we'll go to Big Town." to have audio. I accidentally named this restored line wrong
+Fixed the Rockwell couple in Tranquility Lane to confront each other and initiate conversations when the player fools them into believing something awful or weird they did. Also adjusted their AI behavior and conditions involved with being across different cells
+Fixed Janet to immediately force greet the player after saying "What's this... Women's clothing? Down here?"
+Fixed all FO3 incorrect, inconsistent, missing, and double door opening/closing sounds
+Fixed all package dialogue types (ensures they will trigger)
+Fixed/Improved both of Sticky's force greets before bringing him to Big Town
+Fixed Michael Masters' greetings in the Warrington Station to say different lines depending on if the player is detected, sneaking, or has a weapon drawn
+Fixed a mismatched door in Chevy Chase
+Fixed Faydra to do a syringe dialogue animation that was missing when saying "Here's a shot for the rads"
+Fixed the player being unable to talk to the Pitt front gate guards before talking to Mex (no dialogue exists for that)
+Fixed one of Dr. Li's routines in the Science Lab after the player sides with Seagrave in the Council side quest
+Fixed if the player interrupts Gob or Moriarty during their conversation after they both see Simms or Burke being killed in the Saloon. Also if the player leaves the Saloon during their conversation
+Fixed/Reworked the Paradise Falls Carter head exploding scene when the player 1st arrives at the front entrance
+Fixed the dialogue line "Run Sammy, run! We can make it!" to be heard by the player. It triggered too far away to be heard. Scene will trigger close up to hear the lines
+Fixed Forty to say "You! Get back here now!" and "You're fuckin' dead, you hear me? Dead!" while Carter is escaping
+Fixed Forty to also say "Thought you'd get out of here, did you? You little shit. Get back inside, now." to Sammy after Carter's head explodes
+Fixed Sammy and Forty to walk back into PF after Forty says that line to Sammy
+Fixed Carter to try to escape even if the PF Residents are hostile towards the player. He was entering into PF breaking the scene when combat was near him
+Fixed 2 typos when Dominic D'Ellsadro and Uncle Roe mention the Mechanist's real name "Wollinski", not "Wollinksi"
+Fixed Sarah, Fawkes, Charon, and RL3 to ignore combat when going to the Project Purity chamber and inputting the code. Remaining enclave soldiers outside the doors can cause them to be stuck in combat mode
+Fixed Rory to be killed when the player tells him he's on his own (he runs for the exit) and either the player or Rory aren't in the Paradise Falls worldspace
+Fixed Rory to be included being killed with all the other Megaton residents when they're blown up 💥 if he's in Megaton
+Fixed Rory to be killed if he's on his way to Megaton and the player blows up 💥 Megaton
+Fixed the Blood Ties quest objective "Locate the Family." to complete when it's displayed and the player already found The Family
+Fixed when Andy Stahl says "Can't a man eat in peace? Go talk to Jenny or Leo if you need something." only when he's sitting, eating, the player already talked to him, player passed his initial greeting stage, and Jenny/Leo are alive
+Fixed when Andy Stahl says "Look, I need to balance these books. If you'd like to order some food, please talk to Jenny or Leo. " only when he's sitting, working, the player already talked to him, said once a day, player passed his initial greeting stage, and Jenny/Leo are alive
+Fixed when Andy Stahl says "Yep. Still balancing the books. Is there something exciting about watching me? Look: Go talk to Jenny or Leo." only when he's sitting, working, the player already talked to him, fixed its emotion type to anger, player passed his initial greeting stage, and Jenny/Leo are alive
+Fixed when Andy Stahl says "You again. Is there something exciting about watching me? Look: Go talk to Jenny or Leo." only when he's sitting, working, the player already talked to him, player didn't pass his initial greeting stage yet, and Jenny/Leo are alive
+Fixed when Andy Stahl says "Hmm? Oh. I'm afraid I'm quite busy right now. If it's food you're after, talk to Jenny or Leo. Otherwise, I can't help you." only when the player hasn't talked to him yet, player didn't pass his initial greeting stage yet, and Jenny/Leo are alive
+Fixed when Andy Stahl says "You again? Go Bother Jenny or Leo, will ya?" only when the player already talked to him, fixed its emotion type to anger, player didn't pass his initial greeting stage, and Jenny/Leo are alive
+Fixed when Andy Stahl says "Whatever. I need to get back to work." only when he's sitting and working
+Fixed/Prevented a save glitch at the Vault 101 Birthday party. If the player saved the game when the Overseer is standing next to Old Lady Palmer and the door he entered from is still open. Loading the save, the door didn't close and remained open. That door is supposed to close and leads to out of bounds
+Fixed the Nuclear Anomaly perk to not harm the player and work as intended
+Fixed the slaves to stop looking at Ashur and leave after Ashur's speech. They were just standing there looking at Ashur until the player exited the cell and they got disabled
+Fixed the Taft Tunnel Overflow Door Control Terminal to block the player from using it. If the player used it to unlock the door before Dr Li did, it caused the scientist team to remain in their waiting positions
+Fixed Moriarty's Saloon to be renamed to Gob's Saloon when Moriarty is dead and Gob is alive
+Fixed/Cut when Michael Masters says "Still want to live in the past, huh? Well, forget it. Those days are long gone." Unvoiced line that doesn't exist
+Fixed/Cut when Michael Masters says "Yuck, the thought of walking around naked's making me sick." Unvoiced line that doesn't exist
+Fixed/Restored Lydia Montenegro to say "Still want to live in the past, huh? Well, forget it. Those days are long gone." when the player is interested in the Pre-War Theme
+Fixed/Restored Lydia Montenegro to say "Yuck, the thought of walking around naked's making me sick." when the player is interested in the Love Theme
+Fixed Dr Barrows unique healing dialogue lines to use the Doctors quest instead of Reilly's Rangers quest. When Reilly's Rangers quest ends, all associated dialogue will no longer trigger
+Fixed when Mister Crowley says "You did me a great favor with those keys. How do you like my new armor? Those keys led me right to it." to not be said once a day so he's not able to say "You stole what was rightfully mine! Get lost." afterwards making no sense
+Fixed in all ways telling Mister Crowley if Ted, Dave, Dukov, or Tenpenny are already dead before the quest begins
+Fixed when the player says "Sure. Take it. I don't have any use for it." to Mister Crowley to complete the objectives involving giving him each key
+Fixed when the player says to Mister Crowley about not having any proof yet to be all goodbyes, be specific towards not having each key, and the player can try again with proof talking to him again
+Fixed/Restored Mister Crowley to also obtain the T51b Power Helmet when he gets the T51b Power Armor (developers partially did this but didn't finish)
+Fixed Mister Crowley to not sometimes get stuck trying to obtain the T51b Power Armor when right in front of it (his get PA Helmet package was never ending)
+Fixed the T51b Power Armor stasis field to get disabled after Crowley gets the armor set
+Fixed the T51b Power Armor/Helmet to disable themselves after Crowley gets the armor set
+Added the Flies flag to some flying creatures that were missing it, this means they won't set off mines/tripwires anymore.
+Fixed Esther, Experimental MIRV and Fat Man to have a critical chance of its restored Atomization effect on death
+Fixed quests that had finished objectives marked not completed after completing the quests. Aiding the Outcasts, Not of This World, Project Impurity, Protecting the Water Way, Take it Back, The American Dream, This Galaxy Ain't Big Enough, and Trouble on the Homefront
+Fixed Project Impurity quest to start and objective "Infect the Project Purity water supply... Or not." to be displayed after obtaining the Modified FEV Virus
+Fixed/Restored Project Impurity quest objective "Infect the Project Purity water supply." to be displayed after obtaining the Modified FEV Virus
+Fixed/Restored Project Impurity quest objective "Turn in the FEV virus over to Elder Lyons." to be displayed after obtaining the Modified FEV Virus
+Fixed/Restored Project Impurity quest objective "Turn in the FEV virus over to Elder Lyons." to be completed after giving the Modified FEV Virus to Elder Lyons
+Fixed/Restored Project Impurity quest objective "Infect the Project Purity water supply... Or not." to be completed after giving the Modified FEV Virus to Elder Lyons
+Fixed/Restored Project Impurity quest to be completed after giving the Modified FEV Virus to Elder Lyons
+Fixed/Restored Project Impurity quest objective "Infect the Project Purity water supply." to be completed after inserting the Modified FEV Virus into the Project Purity Auxiliary Filtration Input
+Fixed/Restored Project Impurity quest objective "Infect the Project Purity water supply... Or not." to be completed after inserting the Modified FEV Virus into the Project Purity Auxiliary Filtration Input
+Fixed/Restored Project Impurity quest and objective "Infect the Project Purity water supply... Or not." to be completed if the player didn't give the virus to Elder Lyons and didn't infect the water supply
+Fixed Esther, Experimental MIRV and Fat Man to have a critical chance of its restored Atomization effect on death
+Fixed the Reilly's Rangers Quest objective "(Optional) Locate the Ranger's ammo crate." target to only show if the player asks Donovan or Brick "Where can I get some more ammo around here?"
+Fixed/Cut the line "Gonna have to get the code from Butcher though." Brick says since Butcher's line doesn't exist
+Fixed/Cut the line "Ask Butcher for the code though." Donovan says since Butcher's line doesn't exist
+Fixed the Hit Squad NPCs (Talon and Regulators) to all attack as a group towards the player if the player attacks them before they engage in dialogue, only the NPC shot would attack
+Fixed the Hit Squad Regulator NPCs to have the Bounty note and not the other Regulators
+Reversed/Fixed bad edits that caused Zeta Cryo Lab pods to not activate
+Fixed some Zeta archways that wouldn't work
+Fixed TTW train klaxon light to be on and spinning
+Fixed the player being unable to accept blowing up Megaton after telling Lucas Simms Burke wants to blow up Megaton
+Fixed Simone's bed in Simone's Tent to be owned by Simone. Not by Caleb
+Fixed Caleb's bed in Caleb's Tent to be owned by Caleb. Not by Simone
+Fixed Bill's bed in Caleb's Tent to be owned by Bill. Not by the Player
+Fixed Alejandra's Sandbox routine to be inside Caleb's tent. Not in Simone's
+Fixed Caleb's eat and sleep routines to be inside Caleb's Tent. Not in Simone's
+Fixed Simone's eat and sleep routines to be inside Simone's tent. Not in Calebs
+Fixed/Re-implemented all of Rivet City's extra flavor dialogue lines residents say at the beginning or end of their routines (going to bed, bar, work, etc). This made some NPC scripts not needed anymore. Fixed many incorrect lines being triggered or at the wrong times. Made all necessary lines to be specific saying to someone, if they're alive, near them. Restored some lines as well
+Fixed Father Clifford to still preach after Diego and Angela get married
+Fixed the Rivet City wedding to not break if Angela's "wait to walk down the isle" expired before she got there
+Fixed the Rivet City wedding to not be at a standstill when Angela is supposed to walk down the isle
+Fixed the Rivet City wedding residents to have infinite time to show up for the wedding
+Fixed/Restored Angela and Diego to sleep in their new bed after getting married
+Fixed/Restored Angela and Diego to sandbox in their new room after getting married (when no other routine is being called)
+Fixed/Removed empty death leveled item lists from Angela Staley, Cindy Cantelli, Flak, Gary Staley, Jenny Stahl, Paulie Cantelli, Shrapnel, and Vera Weatherly
+Fixed/Added Gob to say "For you, a discount" to the player if Moriarty is dead
+Fixed/Added Fawkes to say "We both know you're here to obtain the G.E.C.K. Now, follow me. I'll retrieve the G.E.C.K. for you." if the player hasn't made a bargain with him yet (his line saying "now my part of the bargain" when no bargain was struck made no sense)
+Fixed Sid and Centaurs in Vault 87 observation cells to not be hostile only until their own cell door's have been unlocked
+Fixed Sid to not be in the Centaur faction so Centaurs and Super Mutants will attack him after he's released
+Fixed the named order of the Observation cell terminals
+Fixed Unsafe Working Conditions and Free Labor quest markers to show the full path of where to go for each objective
+Fixed Tobar's Wasteland Ferry sandbox routine
+Fixed the PL ferry boat cutscene to no longer bug out (Player stood there with controls disabled until the timer ran out)
+Fixed a key's name from "Fuel Stash Conatiner Key" to "Fuel Stash Container Key"
+Fixed Eulogy's upper exterior door to match its interior counterpart 
+Fixed Paladin Gunny's sleep routine to sleep in a bed (the only unassigned bed in the citadel)
+Fixed all the Brotherhood dialogue lines when they address each other as sir, sir knight, Paladin, etc
+Fixed the dialogue choice "Wait, I meant, um, isn't she cute? Here you go." to close the baby's crib, not open it
+Fixed Silver's side quest dialogue to be unlocked at all times
+Fixed the dialogue choice "I took care of Silver for you." towards Moriarty to be unlocked
+Fixed the dialogue choice "You're lying. The Vault's been sealed for 200 years!" towards Moriarty to not be available if the player already knows they ventured out of the vault from reading the Vault 101 overseer's terminal scouting report
+Fixed the Pitt slaves to not say "Help us" still when the player frees them from the pen in the Wasteland near the cart ride
+Fixed/Restored Jericho's response "I spent a lot of time out there and I've left a lot of ghosts in my path. Some of them, well... they're coming a bit close to catching up to me." to when asking him about the Wasteland
+Fixed/Restored Roy Phillips to say "I had a feeling you'd be coming, deep in my angry bones, I just knew it. We're all set, just get that door open!" to the player when approaching the DCTA Emergency Access Terminal
+Fixed/Restored Roy Phillips to say "Come on kid, get that door open!" randomly to the player when approaching the DCTA Emergency Access Terminal
+Fixed/Restored Roy Phillips to say "I'm counting on you, get that door open!" randomly to the player when approaching the DCTA Emergency Access Terminal
+Fixed/Restored Roy Phillips to say "What's the hold up?" randomly to the player when approaching the DCTA Emergency Access Terminal
+Fixed/Restored Roy Phillips to say "Get this door open already!" randomly to the player when approaching the DCTA Emergency Access Terminal
+Fixed/Repositioned the DCTA Emergency Access Terminal slightly to the right so the quest compass points to it on the correct side of the wall. Not the opposite side of where the Ghouls are waiting
+Fixed/Adjusted the Ghoul's AI that are waiting in the Metro Access & Generator to not become hostile so easily towards the player causing Roy to also be hostile (They still will become hostile if the player gets close enough to them)
+Fixed the Metro Access & Generator Containment Door to only be activated once when unlocked so the player doesn't get negative karma twice when unlocking the door with the terminal and blowing up the transformers
+Fixed/Blocked the dead body container cheat at the Pitt front gate
+Fixed the Pitt guards (right after the front gate) to not say you killed his buddies when the player started combat but didn't kill any of them
+Fixed/Restored Mex that was supposed to say "Hold it right there, grinder. Inspection." if the player is wearing slave clothes before forcing a conversation at the Pitt front gate
+Fixed/Restored Mex that was supposed to say "Hold it right there, Waster. Inspection." before forcing a conversation with the player at the Pitt front gate
+Fixed the dialogue choice "How did someone like you get a nickname like Princess?" towards Princess to be only said once (choosing this a 2nd time after asking Sammy about Princess breaks the progression choice)
+Fixed Grandma Sparkles' Shack name to Grandma Sparkle's Shack
+Fixed/Moved 2 creature spawns away from Robco so they don't possibly kill Tinker Joe and his robots
+Fixed the Vault Tec Terminal 76 Project Goals
+Fixed a Super Mutant Radscorpion Hunter to have a leveled melee weapon
+Fixed a Super Mutant Radscorpion Hunter to be part of the Super Mutant faction
+Fixed Vera's dialogue line "Welcome back, sir." to have an added condition to only trigger when the player is near her hotel
+Fixed Vera's dialogue line "Welcome back, ma'am." to have an added condition to only trigger when the player is near her hotel
+Fixed/Changed "talk to him." to "let me know when you are ready to order." in the dialogue line "Hi. I'm Angela. My dad runs Gary's Galley. If you want anything to eat, talk to him." Didn't make any sense when she takes orders
+Fixed Angela's dialogue line "Hi. I'm Angela. I run Gary's Galley. Let me know when you are ready to order." to have an added condition to only trigger when the player is near their restaurant
+Fixed the turret in the Jefferson Memorial and Gift Shop to be friendly to Super Mutants (requires a new game for this to take effect)
+Fixed Warrington Station's exterior chain gate to switch to its unlocked model after it's unlocked
+Fixed a dialogue choice with Old Man Harris to show the proper choice depending on if the player talked to the other Andale residents or not
+Fixed Ian and Arefu to not go hostile, and not fail the quest unexpectedly if the player attacked The Family afterwards
+Fixed the dialogue prompt "Look, this place isn't the answer. You need to go home and face your demons." the player says to Ian to be a speech challenge (developers didn't finish setting it up)
+Fixed all dialogue lines that had too many inconsistent periods .... in the entire game
+Fixed Dr Li's dialogue line "I'm unarmed! Don't shoot!" to only be spoken if the hostile target has a firearm out
+Fixed/Changed "am I" to "I'm" text in a Stiggs dialogue line that didn't match the audio
+Fixed/Moved "is" text in a Mother Curie dialogue line that didn't match the audio line
+Fixed/Added in "was" text into an Elder Lyons dialogue line that he said in the audio but was missing from the text
+Fixed/Added in "any" text into a Macready dialogue line that he said in the audio but was missing from the text
+Fixed/Added in "this" text into a Somah dialogue line that she said in the audio but was missing from the text
+Fixed/Cut out "I think" text from a Somah dialogue line since she didn't say it in the audio
+Fixed/Cut out "Can you believe these" from a Brokensteel Megaton Settler dialogue line since one voice type incorrectly said "those"
+Fixed/Cut out "in that alley in Chevy Chase" from Sarah Lyon's dialogue line "When I first saw you long ago in that alley in Chevy Chase, I thought you were just some trashy Wastelander. I'm glad I was wrong." to account for if the player skipped going to Chevy Chase
+Fixed all inconsistent spellings of "ghoul" to "Ghoul" in DC
+Fixed all inconsistent spellings of "muties" to "Muties"
+Fixed all inconsistent spellings of "super mutant" to "Super Mutant" in DC
+Fixed all NPC's forced dialogue to account for if their target is dead or not
+Fixed all scripts and conditions towards locked doors to account for being broken
+Fixed/Reverted Rivet City doors having "ignored by sandbox" that caused NPCs with sandbox routines to be stuck
+Fixed/Reverted Rivet City doors having "minimal Use" that caused NPCs to take longer routes
+Fixed Angela and Gary Staley to ask Rivet City residents to take their orders once per meal time
+Fixed Angela to say "I'll be right with you." when the player is within Gary's Galley radius
+Fixed Angela to still offer services when eating at Gary's Galley
+Fixed Gary Staley to say "Have a seat anywhere. Someone will be with you in a minute." when the player is within the Gary's Galley radius
+Fixed Angela and Gary Staley's serving times, and to be unlimited for each meal (no need when they're active towards the NPC's eating times)
+Fixed Angela, Gary Staley, Brock, Belle, Mister Buckingham, and Vera Weatherly to only serve NPCs when the player is in the same cell
+Fixed Shrapnel to say "Hey, girlie. This ain't a god damn dress shop. There's nothing in here you oughta be buyin'." when Angela Staley is within Shrapnel's store radius and she's currently on a break from work
+Fixed Tammy Hargrave to say "James? Who knows where that little shit has run off to. Mind your own business, Brock. I'm going to get a drink." to Brock when James isn't in the same cell as her
+Fixed Father Clifford and Diego to start their preaching dialogue when at the podium (half the time was standing there not talking)
+Fixed Father Clifford and Diego to not have a difficult time getting to the preach target and they won't get stuck trying to get off of the walkway after the sermon from removing the walkway underneath the Rivet City Church podium
+Fixed Father Clifford and Diego to stop saying the preach dialogue when their preach package expires (church sermon ended)
+Fixed Father Clifford and Diego to be always looking forward when preaching
+Fixed Father Clifford and Diego to be uninterrupted by hello dialogue during their preaching
+Fixed Rivet City, Megaton residents, and Euology Jones to not get stuck trying to complete routines when the player isn't in the same cell as them (Adjusted AI)
+Fixed the Behemoth Achievement, Brokensteel President Ghouls, Brother Gerard, Alien Non Hostile, Doctor Lesko, Garza, Mabel Henderson, Mister Burke, Wasteland Survival Guide, Mirelurk quest, Those Queen Ant quest, Tenpenny Tower Feral Ghoul attack, and Reilly's Rangers quest scripts to account for if the player's teammate/follower does the killing blow
+Fixed the Metro Protectron and Super Mutants in the Dupont Circle Station to stop talking to each other if one of them dies during their conversation
+Fixed Butch, Christine, Old Lady Palmer, Paul Hannon, Stevie Mack, Susie, and Wally Mack to be seated uninterrupted by hello dialogue at the Vault 101 Bday party
+Fixed Butch to get up out of his seat to confront the player when wanting the sweetroll
+Fixed Paul Hannon to follow Butch when he confronts the player, and will go into combat with him if the player makes Butch mad (incorrect package type)
+Fixed Stanley to not sit too early at the bday party
+Fixed Stanley to be included in the Growing Up Fast quest script to look at the player when everyone else does
+Fixed all eat routines to allow searching for food if they don't have any
+Fixed the Andale residents to have conversations to each other (Adjusted AI)
+Fixed all NPC forced dialogue to be uninterrupted by hello dialogue (Adjusted AI)
+Fixed Red to offer services while sleeping (she offers services whenever in the clinic, and that's where she sleeps)
+Fixed when Cherry steals Dukov's key to be uninterrupted by hello dialogue (Adjusted AI)
+Fixed Citadel Lyons, Scribes, Knights, and Paladins to have random conversations with each other during all routines  (Adjusted AI)
+Fixed Underworld residents to have random conversations with each other during all routines  (Adjusted AI)
+Fixed Roy Phillips, Bessie, and Michael to have random conversations with each other during all routines  (Adjusted AI)
+Fixed American Captives, injured limping Americans, posing for picture Americans, and American War Correspondent to head for inside the Command Tent and get disabled (before they would stop at the Command Tent's entrance and stay there)
+
+From Kazopert:
+Fixed Point Lookout Moonshine to use the FNV one
+Fixed Nightkin missing embedded weapon list
+Restored the Stealth Boy prototype being interactible with during Guess Who I Saw Today
+Fixed Follower Random dialogue lines
+Fixed Mister Lopez's greeting line "I wish I had the courage to end it all." to be said at the right time
+Fixed not missing out on a challenge if a companion kills a behemoth
+Fixed/Replaced all static centaurs in DC with a new levelled list for normal and evolved centaurs
+Fixed all exterior acoustic spaces in FNV to not use "Is Interior" flag
+Fixed/Added Vera's Dress to the list of items Veronica recognises as a dress
+Made it so Junk Food, Bubblegum and Gum Drops now restore starvation, also made them get affected by the Food Sanitizer and Old World Gourmet.
+Fixed White Horsenettle so its effect that restores starvation now works if you have the Food Sanitizer.
+Made it so you can't wear the Radiation Suit and Breathing Mask at the same time.
+Made it so you can't wear Talon Combat Helmet, Reinforced with Sunglasses.
+Made Deathclaw babies and mothers have the correct hit sounds.
+Made it so the aliens at the Wild Wasteland encounter in New Vegas have alien voices and items from Zeta.
+Made it so Raul can repair your equipment in his shack if he's a companion
+Removed a duplicate goodbye for Melody
+Fixed it so Lily doesn't give you her perk removal message even if she isn't your companion
+Removed the ability for several random beds in the Wasteland to give you the Well Rested bonus
+Fixed the Protectron in the EncRobotArmy levelled list so he's actually an army Protectron
+Fixed several robot spawns in the Mojave so they aren't using DC voicetypes
+Updated the TTW DLL message so it talks about ROOGNVSE now
+Fixed an Enclave encampment note that was missing most of its top text
+Fixed the utility door in the National Archives so you can't make it continually spam the same message
+Restored Dogmeat's carrying ability
+Fixed companions to not default to the wrong packages and making NV companions go to DC if you don't immediately hire them
+Made it so you can wait in Eulogy's Pad
+Fixed Three Dog's PSA's so it doesn't just play the Ghoul and Raider PSA
+Fixed Three Dog's one-time intro when you fix the radio dish so it now plays correctly, also fixed a broken link so his last line plays properly
+Removed Legion ears off of dead Legionnaires since you can get them even if you didn't start/finish the respective quest
+Fixed the Ranger at Ranger Station Charlie so he isn't (unintentionally) stripped naked
+Fixed two water pools at Quarry Junction that weren't irradiating you as they should've done
+Fixed it so you can't trap yourself inside the concrete barriers near Jefferson Memorial
+Fixed NPCs to only say Karma dialogue lines to the player
+Fixed a Broken Steel smoke trail that was appearing even if you didn't blow up the Citadel
+Removed NV doctors from the DC dialogue faction and other small cleanup
+Updated plugin requirement messages
+Made Lead Belly reduce radiation from water sources like it should
+Made all doctor scripts consistent and easier to read
+Restored an unused addiction line from Julie Farkas
+Fixed the NV doctor packages so they don't get stuck on the greeting package
+Fixed some scripts that were failing to compile and recompiled some that needed it
+Removed all uses of AddPerk in companion hiring scripts as it isn't necessary (And is half-broken anyway)
+Added one-time adding of Companion Suite/Charisma Bobblehead Perk in the respective scripts.
+Enabled basic JIP NPC perks by default. (Setting 1)
+Fixed the Charisma Bobblehead Perk so its damage resistance works properly now
+Fixed a massive YUP goof by undeleting the dialogue for Deans Blackmail Note and adding impossible conditions instead
+Removed Auto-Calc from the remaining ingestibles that had it.
+Marked the magic door in Mama Dolce's as inaccessible.
+Removed the open/close sound from an ammo box in Lonesome Road as it was duplicated.
+Fixed an extra space in one of Scribe Jameson's dialogue lines.
+Made it so asking Scribe Jameson about dogtags prevents the player from still asking about them to other Brotherhood members.
+Made the spelling of madam consistent.
+Removed the goodbye flag from all the Citadel Brotherhood greetings so the player can ask them about power armour/holotags.
+Fixed a missing word in a dialog line about Grayditch.
+Fixed it so Raider dogs don't attack Raider Brahmin anymore.
+Fixed the sleeping Brotherhood Knights in the Citadel so they actually snore now on interacting with them.
+Fixed it so Veronica doesn't randomly greet you in the Capital Wasteland about her quest.
+Removed AddPerk from the X-42 Giant Roboscorpion.
+Fixed Harold so his dialogue when not looking at you doesn't sound like it's coming from an intercom.
+Corrected the filepath for the large/small dog injured sounds. (They were the wrong way around)
+Fixed a terminal that didn't capitalise RHO.
+Properly implemented the Gunny/Initiate conversations in the Citadel so they have a more than a 1/1000 chance of running and fixed the grenade package that was using the wrong dialogue target entirely so it wasn't working.
+Cleaned up the knockdown actor/base/object effects so they have the right flags.
+Fixed Rex doing double the damage he should do with the Faithful Protector perk.
+Added a check for Mobius' Glove so it doesn't frenzy over and over again.
+Fixed inconsistent name of the Gauss Rifle Prototype.
+Fixed a beam trap in Vault 11 that had ragdoll data which was making it trigger prematurely.
+Fixed a Nightstalker in Vault 19 that was stuck in the floor.
+Fixed two trap shotguns in NV that weren't being disabled because they were attached to an enable parent.
+Removed the Protectron Drones from the Robot faction in Old World Blues since they weren't attacking the Giant Roboscorpion.
+Fixed scripts calling disable on enable parented objects for picking the Punga tree, during Take it Back!, and when you're at Bitter Springs with Boone.
+Removed enable parents from the electric arcs that appear when blowing up the Vault 101 reactor so they now appear at the correct time.
+Increased the threshold for Apocalypse Ain't Got Nothin' because it wasn't changed, and You Run Barter Town as it was too easy to get.
+Fixed the Black Mountain Centaurs so they're in the same faction as the Super Mutants, they were staying aggroed if you did the quest peacefully.
+Changed the Metro Protectron in Dupont Circle Station so you can't talk to it and disrupt its package. Also increased its talking timer so he doesn't cut off its own dialogue.
+Fixed Albino Radscorpions so they're actually in the same factions as the other radscorpions now.
+Added No Knockdowns to all Spore Plants.
+Changed the generic locked objects/fire weapon dialogue topics so they check for teammates rather than specific companions.
+Removed a TTW change that was making it so you were getting your concealed weapons twice when entering the Pitt.
+Fixed the Book Chute not using it's post-ending dialogue, the variable was being set in the wrong topic.
+Fixed Mean Sonofabitch talking about being glad he's on his own side.
+Fixed Specialist Olin saying "We'll be here" to McGraw.
+Fixed James Garret using drunk goodbyes.
+Restored 18 lines of attack dialogue from Vault 101 Security that were hidden behind bad random info positioning.
+Fixed Doctor Li's Flee dialogue so she only says it if the combat target has a gun.
+Fixed Doctor Barrows healing dialogue so it uses the right spelling.
+Fixed Sawbones' elevator music getting interrupted.
+Fixed Daring so his dialogue about GNR and Argyle aren't tied to the Tenpenny Tower quest running.
+Fixed the Sudden Death Overtime gang so they all run away properly.
+Fixed some Merchants in New Vegas that were reverting to default dialogue when you asked them what was for sale.
+Fixed 2 dialogue topics for Fitz so it doesn't go missing when ask other questions.
+Fixed Mean Sonofabitch so one of his goodbyes is actually marked as a goodbye.
+Fixed Bill Ronte/Jacob Hoff so their goodbyes are actually marked as goodbyes.
+Fixed an intermittent issue with Troike where he wouldn't run off when he should.
+Fixed it so you can't ask Marco about Saint James when he's been arrested.
+Conditioned out unvoiced lines for the Samurai encounter on the bridge and added appropriate sound effects.
+Marked the Caesar's Legion and REPCONN Robots as Evil so you don't lose karma for stealing/picking locks from them.
+Fixed Braun's failsafe note so it doesn't have invalid characters.
+Added the Ultra-Luxe gamblers to the VNCRStreetFaction faction like the other gamblers.
+Fixed a gambler that attacked you instead of running away if you started combat.
+Fixed Walter and Ethel Phebus so they actually sit properly now, their old package was using a radius.
+Fixed a Vexillarius that with evil Karma as you were gaining Karma for killing him.
+Fixed Amata's package where she leaves your room so it doesn't block her last line of dialogue.
+Fixed Smiling Jack so he always stays at his counter and doesn't run off.
+Added a SPECIAL check for Walker Instinct so you don't waste a perk.
+Reverted the usage of GetGameDaysPassed for Little Buster's script as it wasn't working if you did the DC start.
+Fixed a missing period for a quest objective in Trouble on the Homefront.
+Fixed Mortimer so if you force him out then kill him you can loot his body.
+Fixed a few scripts in Zeta that were trying to play animations on disabled forms.
+Removed an incorrect script from Mama Dolce's radio and fixed the voice type on the Vault 101 radio.
+Re-added the voice filter to the intercom in the Ultra-Luxe.
+Moved some dialogue from Nurse Graves/Doctor Barrows outside the Reilly's Rangers quest to make sure they still run after the quest is finished.
+Disabled Montgomery after Anchorage is finished so he doesn't escape the simulation.
+Changed faction armour so companions that can't wear it can actually carry it.
+Removed the RefreshItemsList command from TTW as it's fixed properly in-engine now.
+Added uncompressed facegen to all NPC's
+Fixed several creatures that had the Swims flag with no swimming animations and added/restored the Flies flag to all creatures that fly.
+Fixed inconsistent spelling of Nightstalker.
+Fixed some Honest Hearts traps that were missing checks for the trap/White Legs faction.
+Restored Player death sounds.
+Marked a chair as static so you don't get stuck in a desk.
+Reduced the wander radius for the Great Khan armourers so they don't unlock the jail door, also marked said jail door as owned.
+Marked the companional dismissal terminal in Craterside Supply as player owned so it doesn't count as a crime to use it.
+Removed the Player Only flag from Industrial Hand since TTW adds it to some NPC lists.
+Removed the Cant Drop flag from the Chinese Dragoon Pistol.
+Fixed an issue with the Zax Eyes using voice lines from President Kimball.
+Fixed the Second Skin perk having the wrong number (30 instead of 50)
+Fixed Veronica so she doesn't try to go to Megaton when its been destroyed.
+Removed invalid idle animations from EDE's stand outside Megaton package.
+Added the Service Rifle to the WeaponMachinegunLIST form list.
+Removed the Pulse Gun from the BeamChallengeWeaponLIST form list.
+Added DC variant weapons to the NVDLC05ChallengeWhiteLineNightmareWeapons form list.
+Removed the Combat Shotgun from the DLC04SwampFolkWeapons form list.
+Added the Tuxedo Hat to the TTWItemUniqueList form list.
+Added the Cryolator to and removed the Fist of Rawr from the TTWChallengeJunkyardDogList.
+Updated the description of the Junkyard Dog challenge to make it more clear.
+Fixed Boone and Veronica so they actually aggro on you properly now. (TTW added them to the follower faction but didn't remove them in these cases)
+Fixed it so you can't get RL-3 without the Speech bobblehead if you have good karma.
+Reverted TTW's change to the reinforced leather armour icon (It was changed to the regular one for some reason?)
+Added correct biped flags to the Hellfire Power Armour Helmet to be in line with the rest.
+Made the 4GB patch checker only check for a value of 0 to work around a JIP bug.
+Fixes bad random dialogue order and restored StartCombatResponse dialogue for the New Vegas companions.
+Linked up 100+ StartCombatResponse lines to combat lines so they actually play now. (Surpisingly this wasn't just on Obsidian), also fixed some GetSex checks to check Combat Target.
+Made Ulysses' mask modulate voice.
+Implemented TTW Combat Shotgun HQ Reload Sounds (Thanks Bunslinger!)
+Added the pink power armour to the In Shining Armor list plus the Everything list. Also put it into the test cell and renamed it.
+Added a blank acoustic space to the endgame cells for NV to prevent ambient sounds bleeding into them.
+Fixed Jabsco so if you instantly kill him he actually drops his knife now.
+Added voice modulation to the Chinese Stealth Armor as it was only put on the helmets (The helmets aren't actually used standalone)
+Dragged a sledgehammer from deep within the void in Hank's Electrical Supply.
+Removed the turret audio template from the real version of Mr. House.
+Fixed it so Dad doesn't repeat his 21:6 line if you talk to him again without asking about what to do at Project Purity.
+Restored a line from Doctor Li where she's shocked to see you if you rescue Dad but he isn't at Rivet City yet. (A script was moving him there immediately and blocking it)
+Made Colonel Autumn interrupt the conversation between Doctor Li and Dad as it was awkward for him to stand there for a minute straight without saying anything.
+Made it so you don't have to wait so long for Dad to start talking when you turn the valve at Project Purity.
+Made George in Tranquility Lane greet you consistently when you first enter.
+Changed the Swing For The Fences perk so it does 20% more damage instead of flat 10 as it was making automatic melee weapons completely broken damage wise.
+Optimised and made the trap scripts more compatible with flying creatures by checking the flag directly instead of the kludgey method of checking each creatures weapon. (This also seems to have fixed a few instances of creatures randomly not triggering traps)
+Added ShowOff as a dependency for the above change.
+Disables some murder/death lines that check sex since they never fire correctly. 
+Added a 3D loaded check to a disabled veribird near Project Purity since it was trying to play animations on a disabled object.
+Raised several rocks and shrubs out from underneath Project Purity.
+Added a companion dismissal terminal to Rivet City in case Megaton is destroyed.
+Made the Behemoth Club and Gauss Rifle crit effect use the Stonewall system.
+Made it so behemoths can now knock you down like other large creatures.
+Removed the version checking from the TTWStart quest as it's redundant.
+Updated YUPTTW to 13.1.1
+Updated tons of meshes (Mostly SCOLS) to remove the mutable flag from them, saving memory. (Thanks Wall for updating SNIFF and finding this out)
+Removed the "Hat" flag from recon helmets and wigs as it was making hair pop out of them.
+Removed either the Hat or Hair flag from headgear since you can't have them flagged at the same time.
+Fixed two scripts that were still using the broken IsSpellTarget function.
+Made the Lucky 8 Ball show both drop and pick up messages and hidden the "Good luck added" message.
+Made it so bear traps, trip wires, and pressure plates work the same as mines. Faction owners walking over them don't trigger them now.
+Fixed Over-Compensation so the strength requirement only affects big guns like the description says.
+Fixed some XMarkerHeadings in Cliffside Cavern stuck in the walls that were stopping raiders using their patrol packages properly.
+Havok settled all mines in the game to avoid issues where they would fall through the floor. Also reverted old mesh changes to most mines as it broke collision and made the issue worse.
+Recovered tons of mines stuck underneath the geometry that would never appear, mostly around the Pitt Bridge, Wheaton Armory, and Friendship Metro.
+Deleted most mine fix activators since they aren't needed with the reverted mine meshes. (The one at Point Lookout has been kept as this is a different bug)
+Adds ownership to some mines that were missing it so the owners don't blow themselves up.
+Fixed all inconsistent spellings of "ghoul" to "Ghoul" in NV
+Fixed inconsistent spelling of D.C.
+Changed the filepath for the empty whiskey bottle to be the same as YUP for compatibility with some mesh mods.
+Tweaked the train ticket terminals to only require 50 Pre-War Money and added a Repair check for 30 that lets you purchase a ticket for 200 caps.
+Made all the dependency messages suggest looking at the TBOT guide.
+Fixed 13 melee weapons not showing VATS attacks because the values weren't set.
+Fixed a chair that would get you stuck forever.
+Migrated the DC Yao Guai sounds to the Fallout 3 ESM instead of TTW.
+Fixed 25 grammar issues/typos.
+Fixed 112 misplaced statics.
+
+From Kazopert - Installer Changes:
+Fixed it so Irving Cheng isn't missing his Ghoul neighbour dialogue.
+Fixed it so NV Super Mutants don't use DC footsteps and added some NV footsteps that got incorrectly carried over.
+Removed the free size check to support Linux.
+Replaced the OGG encoder with a 64-bit version, decreasing overall install time by 10%.
+Updated the OGG Vorbis DLL's used by the game to latest. (1.3.7.0)
+Placed an OGG-to-WAV operation early on in the installer so any BASS errors are found early
+Split the TTW BSA to make room for the new uncompressed facegen, also moved all meshes out of the misc BSA.
+Removed any assets in the vanilla BSA's that were also in the update BSA to avoid confusion and conflicts. (Also fixed one issue where an update BSA mesh wasn't being used.)
+ 
+From NoBarkNoBiteNoonan:
+Fixed the ncr goggles helmet using the combat helmet's icon on female characters
+Fixed the Enclave Field Research Terminal: RHO Camp's terminal name
+Fixed an Overload Assembly Line message description
+Fixed/Replaced all placed microphones with proper statics so they collide correctly
+Fixed/Removed the embedded sound from a fence record in helios one called CLFence02NoSnd
+Fixed/Disabled a handful of collision markers on the Strip that seemingly serve zero purpose
+Fixed collision transforms on a ton of common nifs, should help people trying to SCOL sidewalks, roads, or fences
+Environment mapped most, if not all windows and other reflective surfaces between both games and added some flags to stop some environment mapped objects from glowing in the dark
+Restored almost all unused environment mapping
+Cleaned up a ton of nif geometry
+Made specular for a lot of textures lacking it, not including geometry or signage
+Removed collision from all LOD meshes that had it for whatever reason
+Corrected all unidentified collision layers to ones matching the usecase
+Corrected a lot of default export stone collision materials to ones better matching the textured materials
+Removed all outdated collision materials leftover from fallout 3 (the metal stairs in vault 21 should no longer sound like stone)
+SCOL'd a few assets (the inclined road next to doc mitchel's with the ugly seam, the King's House of Impersonation, the Atomic Wrangler, those big gray buildings next to the Strip gate)
+MOPP'd a ton of objects lacking multi-material collision (a lot are glass related, most doors with glass now behave like you'd expect, the frames of chainlink fences are finally solid)
+Fixed a handful of animated objects that weren't looping (a swinging door on the greenhouses, all of the trees in honest hearts, the Sink CIU, the lights on Doc Mitchel's house flicker)
+Cleaned up a handful of weapons
+Combined the collision on a few SCOLs so decals worked properly
+Made gendered textures for the boomer outfits
+Fixed the light animation for the microfusion hypercharger
+Made elijah's laer green like in the concept art
+Fixed the missing jam sound for the 45 auto submachine gun
+Made nightstalker the consistent spelling
+Tweaked exploding barrels between ttw to be consistent and give a warning before they explode
+Made weapon mod descriptions more accurate and consistent
+Made weird projectile collision layers on electrical pylons transparent
+Made some texture tweaks to ttw's deathclaw variants
+Made the windows of enterable rooms on the point lookout hotel glow so you can tell which are used
+Fixed weird textures on the tranquility lane npc models
+Probably made 20 and 12 gauge shotguns use the right colored shells
+Made a female pimpboy mesh that isn't ass or modified from mission mojave assets
+Fixed holes in the pipboys
+Credit to the scummiest of them all: added a missing alpha mask to a decal on sunset sarsparilla trucks
+Created a fingerprintless texture for monitors and applied it to all of the places that would make sense
+Cleaned bc1 compression from the pipboy normals and water textures and resaved them as uncompressed to remove some ugliness
+Resized all third person weapon textures to be at least half the 1stperson size (srs the laser weapons were 128 when everything else is at least 256; now most are 512)
+Replaced the garbage speculars on the chainsaw and autoaxe so they don't look like plastic
+Fixed a lot of mesh issues with the chainsaw (sadly the chain's UVs are still garbage for now due to a busted export)
+Fixed instances where GRA replaced the 1stperson textures of some weapons with their low resolution counterparts
+Made a male version of walking cloud's armor and made it playable since it's supposed to be awarded at the end of honest hearts
+Replaced the damwar versions of outfits with their full, playable models
+Credit to inthegrave: placed down some references that you should be able to see from north freeside
+Fixed the timing on camp mccarran's animated sign, it turns on between 7pm and 7am
+Credit to theincrediblekraken: fixed flickering on some signs in freeside, tweaked LOD for gomorrah's lights, flipped a glowing window on the tops that was facing the wrong way, fixed some mesh errors on tuxedos, caravan, gambler, and ambassador outfits
+Fixed honest hearts looping tree animations
+Edited the bobblehead stand to add an extra spot for big guns (Currently unimplemented but is in the test cell)
+Fixed a typo
+
+From Rikako:
+Removed env mapping from architecture\suburban\bldgcorner01, 02, and 03
+Fixed collision material on vehicles\mustang.nif
+Cleaned up meshes\clutter\playground\ruined\ufofort01.nif
+Fixed up smoothing on meshes\vehicles\boat01d.nif
+Swapped cubemaps on meshes\armor\headgear\ncr_civillian\ncr_civ_glasses_m.nif, ncr_civ_glasses_m_go.nif
+Greatly reduced draw calls on lots of meshes in dlc03\architecture\andrewsbase\
+Fixed a billion stretched UVs on meshes\architecture\urban\buildingscomplete\bldfuturedcworld16.nif
+Reduced total mesh chunks from 70-something to 5 on meshes\dlc05\dungeons\mz\enginecore\dlc05mzrmenginecorebase01.nif
+Merged shapes on meshes\architecture\urban\georgetown\gtstorecornera01.nif
+Fixed UVs and merged shapes on meshes\architecture\strip\nv_mangelos_sign.nif
+Removed hopefully all the degenerate normals, adjusted collision alignment stuff on meshes\clutter\tombstone\arlingtonmonument01.nif
+Various fixes to: meshes\dlc04\clutter\dolltrees\dlc04dolltree, meshes\architecture\urban\capitol\capitolrotundainterior01.nif
+SCOL'd the TV's Camp McCarran Concourse
+
+From Darth:
+Added Power Helmets to DC Brotherhood Members who did not have them, or had them added during Take it Back. Helmets will be unequipped when not in combat
+Added Power Helmets to Protector McGraw and Defender Sibley. They will unequip them when not in combat
+Added Scorched Sierra Helmet to Colonel Royez and added script to Royez to equip Helmet in combat
+Restored Recon Helmet that was cut from Sentinel Lyons. She will remove it during the Take it Back speech, and when activating the purifier.
+Changed DC Paladin and Outcast Protector Armor Lists to reverse of Hidden Valley Brotherhood (i.e. 4/5 chance of T-45d, 1/5 of T-51b)
+Changed Lyons Pride Paladins back to T-45d (for consistency in Sentinel Lyons Sacrifice video). Sentinel Lyons still given T-51b in Broken Steel
+Reverted Paladin Jensen Helmet addition. The joke is that he is an idiot who thinks he is a super hero. No helmet is appropriate
+Reverted Initiate Reddin to original equipment
+Fixed Raider Enclave ecounter NPC being given Helmet erroneously
+Removed Recon Helmet added to Paladin Tristan
+Added missing gloves to Army and Brotherhood Recon Armor
+Fixed potential issue where HV Paladins could remove helmets on death
+
+Bugs reported by Panzermann:
+Fixed Anchorage weather image spaces for sunrise, day, sunset, night
+Fixed 3 Terminals with subtitle mispellings
+Fixed many dialogue subtitles
+Fixed 15 note mispellings
+Restored a Brokensteel Terminal Remote Access Research Terminal note
+Restored a love letter note from Bittercup that's added through 3 different dialogue choices with her
+Restored a Dispatch to Scribe Yearling note that's added from Scribe Yearling involving 5 different dialogue choices
+Restored a Contract With Ahzrukhal note from Ahzrukhal that's added when the player says to him "Sure. Greta is nothing to me. I'll do it."
+Restored a Nuka 4 Zip! note from Zip when asking him "You said you were looking for Nuka-Cola?"
+Restored a Note From Walter that's added when saying to him "Sounds good to me. I'll bring you the parts I find."
+Restored a Mirelurk Spawning Pod note picture from Moira Brown when accepting to do the side quest saying to her "All right, I'll try."
+Restored a Minefield Playground note picture from Moira Brown when accepting to do the side quest saying to her "I suppose, for the sake of proper research, I can go back into Minefield."
+Restored a Minefield Playground note picture from Moira Brown when accepting to do the side quest saying to her "I'll head into Minefield. Wish me luck."
+Restored a Arlington Library Photo note from Moira Brown when accepting to do the side quest saying to her "Okay, I'll check out my local library."
+Restored a Megaton Atomic Bomb note picture from Mister Burke when accepting to rig the Megaton bomb saying to him 5 different dialogue choices
+Restored a Notice From Winthrop note when saying to him "Sure, Winthrop. I think I can help you out."
+
+Misc fixes: (Not sure who did these)
+Fixed Zion Map to remain a quest item so you can travel back and forth to Zion after completing Honest Hearts (Roy bug)
+Removed empty syringes as a requirement to make poison darts from recipes
+Adjusted At a Loss For Words challenge to 50 failures to be in line with Sir Talks A lot
+Fixed bug with NVGeckoMeat having a hardcore checks for reduced strength rather than Lead Belly check
+Fixed Anchorage simulation T-51b Armor, T-51b Helmet, Chinese Stealth Armor, Chinese General Hat and Chinese General Uniform to have non-playable flag so player cannot loot it
+Fixed Anchorage simulation Chinese Officer Sword, Chinese Pistol, Flamer, Minigun and Jingwei's Shocksword to have non-playable flag so player cannot loot it
+Fixed SuperMutantBodyPartDataDC to be in Fallout3.esm
+Fixed FeralGhoulBodyPartDataDC to be in Fallout3.esm
+Fixed FeralGlowingOneBodyPartDataDC to be in Fallout3.esm
+Fixed DLC03FeralGhoulBodyPartDataDC to be in BrokenSteel.esm
+Fixed SMRagdollDC to be in Fallout3.esm
+Fixed FeralGhoulRagdollDC to be in Fallout3.esm
+Fixed GlowingOneRagdollDC to be in Fallout3.esm
+Fixed DLC03FeralGhoulRagdollDC to be in BrokenSteel.esm
+Fixed Thermic Lance to not have a "miss" sound so it doesn't destroy your ears
+Added Reloading Supplies Rare to various DC weapon/ammo vendors
+Fixed Charisma Bobblehead to show in perk list
+Fixed Contract Killer to show it needs Evil Karma
+Fixed Lawbringer to show it needs Good Karma
+Fixed Just Lucky I'm Alive to properly check alignment and if you already have Thought You Died or Ain't Like That Now
+Reverted change to Gold Bar value
+Fixed Burnmaster Equip/Unequip sounds
+Fixed Cleansing Flame pickup/putdown sounds
+Fixed Slo-Burn attack animation
+Fixed Rapid Torch attack animation
+
+From Roy:
+Fixed Intense Training Perk's conditions
+Perk and challenge fixes
+Fixed Pitt Trog NPC leveled lists
+Fixed Laser Rifle Scope Zoom
+
+From Trooper:
+Removed the message you get when you pick up flashbangs for the first time.
+Set the weapon skill for alien pistols to 50 from 75.</textarea>
+                    </p>
+                </div>
+
                 <div class="expander-top clickable" onclick="expandCard(this, v332aexpander)" id="v332a">
                     <p>
                     <h3>3.3.2a (5/11/23)</h3>
