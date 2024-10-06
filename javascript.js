@@ -216,7 +216,7 @@ function markActivePage() {
             link.classList.add("active");
             currentIndex = index;
 
-            if (link.classList.contains("sublink")){
+            if (link.classList.contains("sublink")) {
                 link.setAttribute('style', 'display:flex !important');
             }
         }
@@ -279,6 +279,7 @@ function createPageArrows(currentIndex) {
         }
     }
     else if (prevLink) {
+        console.log("Current page not found in sidebar links");
         const prevPage = sidebarLinks[0];
         prevLink.href = prevPage.getAttribute("href");
         prevLink.querySelector(".arrowText").textContent = prevPage.textContent.trim();
