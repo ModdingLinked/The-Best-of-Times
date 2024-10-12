@@ -129,6 +129,22 @@
             <span id="Changelog" class="section">
                 <h2 onclick="location.href='#Changelog'">TTW Changelog (3.3 onwards, DD/MM/YY)</h2>
 
+                <div class="expander-top clickable" onclick="expandCard(this, v333ahf1expander)" id="v333ahf1">
+                    <p>
+                    <h3>3.3.3a Hotfix 1 (12/10/24)</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="v333ahf1expander">
+                    <p>
+                        <textarea readonly class="auto-resize" onclick="this.focus();this.select()">
+                            From DevvEloper:
+                            Fixed the dialogue where you can ask Mr. Crowley about the real reason he wants Tenpenny, Dave, Dukov and the other guy killed, after you hear rumors of them being no bigots.
+                            From NoBark:
+                            Corrected paths in-plugin to account for the removal of an extra meshes folder in the paths for grenaderiflelongbarrelmerc.nif and grenaderiflemerc.nif</textarea>
+                    </p>
+                </div>
+
                 <div class="expander-top clickable" onclick="expandCard(this, v333aexpander)" id="v333a">
                     <p>
                     <h3>3.3.3a (12/10/24)</h3>
@@ -140,6 +156,7 @@
                         <textarea readonly class="auto-resize" onclick="this.focus();this.select()">
 From barrythepirate:
 Fixed InitExtraMiscStat by setting a variable to 1 after it's init instead of relying on GetGameRestarted. This also fixes the perception assignment bug for characters using Four Eyes and some weapon crafting returning nothing
+Fix the Lawbringer challenges bug
 From NoBark:
 Improved the light node position in Pip-Boy meshes, to avoid leaking
 Fixed an extra meshes folder in the paths for grenaderiflelongbarrelmerc.nif and grenaderiflemerc.nif
@@ -1183,13 +1200,13 @@ Removed Sneak2haReloadP from the files as it was breaking plasma rifle third per
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, v331hfexpander)" id="v331hf">
+                <div class="expander-top clickable" onclick="expandCard(this, v331hf1expander)" id="v331hf1">
                     <p>
                     <h3>3.3.1 Hotfix 1 (7/5/22)</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="v331hfexpander">
+                <div class="expander-bottom" id="v331hf1expander">
                     <p>
                         <textarea readonly class="auto-resize" wrap="off">
 Reverted NV map size change as it was completely off.
