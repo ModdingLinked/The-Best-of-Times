@@ -129,6 +129,32 @@
             <span id="Changelog" class="section">
                 <h2 onclick="location.href='#Changelog'">TTW Changelog (3.3 onwards, DD/MM/YY)</h2>
 
+                <div class="expander-top clickable" onclick="expandCard(this, v333aexpander)" id="v333a">
+                    <p>
+                    <h3>3.3.3a (12/10/24)</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="v333aexpander">
+                    <p>
+                        <textarea readonly class="auto-resize" onclick="this.focus();this.select()">
+From barrythepirate:
+Fixed InitExtraMiscStat by setting a variable to 1 after it's init instead of relying on GetGameRestarted. This also fixes the perception assignment bug for characters using Four Eyes and some weapon crafting returning nothing
+From NoBark:
+Improved the light node position in Pip-Boy meshes, to avoid leaking
+Fixed an extra meshes folder in the paths for grenaderiflelongbarrelmerc.nif and grenaderiflemerc.nif
+Fixed sprtel wood's firing sound
+Finished applying environment mapping to weapons
+Added envmap_fade to a light shining in darkness so it doesn't glow
+Fixed miscolored sleeves on male combat armors
+Fixed busted textures on sprtel wood and pewpew's clip
+Fixed texture issue with the sierra madre security armor and reverted changes to the helmet
+From Ungeziefi:
+Tiny improvements to the installer backend and wording, some tag cleanup as well
+Added a check to prevent installation if FNV is in Program Files, as the guide expects it elsewhere to avoid issues</textarea>
+                    </p>
+                </div>
+
                 <div class="expander-top clickable" onclick="expandCard(this, v333expander)" id="v333">
                     <p>
                     <h3>3.3.3 (6/10/24)</h3>
@@ -3473,6 +3499,10 @@ Repathed the cabinet doors in New Vegas so their rotations aren't broken.
                     </textarea>
                     </p>
                 </div>
+
+                <br>
+
+                Legacy changelogs <a href="./files/TTW Legacy Changelogs.7z">here</a> (From 3.0 to 3.2.2, there might be some entries missing for 3.2)
             </span>
 
             <!-- Arrows -->
