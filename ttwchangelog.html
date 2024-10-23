@@ -129,6 +129,46 @@
             <span id="Changelog" class="section">
                 <h2 onclick="location.href='#Changelog'">TTW Changelog (3.3 onwards, DD/MM/YY)</h2>
 
+                <div class="expander-top clickable" onclick="expandCard(this, v333bexpander)" id="v333b">
+                    <p>
+                    <h3>3.3.3b (23/10/24)</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="v333bexpander">
+                    <p>
+                        <textarea readonly class="auto-resize" onclick="this.focus();this.select()">
+From NoBark:
+Fixed an extra meshes folder in the paths for grenaderiflelongbarrelmerc.nif and grenaderiflemerc.nif, without missing meshes this time
+Fixed alpha bug in ashpile01.nif, goopile01.nif, goopile02.nif, nvashpile01.nif, and nvashpile03.nif
+Restored the .45 submachine gun from 3.3.2, fixing the flipped iron sights
+Fixed the busted All American sticker in 1st person
+Fixed the broken Single Barrel Shotgun shell texture
+From Ungeziefi:
+Added patched executable hashes as valid for the 3 platforms, verifying game files is now required only if you decompressed BSAs
+Better wording and more information in the installer, including failure messages
+Added a check that prevents installation if the user doesn't have enough free storage in the destination folder
+Removed mentions of the disk versions from the installer
+Fixed broken progress in the challenge "The Bigger They Are..." due to wrong comparison signs in BehemothAchievementSCRIPT and MQ01BehemothSCRIPT
+Fixed Behemoth in Evergreen Mills not turning hostile if the electrified gate is disabled via the manual switch instead of destroying the generator, EvergreenMillsFenceGate01SCRIPT was only checking for the generator's destroyed status instead of the gate XMarker state
+Fixed 3 misplaced lights in the Union A&P Station:
+10012E4E
+10012E5C
+10012E5D
+Applied the "No LOD Water" flag to TheStripWorldNew for better performance, making Aqua Performa redundant
+Reduced the particle lifetime of all Snow Globes from 33 to 12 seconds for better performance, making Snow Globes Performance Fix redundant (+40% on a 5800X3D system while CPU bound)
+From Stentorious:
+Fixed the script lag occurring in cells with numerous gas traps. Adding the scripts edits needed to the TTW plugin means removing the existing script optimization from YUPTTW to not have it overwrite (01010DAB)
+From dhert:
+Fixed Super Stimpaks affecting the "Stimpaks Taken" Misc stat and playing the Addiction01ISFX IMOD if used by an NPC
+From Hairy:
+Fixed some missing "No Voice Filter" flags causing Shorty to die when not supposed to. Also fixed a missing "ShortyRef.SetRestrained 0"
+Switched to a more reliable method to disable NPCs in Anchorage entering the main tent
+Fixed broken "Project Impurity" quest completion due to missing SetStage functions in 2 of Lyon's dialogue lines
+</textarea>
+                    </p>
+                </div>
+
                 <div class="expander-top clickable" onclick="expandCard(this, v333aexpander)" id="v333a">
                     <p>
                     <h3>3.3.3a (12/10/24)</h3>
@@ -152,9 +192,9 @@ Fixed busted textures on sprtel wood and pewpew's clip
 Fixed texture issue with the sierra madre security armor and reverted changes to the helmet
 From Ungeziefi:
 Tiny improvements to the installer backend and wording, some tag cleanup as well
-Added a check to prevent installation if FNV is in Program Files, as the guide expects it elsewhere to avoid issues
+Added a check to prevent installation if FNV is in Program Files, as the guide expects it elsewhere to avoid issues (added instructions in the 2nd upload of 3.3.3a)
 From DevvEloper:
-Fixed the dialogue where you can ask Mr. Crowley about the real reason he wants Tenpenny, Dave, Dukov and the other guy killed, after you hear rumors of them being no bigots.</textarea>
+Fixed the dialogue where you can ask Mr. Crowley about the real reason he wants Tenpenny, Dave, Dukov and the other guy killed, after you hear rumors of them being no bigots (3rd upload of 3.3.3a)</textarea>
                     </p>
                 </div>
 
@@ -621,7 +661,7 @@ Fixed Nightkin missing embedded weapon list
 Restored the Stealth Boy prototype being interactible with during Guess Who I Saw Today
 Fixed Follower Random dialogue lines
 Fixed Mister Lopez's greeting line "I wish I had the courage to end it all." to be said at the right time
-Fixed not missing out on a challenge if a companion kills a behemoth
+Fixed not missing out on a challenge if a companion kills a Behemoth
 Fixed/Replaced all static centaurs in DC with a new levelled list for normal and evolved centaurs
 Fixed all exterior acoustic spaces in FNV to not use "Is Interior" flag
 Fixed/Added Vera's Dress to the list of items Veronica recognises as a dress
@@ -781,7 +821,7 @@ Added a 3D loaded check to a disabled veribird near Project Purity since it was 
 Raised several rocks and shrubs out from underneath Project Purity.
 Added a companion dismissal terminal to Rivet City in case Megaton is destroyed.
 Made the Behemoth Club and Gauss Rifle crit effect use the Stonewall system.
-Made it so behemoths can now knock you down like other large creatures.
+Made it so Behemoths can now knock you down like other large creatures.
 Removed the version checking from the TTWStart quest as it's redundant.
 Updated YUPTTW to 13.1.1
 Updated tons of meshes (Mostly SCOLS) to remove the mutable flag from them, saving memory. (Thanks Wall for updating SNIFF and finding this out)
@@ -963,10 +1003,10 @@ Set the weapon skill for alien pistols to 50 from 75.</textarea>
                 <div class="expander-bottom" id="v332aexpander">
                     <p>
                         <textarea readonly class="auto-resize" onclick="this.focus();this.select()">
-YUPTTW to 12.7 from 12.5.
-Fixed a bug causing Red to leave for Big Town but then going back to her cell.
-Re-encoded a dialogue in OWB to fix crackle.
-Reverts the chemist and daytripper changes as JIP fixes it now.</textarea>
+YUPTTW to 12.7 from 12.5
+Fixed a bug causing Red to leave for Big Town but then going back to her cell
+Re-encoded a dialogue in OWB to fix crackle
+Reverts the chemist and daytripper changes as JIP fixes it now</textarea>
                     </p>
                 </div>
 
@@ -2995,106 +3035,106 @@ Fixed a flying rock pile.
 
 From Rikako:
 Fixed UVs, Smoothing, other issues in
-architecture\freeside,nv_freesidesign-large.nif
-architecture\mccarran,nv_mccarran_terminalint01.nif
-architecture\mccarran,nv_mccarran_terminalint04.nif
-architecture\mccarran,nv_mccarran_terminalint07.nif
-architecture\ncr,ncr_guardtower01.nif
-architecture\nipton,nv_nipton-town-hall.nif
-architecture\pentagon,pentagonexteriorcor01.nif
-architecture\strip\nv_stripwall,nv_stripwall-c01.nif
-architecture\strip\nv_stripwall,nv_stripwall-c01back.nif
-architecture\strip\nv_stripwall,nv_stripwall-c01front.nif
-architecture\strip\nv_stripwall,nv_stripwall-l01.nif
-architecture\strip\nv_stripwall,nv_stripwall-l01back.nif
-architecture\strip\nv_stripwall,nv_stripwall-l01front.nif
-architecture\strip\nv_stripwall,nv_stripwall-l02.nif
-architecture\strip\nv_stripwall,nv_stripwall-l02front.nif
-architecture\strip\nv_stripwall,nv_stripwall-s01.nif
-architecture\strip\nv_stripwall,nv_stripwall-s01back.nif
-architecture\strip\nv_stripwall,nv_stripwall-s01front.nif
-architecture\strip\stripmonorail,nv_stripmrplatforma.nif
-architecture\strip,gamorrah01.nif
-architecture\strip,michaelangelos.nif
-architecture\strip,nv_thetops-casino01.nif
-architecture\strip,nv_thetops-casino02.nif
-architecture\strip,nv_thetops-wl.nif
-architecture\strip,ul_fountainnew.nif
-architecture\strip,ultraluxhotelfront.nif
-architecture\suburban,bldgcorner01.nif
-architecture\suburban,bldgcorner02.nif
-architecture\suburban,bldgcorner03.nif
-architecture\suburban,houseruined01.nif
-architecture\suburban,houseruined02.nif
-architecture\suburban,houseruined03.nif
-architecture\suburban,houseruined04a.nif
-architecture\suburban,houseruined04b.nif
-architecture\suburban,houseruined04c.nif
-architecture\urban\buildingkits,bld03column01.nif
-architecture\urban\buildingkits,bld03column02.nif
-architecture\urban\buildingkits,bld03column03.nif
-architecture\urban\buildingkits,bld03corin01.nif
-architecture\urban\buildingkits,bld03corner01.nif
-architecture\urban\buildingkits,bld03corner02.nif
-architecture\urban\buildingkits,bld03cornerrd01.nif
-architecture\urban\buildingkits,bld03divwall01.nif
-architecture\urban\buildingkits,bld03divwall02.nif
-architecture\urban\buildingkits,bld03divwalldoor01.nif
-architecture\urban\buildingkits,bld03divwallgfdocklarge01.nif
-architecture\urban\buildingkits,bld03divwallgfdockmed01.nif
-architecture\urban\buildingkits,bld03divwallgfdocksmall01.nif
-architecture\urban\buildingkits,bld03divwallgffree01.nif
-architecture\urban\buildingkits,bld03divwallgffreedoor01.nif
-architecture\urban\buildingkits,bld03divwallgffreewin01.nif
-architecture\urban\buildingkits,bld03endl01.nif
-architecture\urban\buildingkits,bld03endr01.nif
-architecture\urban\buildingkits,bld03mid01.nif
-architecture\urban\buildingkits,bld03mid02.nif
-architecture\urban\buildingkits,bld03mid03.nif
-architecture\urban\buildingkits,bld03mid04.nif
-architecture\urban\buildingkits,bld03stairs01.nif
-architecture\urban\buildingkits,bld03stairs2nd01.nif
-architecture\urban\buildingkits,bld07corner01.nif
-architecture\urban\buildingkits,bld07midcorner01.nif
-architecture\urban\buildingkits,bldbasementstructure01.nif
-architecture\urban\capitol,capitolbasestairs01.nif
-architecture\urban\capitol,capitolbasestairs02.nif
-architecture\urban\oldtown,otbldgdescorner05.nif
-architecture\urban\rubblepiles,rubbleblockade02.nif
-architecture\urban\rubblepiles,rubbleblockade03.nif
-architecture\urban\rubblepiles,rubblepile01.nif
-architecture\urban\rubblepiles,rubblepile01b.nif
-architecture\urban\rubblepiles,rubblepile01brick.nif
-architecture\urban\rubblepiles,rubblepile02.nif
-architecture\urban\rubblepiles,rubblepile02brick.nif
-architecture\urban\rubblepiles,rubblepile04.nif
-architecture\urban\rubblepiles,rubblepile04brick.nif
-architecture\urban\rubblepiles,rubblepile05.nif
-architecture\urban\rubblepiles,rubblepile05brick.nif
-architecture\urban\rubblepiles,rubblewall01.nif
-architecture\urban\rubblepiles,rubblewall01brick.nif
-architecture\urban\rubblepiles,rubblewall02.nif
-architecture\urban\rubblepiles,rubblewall02brick.nif
-clutter\office,deskpadplanner01.nif
-dungeons\basement,basrmcorinleft03.nif
-dungeons\caves\lamplight,lamplightwalkway01.nif
-dungeons\caves\lamplight,lamplightwalkway02.nif
-dungeons\caves\lamplight,lamplightwalkway03.nif
-dungeons\caves\lamplight,lamplightwalkway04.nif
-dungeons\caves\lamplight,lamplightwalkway05.nif
-dungeons\caves\lamplight,lamplightwalkway06.nif
-dungeons\caves\lamplight,lamplightwalkway07.nif
-dungeons\caves\lamplight,lamplightwalkway08.nif
-dungeons\caves\lamplight,lamplightwalkway09.nif
-dungeons\industrial\exterior,indextsmdockexsm01.nif
-dungeons\industrial\exterior,indextsmmid01.nif
-dungeons\industrial\exterior,indextsmwall02.nif
-dungeons\neoclassical,planetariumcontroldesk.nif
-dungeons\vaultruined\clutter,deskwoodtopr01.nif
-furniture\officeruined,officechairruined01.nif
-furniture,deskwoodtop01.nif
-furniture,repochair.nif
-vehicles,rocketstatuenv_lod.nif
+architecture\freeside\nv_freesidesign-large.nif
+architecture\mccarran\nv_mccarran_terminalint01.nif
+architecture\mccarran\nv_mccarran_terminalint04.nif
+architecture\mccarran\nv_mccarran_terminalint07.nif
+architecture\ncr\ncr_guardtower01.nif
+architecture\nipton\nv_nipton-town-hall.nif
+architecture\pentagon\pentagonexteriorcor01.nif
+architecture\strip\nv_stripwall\nv_stripwall-c01.nif
+architecture\strip\nv_stripwall\nv_stripwall-c01back.nif
+architecture\strip\nv_stripwall\nv_stripwall-c01front.nif
+architecture\strip\nv_stripwall\nv_stripwall-l01.nif
+architecture\strip\nv_stripwall\nv_stripwall-l01back.nif
+architecture\strip\nv_stripwall\nv_stripwall-l01front.nif
+architecture\strip\nv_stripwall\nv_stripwall-l02.nif
+architecture\strip\nv_stripwall\nv_stripwall-l02front.nif
+architecture\strip\nv_stripwall\nv_stripwall-s01.nif
+architecture\strip\nv_stripwall\nv_stripwall-s01back.nif
+architecture\strip\nv_stripwall\nv_stripwall-s01front.nif
+architecture\strip\stripmonorail\nv_stripmrplatforma.nif
+architecture\strip\gamorrah01.nif
+architecture\strip\michaelangelos.nif
+architecture\strip\nv_thetops-casino01.nif
+architecture\strip\nv_thetops-casino02.nif
+architecture\strip\nv_thetops-wl.nif
+architecture\strip\ul_fountainnew.nif
+architecture\strip\ultraluxhotelfront.nif
+architecture\suburban\bldgcorner01.nif
+architecture\suburban\bldgcorner02.nif
+architecture\suburban\bldgcorner03.nif
+architecture\suburban\houseruined01.nif
+architecture\suburban\houseruined02.nif
+architecture\suburban\houseruined03.nif
+architecture\suburban\houseruined04a.nif
+architecture\suburban\houseruined04b.nif
+architecture\suburban\houseruined04c.nif
+architecture\urban\buildingkits\bld03column01.nif
+architecture\urban\buildingkits\bld03column02.nif
+architecture\urban\buildingkits\bld03column03.nif
+architecture\urban\buildingkits\bld03corin01.nif
+architecture\urban\buildingkits\bld03corner01.nif
+architecture\urban\buildingkits\bld03corner02.nif
+architecture\urban\buildingkits\bld03cornerrd01.nif
+architecture\urban\buildingkits\bld03divwall01.nif
+architecture\urban\buildingkits\bld03divwall02.nif
+architecture\urban\buildingkits\bld03divwalldoor01.nif
+architecture\urban\buildingkits\bld03divwallgfdocklarge01.nif
+architecture\urban\buildingkits\bld03divwallgfdockmed01.nif
+architecture\urban\buildingkits\bld03divwallgfdocksmall01.nif
+architecture\urban\buildingkits\bld03divwallgffree01.nif
+architecture\urban\buildingkits\bld03divwallgffreedoor01.nif
+architecture\urban\buildingkits\bld03divwallgffreewin01.nif
+architecture\urban\buildingkits\bld03endl01.nif
+architecture\urban\buildingkits\bld03endr01.nif
+architecture\urban\buildingkits\bld03mid01.nif
+architecture\urban\buildingkits\bld03mid02.nif
+architecture\urban\buildingkits\bld03mid03.nif
+architecture\urban\buildingkits\bld03mid04.nif
+architecture\urban\buildingkits\bld03stairs01.nif
+architecture\urban\buildingkits\bld03stairs2nd01.nif
+architecture\urban\buildingkits\bld07corner01.nif
+architecture\urban\buildingkits\bld07midcorner01.nif
+architecture\urban\buildingkits\bldbasementstructure01.nif
+architecture\urban\capitol\capitolbasestairs01.nif
+architecture\urban\capitol\capitolbasestairs02.nif
+architecture\urban\oldtown\otbldgdescorner05.nif
+architecture\urban\rubblepiles\rubbleblockade02.nif
+architecture\urban\rubblepiles\rubbleblockade03.nif
+architecture\urban\rubblepiles\rubblepile01.nif
+architecture\urban\rubblepiles\rubblepile01b.nif
+architecture\urban\rubblepiles\rubblepile01brick.nif
+architecture\urban\rubblepiles\rubblepile02.nif
+architecture\urban\rubblepiles\rubblepile02brick.nif
+architecture\urban\rubblepiles\rubblepile04.nif
+architecture\urban\rubblepiles\rubblepile04brick.nif
+architecture\urban\rubblepiles\rubblepile05.nif
+architecture\urban\rubblepiles\rubblepile05brick.nif
+architecture\urban\rubblepiles\rubblewall01.nif
+architecture\urban\rubblepiles\rubblewall01brick.nif
+architecture\urban\rubblepiles\rubblewall02.nif
+architecture\urban\rubblepiles\rubblewall02brick.nif
+clutter\office\deskpadplanner01.nif
+dungeons\basement\basrmcorinleft03.nif
+dungeons\caves\lamplight\lamplightwalkway01.nif
+dungeons\caves\lamplight\lamplightwalkway02.nif
+dungeons\caves\lamplight\lamplightwalkway03.nif
+dungeons\caves\lamplight\lamplightwalkway04.nif
+dungeons\caves\lamplight\lamplightwalkway05.nif
+dungeons\caves\lamplight\lamplightwalkway06.nif
+dungeons\caves\lamplight\lamplightwalkway07.nif
+dungeons\caves\lamplight\lamplightwalkway08.nif
+dungeons\caves\lamplight\lamplightwalkway09.nif
+dungeons\industrial\exterior\indextsmdockexsm01.nif
+dungeons\industrial\exterior\indextsmmid01.nif
+dungeons\industrial\exterior\indextsmwall02.nif
+dungeons\neoclassical\planetariumcontroldesk.nif
+dungeons\vaultruined\clutter\deskwoodtopr01.nif
+furniture\officeruined\officechairruined01.nif
+furniture\deskwoodtop01.nif
+furniture\repochair.nif
+vehicles\rocketstatuenv_lod.nif
 
 Integrated Cleansing Flame Colour Fix (Thanks CovenantTurtle)
 Fixed tons of floating litter piles/misc statics (Thanks Callen)
