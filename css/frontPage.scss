@@ -10,7 +10,6 @@ body {
     user-select: none;
     color: #ffffff;
     font-size: 2.2em;
-    line-height: 2em;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -67,10 +66,13 @@ body {
     color: #ffffff;
     font-size: 1rem;
     text-shadow: rgb(0, 0, 0) 0 1px 8px;
+    display: inline-block;
+    margin-top: 1.1em;
 }
 
 .welcomeContent .welcomeButton,
-.welcomeContent .welcomeButtonYT {
+.welcomeContent .welcomeButtonYT,
+.welcomeContent .welcomeButtonWJ {
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -101,8 +103,23 @@ body {
     box-shadow: 0em 0em 0.6em rgba(64, 8, 8, 0.37);
 }
 
+.welcomeContent .welcomeButtonWJ {
+    background-color: rgb(31, 27, 36);
+}
+
+.welcomeContent .welcomeButtonWJ:hover strong {
+    color: rgba(242, 242, 242, 0.9);
+}
+
+.welcomeContent .welcomeButtonWJ:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #443a51;
+    box-shadow: 0em 0em 0.6em rgba(50, 114, 139, 0.37);
+}
+
 .welcomeContent .welcomeButton strong,
-.welcomeContent .welcomeButtonYT strong {
+.welcomeContent .welcomeButtonYT strong,
+.welcomeContent .welcomeButtonWJ strong {
     color: rgb(242, 242, 242);
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -125,6 +142,16 @@ body {
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
     text-shadow: 0.05em 0.075em 0.1em rgba(0, 0, 0, 0.7);
+}
+
+.disabledButton {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #333333 !important;
+}
+
+.disabledButton strong {
+    color: #ffffff60 !important;
 }
 
 @media screen and (min-width: 900px) {
@@ -159,7 +186,8 @@ body {
     }
 
     .welcomeContent .welcomeButton,
-    .welcomeContent .welcomeButtonYT {
+    .welcomeContent .welcomeButtonYT,
+    .welcomeContent .welcomeButtonWJ {
         width: 260px;
         height: 58px;
         font-size: 1.4rem;
