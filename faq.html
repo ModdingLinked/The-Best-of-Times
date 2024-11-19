@@ -711,7 +711,7 @@
 
                 <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion21expander)" id="troubleshootingquestion21">
                     <p>
-                    <h3>There is no "Tale of Two Wasteland" option in MO2's list of executables, only "New Vegas"</h3>
+                    <h3>There is no "Tale of Two Wastelands" option in MO2's list of executables, only "New Vegas"</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
@@ -719,10 +719,13 @@
                     <p>
                         <strong>You created a FNV instance</strong> instead of a TTW one:
                     <ol>
+                        <li>Remove the New Vegas executable from the list.</li>
                         <li>Click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 Folders"> folders list in the top of MO2.</li>
                         <li>Select <b>Open Instance Folder</b>.</li>
+                        <li>Close MO2.</li>
                         <li>Open <span class="card-basic">ModOrganizer.ini</span> in any text editor.</li>
                         <li>Set the <strong>gameName</strong> (line 2) to <span class="card-basic">TTW</span></li>
+                        <li>The Tale of Two Wastelands executable should appear in the list.</li>
                     </ol>
                     </p>
                 </div>
