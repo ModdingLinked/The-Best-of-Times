@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/Coco/Logo.webp">
+
+    <title>FO3 Mod Guide | The Best of Times</title>
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Fallout 3, FO3, Wabbajack, WJ, Installer">
+    <meta name="description" content="A standalone modding guide for Fallout 3.">
+    <meta http-equiv='content-language' content='en-us'>
+    <meta name="twitter:card" value="summary_large_image">
+    <meta property="og:site_name" content="ModdingLinked">
+    <meta property="og:title" content="The Best of Times">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thebestoftimes.moddinglinked.com">
+    <meta property="og:image" content="https://thebestoftimes.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="A standalone modding guide for Fallout 3.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#202524">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='clear-site-data' content='cache'>
+
+    <script src="imageViewer.js"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
+</head>
+
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Best of Times</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
+        </div>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./ttw.html" title="TTW">
+                    Tale of Two Wastelands
+                </a>
+
+                <a href="./essentials.html" title="Essential Mods">
+                    Essential Mods
+                </a>
+
+                <a href="./finish.html" title="Final Steps">
+                    Final Steps
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./tbotchangelog.html" title="TBoT Changelog">
+                    TBoT Changelog
+                </a>
+
+                <a href="./files/TTW Changelog.7z" target="_blank" title="TTW Changelog">
+                    TTW Changelog
+                </a>
+
+                <a href="https://vivanewvegas.moddinglinked.com/resources.html" target="_blank" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="https://vivanewvegas.moddinglinked.com/avoid-tools.html" target="_blank" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="https://vivanewvegas.moddinglinked.com/avoid-mods.html" target="_blank" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./fo3.html" title="FO3 Mod Guide">
+                    FO3 Mod Guide
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Best-of-Times" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <div class="card-red center" style="margin-top: 30px;">
+                <p>
+                    <b>IMPORTANT</b>:
+                    <br>
+                    This spin-off guide is intended for people who want to play Fallout 3 but <strong>without Tale of Two Wastelands</strong>. For the sake of brevity, instructions are not as fleshed out as in the main guides, requiring more <strong>familiarity with modding</strong>.
+                </p>
+            </div>
+
+            <span id="ShortIntruduction" class="section">
+                <h2 onclick="location.href='#ShortIntruduction'">Short Intruduction</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Requirements</h3>
+                    The information from TBoT's <a href="./intro.html">Introduction</a> and <a href="./setup.html">Setup</a> pages doesn't change, you obviously can ignore the parts about Fallout: New Vegas.
+                    <br>
+                    <br>
+                    Once you have a <strong>clean slate</strong>, create a new MO2 instance for Fallout 3 and start installing the mods as instructed.
+                    </p>
+                </div>
+            </span>
+
+            <span id="ManualDownloads" class="section">
+                <h2 onclick="location.href='#ManualDownloads'">Manual Downloads</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Root Mods</h3>
+                    The following mods are special because they need to be installed directly into the game's <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
+                    <br>
+                    Use the <strong>Manual Download</strong> and follow the instructions provided for each mod.
+                    <br>
+                    <br>
+                    Failing to install these mods correctly will result in issues.
+                    </p>
+                </div>
+
+                <div class="card" id="FOSE" title="FOSE">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/8606" target="_blank">Fallout Script Extender (FOSE)</a></h3>
+                    Extends the scripting capabilities of the game.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Fallout Script Extender (FOSE)</li>
+                        <ol>
+                            <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                        </ol>
+
+                        <div class="card-yellow">
+                            <p>
+                                If you do not know what the <b>Root</b> folder is, read the <a href="./setup.html#Terminology" target="_blank">Key Terminology</a>.
+                            </p>
+                        </div>
+
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="Decompressor">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/25720" target="_blank">FO3 BSA Decompressor</a></h3>
+                    Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - FO3 BSA Decompressor
+                            <ol>
+                                <li>Extract the archive and run <span class="card-basic">FO3 BSA Decompressor.exe</span>.</li>
+                                <li>The <strong>Fallout 3</strong> and <strong>Decompressed Archives</strong> paths should be filled by default (Root folder and Data folder respectively). If they aren't, close the program and re-run your game launcher to generate the required registry key.</li>
+
+                                <div class="card-yellow">
+                                    <p>
+                                        The EGS release of the game does not create any keys! You need to select the game folder manually!
+                                    </p>
+                                </div>
+
+                                <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ESMFixes" title="ESM Fixes">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/25717" target="_blank">Unofficial Fallout 3 ESM Patcher</a></h3>
+                    Optimizes and fixes thousands of records across the base game and DLC plugins to increase performance and stability.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Unofficial Fallout 3 ESM Patcher
+                            <ol>
+                                <li>Click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 folder button"> button next to the profiles bar in MO2 and select <strong>Open Mods folder</strong>.</li>
+                                <li>Create an empty folder called <strong>Fixed ESMs</strong> inside of the Mods folder.</li>
+                                <li>Extract the archive and run <span class="card-basic">Unofficial Fallout 3 ESM Patcher.exe</span>.</li>
+                                <li>The <strong>Fallout 3</strong> path should be filled by default (Root folder). If it isn't, close the program and re-run your game launcher to generate the required registry key.</li>
+
+                                <div class="card-yellow">
+                                    <p>
+                                        The EGS release of the game does not create any keys! You need to select the game folder manually!
+                                    </p>
+                                </div>
+
+                                <li>Click <strong>Browse</strong> next to the <strong>Patched Files</strong> path field, then choose the <strong>Fixed ESMs</strong> folder you just created.</li>
+                                <li>Click <strong>Install</strong>, wait for the process the finish, then exit the program once finished.</li>
+                                <li>In Mod Organizer 2, press <kbd>F5</kbd> to refresh the left pane and enable the <strong>Fixed ESMs</strong> mod by ticking its checkbox.</li>
+                                <li>You can now delete files created in the step 1.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="OggVorbisLibraries">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/8606" target="_blank">Ogg Vorbis Libraries</a></h3>
+                    Extends the scripting capabilities of the game.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Ogg Vorbis Libraries
+                            <ol>
+                                <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <span id="MO2Downloads" class="section">
+                <h2 onclick="location.href='#MO2Downloads'">Mod Organizer Downloads</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Managed</h3>
+                    From now on, select <strong>Mod Manager Download</strong> to download mods - this will make the file appear in MO2's <b>Downloads</b> tab, ready to be installed according to the <a href="./mo2.html#Instructions" target="_blank">instructions</a> earlier in the guide.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Utilities</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="CommandExtender">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/23682" target="_blank">Command Extender</a></h3>
+                    Adds functions and engine bugfixes ported from JIP LN NVSE.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Command Extender</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="TripleBuffering">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26299" target="_blank">Triple Buffering (FOSE)</a></h3>
+                    Enables triple buffering, fixing halved FPS and instability caused by the default double-buffer V-Sync.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Triple Buffering (FOSE)</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ButcherPete">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26358" target="_blank">ButcherPete FOSE</a></h3>
+                    Adds functions and fixes some bugs.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - ButcherPete FOSE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="zlibUpdated">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26126" target="_blank">zlib Updated - FOSE</a></h3>
+                    Updates zlib to the latest version for faster loading and less stutter.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - zlib Updated - FOSE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="SteamOverlayFixer">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/25811" target="_blank">Yet Another Steam Overlay Fixer</a></h3>
+                    Adds Steam API integration for functional playtime tracking and Steam overlay support when launching through MO2.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Yet Another Steam Overlay Fixer - Main File</li>
+                        <li><b>Update Files</b> - Supplementary Files - Fallout 3 GOTY
+                            <ol>
+                                <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                            </ol>
+                        </li>
+                    </ul>
+
+                    <div class="card-red">
+                        <p>
+                            This is only for Steam users.
+                        </p>
+                    </div>
+
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Bug Fixes</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="UFO3P" title="UFO3P">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/19122" target="_blank">Updated Unofficial Fallout 3 Patch</a></h3>
+                    Fixes bugs and fixes/restores cut content.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Updated Unofficial Fallout 3 Patch</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="StewieTweaks">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/23561" target="_blank">lStewieAl's Tweaks</a></h3>
+                    A collection of tweaks and fixes with an INI to configure settings.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Stewie Tweaks</li>
+                        <li><b>Optional Files</b> - Stewie Tweaks INI</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="CombatLagFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/24647" target="_blank">Combat Lag Fix (FOSE)</a></h3>
+                    Improves framerate in combat by fixing an engine bug that lowered framerate while attacking an enemy with a health-bar visible.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Fast Weapon Lag Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="SaveBloatFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/25601" target="_blank">ActorCause Save Bloat Fix (FOSE)</a></h3>
+                    Fixes a save bloating issue related to actors detecting the player, improving save/load speed and decreasing save size 10-30% depending on playthrough length.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - ActorCause Save Bloat Fix (FOSE)</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="SunlightFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26125" target="_blank">Sunlight Fix - FOSE</a></h3>
+                    Fixes incorrect sunlight position.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Sunlight Fix - FOSE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ViewmodelShadingFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26124" target="_blank">Viewmodel Shading Fix - FOSE</a></h3>
+                    Fixes totally wrong specular lighting, and lack of muzzle flash lights on viewmodel.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Viewmodel Shading Fix - FOSE</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <span id="GameConfiguration" class="section">
+                <h2 onclick="location.href='#GameConfiguration'">Game Configuration</h2>
+                <div class="card" id="CustomINI" title="Custom INI">
+                    <p>
+                    <h3>Custom INI</h3>
+                    In this step we will take advantage of Command Extender's FalloutCustom.ini feature to improve performance and stability without affecting the main INIs.
+                    <div class="card-green">
+                        <p>
+                            <b>FalloutCustom.ini</b> is a special settings file that overrides all other game INIs. This INI is exclusive to the user, meaning that the game or its launcher cannot change it.
+                            <br>
+                            <br>
+                            This allows you to change settings without the fear of being overwritten, and removes the need of tracking which settings go into which file.
+                        </p>
+                    </div>
+                    <ol>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                        <li>Select the <b>FalloutCustom.ini</b> tab, which should be blank. In case it's not, clear the file.</li>
+
+                        <div class="card-yellow">
+                            <p>
+                                If you don't see the <b>FalloutCustom.ini</b> tab:
+                            <ol>
+                                <li>Click the <img class="mo2-icon" src="./img/MO2/Profile Settings.webp" alt="MO2 profile settings button"> button at the top of MO2.</li>
+                                <li>Enable all options.</li>
+                            </ol>
+                            </p>
+                        </div>
+
+                        <li>Paste in the following:</li>
+                        <textarea readonly style="height: 51.5em" onclick="this.focus();this.select()">
+; Value types (prefixes):
+; i = integer (whole number)
+; f = float (decimal number)
+; s = string (text)
+; b = boolean (0 = Off, 1 = On)
+
+[Audio]
+; Enables additional worker thread for minor performance improvement
+bMultiThreadAudio=1
+
+; Disables debug logging to save memory and CPU time
+bUseAudioDebugInformation=0
+
+; Increase audio file cache size to reduce loading stutter
+iAudioCacheSize=16384
+iMaxSizeForCachedSound=2048
+
+[BackgroundLoad]
+; Forces cell unload on fast travel to lessen memory usage
+bSelectivePurgeUnusedOnFastTravel=1
+
+; Reduces stutter when loading multiple NPCs
+bBackgroundLoadLipFiles=1
+
+[Controls]
+; Disables mouse acceleration in menus
+; Game does not have mouse acceleration for the camera
+fForegroundMouseAccelBase=0
+fForegroundMouseAccelTop=0
+fForegroundMouseBase=0
+fForegroundMouseMult=0
+
+[Display]
+; Enables Fullscreen mode for the best performance in D3D9
+; Refer to the Performance Guide for more info
+bFull Screen=1
+
+; Use this for V-Sync control (the Launcher setting doesn't work)
+; 0 = Off, 1 = On, Higher values toggle fractional V-Sync (not recommended, very laggy and disables Variable Refresh Rate)
+iPresentInterval=1
+
+; Forces highest texture quality so textures won't break if you had it set to anything lower
+iTexMipMapSkip=0
+
+; Disables actor shadows due to their low visual impact and high performance cost
+bDrawShadows=0
+iActorShadowCountInt=0
+iActorShadowCountExt=0
+
+; Camera FOV
+fDefaultWorldFOV=75.0000
+; Viewmodel FOV
+fDefault1stPersonFOV=55.0000
+; Pip-Boy and terminal FOV
+fPipboy1stPersonFOV=47.0
+
+[General]
+; Forces faster cell unload to lessen memory usage
+bPreemptivelyUnloadCells=1
+
+; Spreads AI and game logic updates across 2 threads for better performance
+; Values above 3 don't change anything, and the setting has nothing to do with the number of CPU cores
+iNumHWThreads=3
+
+; Tale of Two Wastelands specific
+; Sets TTW's starting quest
+SCharGenQuest=001FFFF8
+; Disables FNV intro movie
+SIntroMovie=
+
+[Grass]
+; Increases grass draw distance
+fGrassStartFadeDistance=11200
+
+; Ensures that 3.0 Vertex Shader is used.
+; Allows drawing more grass with better performance
+b30GrassVS=1
+
+[PipBoy]
+; Fixes flicker when opening Pip-Boy when its light is on
+fLightEffectFadeDuration=400
+                        </textarea>
+                    </ol>
+
+                    <div class="card-red">
+                        <p>
+                            It is highly recommended to <strong>avoid changing any other INI settings</strong> not in the guide, and to avoid using tools like Bethini.
+                            You will realistically not need any other tweaks than the ones already in the guide.
+                        </p>
+                    </div>
+
+                    </p>
+                </div>
+
+                <div class="card" id="PerformanceGuide">
+                    <p>
+                    <h3 class="link-page"><a href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">Performance Guide</a></h3>
+                    In-depth guide on how to fix the game's lackluster performance, display issues and <strong>alt-tabbing</strong>. Covers topics such as DXVK, framerate limiting, display modes, lag and HDR.
+
+                    <div class="card-red">
+                        <p>
+                            Most of the information in the Performance Guide applies to Fallout 3 as well, here's a list of the <strong>instructions that differ</strong>:
+                        <ul>
+                            <li>Ignore the <b>Engine Optimizations</b> section, lStewieAl's Tweaks is already part of the list.</li>
+                            <li>The equivalent of NVTF's <b>bUseDefaultPoolForTextures</b> is <b>bDontMirrorTexturesInRAM</b> from lStewieAl's Tweaks. Triple buffering is enabled by Triple Buffering (FOSE).</li>
+                            <li>Ignore the <b>Fog Culling</b> section, the mod does not exist for FO3.</li>
+                            <li>Ignore the <b>zlib</b> section, zlib Updated is already part of the list.</li>
+                            <li>If you are going to use HDR, know that the <a href="https://www.nexusmods.com/newvegas/mods/82985" target="_blank">HDR Save Image Patch</a> mod does not exist for FO3.</li>
+                            <li>Use this version of <a href="https://www.nexusmods.com/fallout3/mods/25485" target="_blank">OneTweak</a>.</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    </p>
+                </div>
+            </span>
+
+            <span id="AdditionalMods" class="section">
+                <h2 onclick="location.href='#AdditionalMods'">Recommended Additional Mods</h2>
+
+                <div class="expander-top clickable" onclick="expandCard(this, uimodsexpander)" id="uimods">
+                    <p>
+                    <h3>User Interface</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="uimodsexpander">
+                    <p>
+                    <div id="VUI" title="Vanilla UI Plus">
+                        <p>
+                        <h3 class="link-download"><a href="./files/Vanilla UI Plus Fallout 3 9.48.7z" target="_blank">Vanilla UI Plus</a></h3>
+                        Improves the user interface without compromising the original style.
+                        <h3 class="install">Installation instructions</h3>
+                        <ul>
+                            <li>
+                                Download the mod, then install it manually by pressing the <img class="mo2-icon" src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2 and selecting the file you just downloaded.
+                                <ul>
+                                    <li>You will be prompted with a FOMOD installer, tweak the settings to your personal preference.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div id="HDScreens">
+                        <p>
+                        <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/25333" target="_blank">High Resolution Screens F3</a></h3>
+                        Increases the render resolution of in-game screens (Pipboy, terminals, character creation menu) to match game's screen resolution.
+                        <h3 class="install">Installation instructions</h3>
+                        <ul>
+                            <li><b>Main Files</b> - High Resolution Screens</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div id="VisualObjectives">
+                        <p>
+                        <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/25322" target="_blank">Visual Objectives (FOSE)</a></h3>
+                        Adds floating markers for quest objectives.
+                        <h3 class="install">Installation instructions</h3>
+                        <ul>
+                            <li><b>Main Files</b> - Visual Objectives (FOSE)</li>
+                        </ul>
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, visualmodsexpander)" id="visualmods">
+                    <p>
+                    <h3>Visuals</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="visualmodsexpander">
+                    <p>
+                    <div id="WaterAliasingFix">
+                        <p>
+                        <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/25363" target="_blank">High Resolution Water Fog - Water Aliasing Fix</a></h3>
+                        Increases resolution of water depth render target, thus significantly reducing aliasing.
+                        <h3 class="install">Installation instructions</h3>
+                        <ul>
+                            <li><b>Main Files</b> - High Resolution Water Fog</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div id="CharacterOverhaul">
+                        <p>
+                        <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26394" target="_blank">Character Overhaul</a></h3>
+                        Improves the appearance of NPCs.
+                        <h3 class="install">Installation instructions</h3>
+                        <ul>
+                            <li><b>Main Files</b> - Character Overhaul</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div id="AtmosphericLightingTweaks">
+                        <p>
+                        <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26397" target="_blank">Atmospheric Lighting Tweaks</a></h3>
+                        Gives interiors a more dynamic and atmospheric look.
+                        <h3 class="install">Installation instructions</h3>
+                        <ul>
+                            <li><b>Main Files</b> - Atmospheric Lighting Tweaks</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div id="TrueWeathers">
+                        <p>
+                        <h3 class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26122" target="_blank">True Weathers</a></h3>
+                        Overhauls the weather system while staying true to the original mood of the game.
+                        <h3 class="install">Installation instructions</h3>
+                        <ul>
+                            <li><b>Main Files</b> - True Weathers</li>
+                        </ul>
+                        </p>
+                    </div>
+                    </p>
+                </div>
+            </span>
+
+            <span id="LODGuide" class="section">
+                <h2 onclick="location.href='#LODGuide'">LOD Guide</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Resources</h3>
+                    The <a href="https://vivanewvegas.moddinglinked.com/lod.html" target="_blank">VNV LOD Guide</a> works for Fallout 3 as well, with the exception of resource mods required.
+                    <br>
+                    Ignore the whole <b>Installing LOD Resources</b> section from VNV and install the ones below instead, then keep following the guide as normal.
+                    <ul>
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/64805" target="_blank">FO3LODGen Resources</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - FO3LODGen Resources</li>
+                                <li>Hide <strong>FO3LODGen.esp</strong>.</li>
+
+                                <div class="card-yellow">
+                                    <p>
+                                        How to hide files and folders:
+                                    <ol>
+                                        <li>Open the mod in Mod Organizer 2 by double-clicking it on the left pane.</li>
+                                        <li>Go to the <strong>Filetree</strong> tab.</li>
+                                        <li>Right-click the file or folder you want to hide and click <strong>Hide</strong>.</li>
+                                    </ol>
+                                    </p>
+                                </div>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/20058" target="_blank">Tree LOD Bug Fix</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Dead Tree LOD Fix</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/17743" target="_blank">Improved LOD Noise Texture</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Improved LOD Noise Texture</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/25606" target="_blank">Wasted LOD - Cliffs</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Wasted DC Cliffs</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26076" target="_blank">LODIFY - Fallout 3 Conversion</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Lodify FO3</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26416" target="_blank">Red Rocket - LOD Improved</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Red Rocket - LOD Improved</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout3/mods/26464" target="_blank">Arefu LOD FO3</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Arefu LOD</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <!--
+            <br>
+            <hr>
+            <br>
+            
+            <span id="Changelog" class="section">
+                <div class="expander-top clickable" onclick="expandCard(this, changelogexpander)" id="changelog">
+                    <p>
+                    <h3>Changelog</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="changelogexpander">
+                    <h2 class="install">x/x/x</h2>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </span>
+            -->
+
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
+        </div>
+    </div>
+
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
