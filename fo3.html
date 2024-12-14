@@ -532,12 +532,6 @@ bPreemptivelyUnloadCells=1
 ; Values above 3 don't change anything, and the setting has nothing to do with the number of CPU cores
 iNumHWThreads=3
 
-; Tale of Two Wastelands specific
-; Sets TTW's starting quest
-SCharGenQuest=001FFFF8
-; Disables FNV intro movie
-SIntroMovie=
-
 [Grass]
 ; Increases grass draw distance
 fGrassStartFadeDistance=11200
@@ -545,6 +539,11 @@ fGrassStartFadeDistance=11200
 ; Ensures that 3.0 Vertex Shader is used.
 ; Allows drawing more grass with better performance
 b30GrassVS=1
+
+[Water]
+; Disables full scene reflections for a massive performance boost
+; Water will use reflect LOD instead of drawing the entire world twice
+bForceHighDetailReflections=0
 
 [PipBoy]
 ; Fixes flicker when opening Pip-Boy when its light is on
