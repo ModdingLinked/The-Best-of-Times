@@ -321,7 +321,7 @@
                     <p>
                     <ol>
                         <li><strong>Delete TTW</strong> in MO2.</li>
-                        <li>If you used the <a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">BSA Decompressor</a> for a normal FNV modlist (for example when following Viva New Vegas), then also <strong>verify</strong> the the game's files through your launcher.</li>
+                        <li>If you decompressed BSAs for either game and replaced the original files directly, then also <strong>verify</strong> the game's files.</li>
                         <li><strong>Reinstall TTW</strong> according to <a href="./ttw.html#InstallingTTW">the guide.</a></li>
                         <li>If you had to verify files for the reason stated above, also re-run the correct <a href="./essentials.html#Patchers">patcher</a>.</li>
                     </ol>
@@ -367,7 +367,7 @@
                     <ul>
                         <li>
                             <h4><b>BASS Init</b> or <b>XD3 Input</b></h4>
-                            Make sure you have both games installed with all DLCs and in English, run them once, then restart the TTW installer. If the problem persists, verify both game's files.
+                            Make sure you have both games installed with all DLCs and in English, run them once, then restart the TTW installer. If the problem persists, verify both games' files.
                         </li>
                         <li>
                             <h4><b>xdelta3.dll was not found</b></h4>
@@ -388,10 +388,14 @@
                             <h4>The installer closed itself or threw an <b>NTDLL error</b></h4>
                             Your CPU is most likely overheating:
                             <ul>
-                                <li>Verify your cooling solution,</li>
+                                <li>Check your cooling solution,</li>
                                 <li>Close or suspend any heavy process running along the TTW installer,</li>
                                 <li>As a last resort, you can make the TTW installer slower and less taxing by running it with the <span class="card-basic">-threads:1</span> command line argument (through a shortcut).</li>
                             </ul>
+                        </li>
+                        <li>
+                            <h4>The installer is taking longer than expected</h4>
+                            If you own an Intel CPU that uses E-cores, <a href="https://i5apps.com/how-to-disable-e-cores-in-windows-11-a-step-by-step-guide/" target="_blank">disable them</a> temporarily for a faster installation.
                         </li>
                     </ul>
                     </p>
